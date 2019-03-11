@@ -1,0 +1,415 @@
+
+<!DOCTYPE HTML>
+<html lang="zh-hans" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>variation subset · NGBT tutorial</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        <meta name="author" content="NGBT">
+        
+        
+    
+    <link rel="stylesheet" href="../../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-anchor-navigation-ex/style/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="haplotype.html" />
+    
+    
+    <link rel="prev" href="about.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="输入并搜索" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../../">
+            
+                <a href="../../">
+            
+                    
+                        <b>1.1.</b>
+                    
+                    About NGBT
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">Basic Usage</li>
+        
+        
+    
+        <li class="chapter " data-level="2.1" data-path="overview.html">
+            
+                <a href="overview.html">
+            
+                    
+                        <b>2.1.</b>
+                    
+                    Overview
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2" data-path="about.html">
+            
+                <a href="about.html">
+            
+                    
+                        <b>2.2.</b>
+                    
+                    About
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="2.3" data-path="subset.html">
+            
+                <a href="subset.html">
+            
+                    
+                        <b>2.3.</b>
+                    
+                    variation subset
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.4" data-path="haplotype.html">
+            
+                <a href="haplotype.html">
+            
+                    
+                        <b>2.4.</b>
+                    
+                    Haplotype plot
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.5" data-path="hapnet.html">
+            
+                <a href="hapnet.html">
+            
+                    
+                        <b>2.5.</b>
+                    
+                    HapNet
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.6" data-path="distree.html">
+            
+                <a href="distree.html">
+            
+                    
+                        <b>2.6.</b>
+                    
+                    Dist-tree
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.7" data-path="sequence.html">
+            
+                <a href="sequence.html">
+            
+                    
+                        <b>2.7.</b>
+                    
+                    sequence maker
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">Setup</li>
+        
+        
+    
+        <li class="chapter " data-level="3.1" data-path="../Setup/overview.html">
+            
+                <a href="../Setup/overview.html">
+            
+                    
+                        <b>3.1.</b>
+                    
+                    Overview
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            本书使用 GitBook 发布
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="../.." >variation subset</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <div id="anchor-navigation-ex-navbar"><i class="fa fa-navicon"></i><ul><li><span class="title-icon "></span><a href="#variation-subset"><b>1. </b>variation subset</a></li><ul><li><span class="title-icon "></span><a href="#there-are-several-inputs-on-the-left"><b>1.1. </b>There are several inputs on the left:</a></li><li><span class="title-icon "></span><a href="#advanced-options"><b>1.2. </b>Advanced Options</a></li><li><span class="title-icon "></span><a href="#run-and-download"><b>1.3. </b>RUN, and Download</a></li></ul></ul></div><a href="#variation-subset" id="anchorNavigationExGoTop"><i class="fa fa-arrow-up"></i></a><h1 id="variation-subset"><a name="variation-subset" class="anchor-navigation-ex-anchor" href="#variation-subset"><i class="fa fa-link" aria-hidden="true"></i></a>1. variation subset</h1>
+<p><img src="../img/NGBT-subset.jpg" alt=""></p>
+<p>It&apos;s 2 panels here. The Left one, &#x2160;, is the input zone, while the right part is the result display zone.</p>
+<p>This function subset the VCF file by the requirements given in the left (part &#x2160;), and shows the child collection on the right (part &#x2161;).</p>
+<p><strong>Note</strong> that all the conditions are connected by <strong>logic AND (&amp;&amp;)</strong></p>
+<h2 id="there-are-several-inputs-on-the-left"><a name="there-are-several-inputs-on-the-left" class="anchor-navigation-ex-anchor" href="#there-are-several-inputs-on-the-left"><i class="fa fa-link" aria-hidden="true"></i></a>1.1. There are several inputs on the left:</h2>
+<ul>
+<li><p><strong>Variation Type</strong>: select one of the three ratios that represent <code>SNP (Single Nucleotide Polymorphism) only</code>, <code>indel (input/delete) only</code> or <code>snp + indel</code>.</p>
+</li>
+<li><p><strong>Samples</strong>: in the three text inputs, you can either use labels of single sample, or groups. Different names should be splited by comma, like <code>Sample1,Sample2</code>. If you want to use group, put a hash before it, like<code>Sample1,Sample2,#Group1</code>. <strong>Make sure</strong> that samples only appear <strong>ONCE</strong> in totall.</p>
+<ul>
+<li><strong>Samples that DO HAVE mutations</strong>: samples here will be asked to have mutations in the result. If they donnot have in some postion, these postion won&apos;t appear.</li>
+<li><strong>Samples that MUST NOT HAVE mutations</strong>: contrary to the former, postions which samples here have mutations will be deleted. So that samples here won&apos;t appear to have mutations in the result.</li>
+<li><strong>Samples without filtering</strong>: samples here won&apos;t be dealed, just display.</li>
+</ul>
+</li>
+</ul>
+<ul>
+<li><p><strong>Regions</strong>: input wanted region, with the format <code>CHROM:BEGIN-END</code>, or gene name. Like the samples, when you want more than one region, use comma to split.</p>
+</li>
+<li><p><strong>Extra length before AND after the regions (bp)</strong>: sometime when you want to use the gene name as region, you want some extra postions in the upstream or downstream. Value here is simply added to the maximum of <strong>each</strong> region, and subtracted from the minimum of <strong>each</strong> region.</p>
+</li>
+<li><p><strong>Advanced Options</strong>: click this button to show/hide some advanced options. <strong>Note</strong> that when these options are hide, they <strong>won&apos;t</strong> affect the result.</p>
+</li>
+</ul>
+<h2 id="advanced-options"><a name="advanced-options" class="anchor-navigation-ex-anchor" href="#advanced-options"><i class="fa fa-link" aria-hidden="true"></i></a>1.2. Advanced Options</h2>
+<p><img src="../img/NGBT-subset-2.jpg" alt=""></p>
+<p>Click the button <code>Advanced Options</code>, and then some more options appeared.<strong>Note</strong> that when these options are hide, they <strong>won&apos;t</strong> affect the result.</p>
+<ul>
+<li><p><strong>MAF filtering threshold (0 for disable)</strong>: Minor allele frequency (MAF) is the frequency at which the second most common allele occurs in a given population. Larger the value is, lesser the result postions are. If the value is 0 (by default), this filter function is disabled.</p>
+</li>
+<li><p><strong>Biallelic sites only</strong>: A <strong>biallelic</strong> site is a specific locus in a genome that contains two observed alleles, counting the reference as one, and therefore allowing for one variant allele. A <strong>multiallelic</strong> site is a specific locus in a genome that contains three or more observed alleles, again counting the reference as one, and therefore allowing for two or more variant alleles. Select <em>Yes</em>, all postions in the result that have multiallelic will be deleted.</p>
+</li>
+<li><p><strong>Maxium of missing rate (1 for disable filtering)</strong>: Lesser the value is, lesser the results are.</p>
+</li>
+</ul>
+<h2 id="run-and-download"><a name="run-and-download" class="anchor-navigation-ex-anchor" href="#run-and-download"><i class="fa fa-link" aria-hidden="true"></i></a>1.3. RUN, and Download</h2>
+<p>Click the <code>Run</code> button when get all options ready. Table on the right will show the result of subsetting, or some error message if the input isn&apos;t correct.</p>
+<p>Click <code>Download as csv</code> to download current result on the right in format csv.</p>
+<p>Click</p>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="about.html" class="navigation navigation-prev " aria-label="Previous page: About">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="haplotype.html" class="navigation navigation-next " aria-label="Next page: Haplotype plot">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"variation subset","level":"2.3","depth":1,"next":{"title":"Haplotype plot","level":"2.4","depth":1,"path":"content/Basic_Usage/haplotype.md","ref":"./content/Basic_Usage/haplotype.md","articles":[]},"previous":{"title":"About","level":"2.2","depth":1,"path":"content/Basic_Usage/about.md","ref":"./content/Basic_Usage/about.md","articles":[]},"dir":"ltr"},"config":{"plugins":["github","-sharing","sharing-plus","anchor-navigation-ex","-highlight","livereload"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"prism":{"css":["prismjs/themes/prism-tomorrow.css"]},"github":{"url":"https://github.com/your/repo"},"livereload":{},"search":{},"sharing-plus":{"qq":false,"all":["facebook","google","twitter","instapaper","linkedin","pocket","stumbleupon"],"douban":false,"facebook":true,"weibo":false,"instapaper":false,"whatsapp":false,"hatenaBookmark":false,"twitter":true,"messenger":false,"line":false,"vk":false,"pocket":true,"google":false,"viber":false,"stumbleupon":false,"qzone":false,"linkedin":false},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"serif","size":2},"anchor-navigation-ex":{"associatedWithSummary":false,"float":{"floatIcon":"fa fa-navicon","level1Icon":"","level2Icon":"","level3Icon":"","showLevelIcon":false},"mode":"float","multipleH1":true,"pageTop":{"level1Icon":"fa fa-hand-o-right","level2Icon":"fa fa-hand-o-right","level3Icon":"fa fa-hand-o-right","showLevelIcon":false},"printLog":false,"showGoTop":true,"showLevel":true},"sharing":{"qq":true,"all":["weibo","qzone","google","douban"],"douban":false,"facebook":true,"weibo":false,"instapaper":false,"whatsapp":false,"hatenaBookmark":false,"twitter":true,"messenger":false,"line":false,"vk":false,"pocket":false,"google":false,"viber":false,"stumbleupon":false,"qzone":false,"linkedin":false},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":true}},"theme":"default","author":"NGBT","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"NGBT tutorial","language":"zh-hans","links":{"sidebar":{}},"gitbook":"3.2.3"},"file":{"path":"content/Basic_Usage/subset.md","mtime":"2019-03-11T03:32:18.551Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2019-03-11T12:00:32.792Z"},"basePath":"../..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../../gitbook/gitbook.js"></script>
+    <script src="../../gitbook/theme.js"></script>
+    
+        
+        <script src="../../gitbook/gitbook-plugin-github/plugin.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-sharing-plus/buttons.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-livereload/plugin.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+
