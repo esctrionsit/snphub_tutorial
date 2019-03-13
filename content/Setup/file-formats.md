@@ -18,7 +18,7 @@ Sample5    S5    Sample_No.5
 
 ### Column Description
 
-![](./content/img/Config-1.jpg)
+![](./../img/Config-1.jpg)
 
 ## Gene Index File
 
@@ -34,7 +34,7 @@ CHROM_2    10    138    GeneId200001
 
 ### Column Description
 
-![](./content/img/Config-2.jpg)
+![](./../img/Config-2.jpg)
 
 ## Group Information File
 
@@ -50,4 +50,4 @@ Group3 S1,S2,S3,S4,S5
 
 ### Column Description
 
-![](./content/img/Config-3.jpg)
+![](./../img/Config-3.jpg)
