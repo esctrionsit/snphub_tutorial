@@ -4,7 +4,7 @@
     <head>
         <meta charset="UTF-8">
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
-        <title>Overview · NGBT tutorial</title>
+        <title>File Formats · NGBT tutorial</title>
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="description" content="">
         <meta name="generator" content="GitBook 3.2.3">
@@ -57,10 +57,8 @@
     <link rel="shortcut icon" href="../../gitbook/images/favicon.ico" type="image/x-icon">
 
     
-    <link rel="next" href="configuration.html" />
     
-    
-    <link rel="prev" href="../Basic_Usage/sequence.html" />
+    <link rel="prev" href="configuration.html" />
     
 
     </head>
@@ -225,7 +223,7 @@
         
         
     
-        <li class="chapter active" data-level="3.1" data-path="overview.html">
+        <li class="chapter " data-level="3.1" data-path="overview.html">
             
                 <a href="overview.html">
             
@@ -255,7 +253,7 @@
             
         </li>
     
-        <li class="chapter " data-level="3.3" data-path="file-formats.html">
+        <li class="chapter active" data-level="3.3" data-path="file-formats.html">
             
                 <a href="file-formats.html">
             
@@ -300,7 +298,7 @@
     <!-- Title -->
     <h1>
         <i class="fa fa-circle-o-notch fa-spin"></i>
-        <a href="../.." >Overview</a>
+        <a href="../.." >File Formats</a>
     </h1>
 </div>
 
@@ -315,9 +313,34 @@
     
                                 <section class="normal markdown-section">
                                 
-                                <div id="anchor-navigation-ex-navbar"><i class="fa fa-navicon"></i><ul><li><span class="title-icon "></span><a href="#overview"><b>1. </b>Overview</a></li></ul></div><a href="#overview" id="anchorNavigationExGoTop"><i class="fa fa-arrow-up"></i></a><h1 id="overview"><a name="overview" class="anchor-navigation-ex-anchor" href="#overview"><i class="fa fa-link" aria-hidden="true"></i></a>1. Overview</h1>
-<p>In this section, we will introduce how to setup our NGBT application. Some basic knowledge about linux, R and resequencing is required. Also, you need to have a server with shiny server installed. If not, see <a href="https://www.rstudio.com/products/shiny/download-server/" target="_blank">here</a>.</p>
-<p>Further more, there are several R packages need to be installed, which are <code>RColorBrewer</code>, <code>ggplot2</code>, <code>ggtree</code>, <code>pegas</code>, <code>vcfR</code>, <code>ape</code> and <code>DT</code>. If any of them does not exist in the server, NGBT may not work. However, this error will be detected by the <code>check.R</code>, whiich is a setup check script that is supposed to be executed <strong>every time configuration file changed</strong>.</p>
+                                <div id="anchor-navigation-ex-navbar"><i class="fa fa-navicon"></i><ul><li><span class="title-icon "></span><a href="#file-formats"><b>1. </b>File Formats</a></li><ul><li><span class="title-icon "></span><a href="#metadata-file"><b>1.1. </b>Metadata File</a></li><ul><li><span class="title-icon "></span><a href="#example"><b>1.1.1. </b>Example</a></li><li><span class="title-icon "></span><a href="#column-description"><b>1.1.2. </b>Column Description</a></li></ul><li><span class="title-icon "></span><a href="#gene-index-file"><b>1.2. </b>Gene Index File</a></li><ul><li><span class="title-icon "></span><a href="#example_1"><b>1.2.1. </b>Example</a></li><li><span class="title-icon "></span><a href="#column-description_1"><b>1.2.2. </b>Column Description</a></li></ul><li><span class="title-icon "></span><a href="#group-information-file"><b>1.3. </b>Group Information File</a></li><ul><li><span class="title-icon "></span><a href="#example_2"><b>1.3.1. </b>Example</a></li><li><span class="title-icon "></span><a href="#column-description_2"><b>1.3.2. </b>Column Description</a></li></ul></ul></ul></div><a href="#file-formats" id="anchorNavigationExGoTop"><i class="fa fa-arrow-up"></i></a><h1 id="file-formats"><a name="file-formats" class="anchor-navigation-ex-anchor" href="#file-formats"><i class="fa fa-link" aria-hidden="true"></i></a>1. File Formats</h1>
+<p>To draw the plots, 3 self-defined files need to be added into configuration file.</p>
+<h2 id="metadata-file"><a name="metadata-file" class="anchor-navigation-ex-anchor" href="#metadata-file"><i class="fa fa-link" aria-hidden="true"></i></a>1.1. Metadata File</h2>
+<p>In this file, there are 3 columns divided by <code>\t</code>. It is used to gives the user a simpler way to select samples.</p>
+<h3 id="example"><a name="example" class="anchor-navigation-ex-anchor" href="#example"><i class="fa fa-link" aria-hidden="true"></i></a>1.1.1. Example</h3>
+<pre><code>Sample1    S1    Sample_No.1
+Sample2    S2    Sample_No.2
+Sample3    S3    Sample_No.3
+Sample4    S4    Sample_No.4
+Sample5    S5    Sample_No.5
+</code></pre><h3 id="column-description"><a name="column-description" class="anchor-navigation-ex-anchor" href="#column-description"><i class="fa fa-link" aria-hidden="true"></i></a>1.1.2. Column Description</h3>
+<p><img src="content/img/Config-1.jpg" alt=""></p>
+<h2 id="gene-index-file"><a name="gene-index-file" class="anchor-navigation-ex-anchor" href="#gene-index-file"><i class="fa fa-link" aria-hidden="true"></i></a>1.2. Gene Index File</h2>
+<p>In this file, some basic information of gene is recorded. There are 4 columns in totall, without header, divided by <code>\t</code>.</p>
+<h3 id="example_1"><a name="example_1" class="anchor-navigation-ex-anchor" href="#example_1"><i class="fa fa-link" aria-hidden="true"></i></a>1.2.1. Example</h3>
+<pre><code>CHROM_1    5    125    GeneId100001
+CHROM_1    200    384    GeneId100002
+CHROM_2    10    138    GeneId200001
+</code></pre><h3 id="column-description_1"><a name="column-description_1" class="anchor-navigation-ex-anchor" href="#column-description_1"><i class="fa fa-link" aria-hidden="true"></i></a>1.2.2. Column Description</h3>
+<p><img src="content/img/Config-2.jpg" alt=""></p>
+<h2 id="group-information-file"><a name="group-information-file" class="anchor-navigation-ex-anchor" href="#group-information-file"><i class="fa fa-link" aria-hidden="true"></i></a>1.3. Group Information File</h2>
+<p>In this file, information of group is recorded. There are 2 columns in totall, without header, divided by <code>\t</code>.</p>
+<h3 id="example_2"><a name="example_2" class="anchor-navigation-ex-anchor" href="#example_2"><i class="fa fa-link" aria-hidden="true"></i></a>1.3.1. Example</h3>
+<pre><code>Group1 S1,S2,S3
+Group2 S4,S5
+Group3 S1,S2,S3,S4,S5
+</code></pre><h3 id="column-description_2"><a name="column-description_2" class="anchor-navigation-ex-anchor" href="#column-description_2"><i class="fa fa-link" aria-hidden="true"></i></a>1.3.2. Column Description</h3>
+<p><img src="content/img/Config-3.jpg" alt=""></p>
 
                                 
                                 </section>
@@ -345,14 +368,10 @@
 
             
                 
-                <a href="../Basic_Usage/sequence.html" class="navigation navigation-prev " aria-label="Previous page: Sequence Maker">
+                <a href="configuration.html" class="navigation navigation-prev navigation-unique" aria-label="Previous page: Configuration">
                     <i class="fa fa-angle-left"></i>
                 </a>
                 
-                
-                <a href="configuration.html" class="navigation navigation-next " aria-label="Next page: Configuration">
-                    <i class="fa fa-angle-right"></i>
-                </a>
                 
             
         
@@ -361,7 +380,7 @@
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"Overview","level":"3.1","depth":1,"next":{"title":"Configuration","level":"3.2","depth":1,"path":"content/Setup/configuration.md","ref":"./content/Setup/configuration.md","articles":[]},"previous":{"title":"Sequence Maker","level":"2.7","depth":1,"path":"content/Basic_Usage/sequence.md","ref":"./content/Basic_Usage/sequence.md","articles":[]},"dir":"ltr"},"config":{"plugins":["github","-sharing","sharing-plus","anchor-navigation-ex","-highlight"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"prism":{"css":["prismjs/themes/prism-tomorrow.css"]},"github":{"url":"https://github.com/your/repo"},"search":{},"sharing-plus":{"qq":false,"all":["facebook","google","twitter","instapaper","linkedin","pocket","stumbleupon"],"douban":false,"facebook":true,"weibo":false,"instapaper":false,"whatsapp":false,"hatenaBookmark":false,"twitter":true,"messenger":false,"line":false,"vk":false,"pocket":true,"google":false,"viber":false,"stumbleupon":false,"qzone":false,"linkedin":false},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"serif","size":2},"anchor-navigation-ex":{"associatedWithSummary":false,"float":{"floatIcon":"fa fa-navicon","level1Icon":"","level2Icon":"","level3Icon":"","showLevelIcon":false},"mode":"float","multipleH1":true,"pageTop":{"level1Icon":"fa fa-hand-o-right","level2Icon":"fa fa-hand-o-right","level3Icon":"fa fa-hand-o-right","showLevelIcon":false},"printLog":false,"showGoTop":true,"showLevel":true},"sharing":{"qq":true,"all":["weibo","qzone","google","douban"],"douban":false,"facebook":true,"weibo":false,"instapaper":false,"whatsapp":false,"hatenaBookmark":false,"twitter":true,"messenger":false,"line":false,"vk":false,"pocket":false,"google":false,"viber":false,"stumbleupon":false,"qzone":false,"linkedin":false},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":true}},"theme":"default","author":"NGBT","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"NGBT tutorial","language":"zh-hans","links":{"sidebar":{}},"gitbook":"3.2.3"},"file":{"path":"content/Setup/overview.md","mtime":"2019-03-13T11:17:04.563Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2019-03-13T12:31:24.005Z"},"basePath":"../..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"File Formats","level":"3.3","depth":1,"previous":{"title":"Configuration","level":"3.2","depth":1,"path":"content/Setup/configuration.md","ref":"./content/Setup/configuration.md","articles":[]},"dir":"ltr"},"config":{"plugins":["github","-sharing","sharing-plus","anchor-navigation-ex","-highlight"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"prism":{"css":["prismjs/themes/prism-tomorrow.css"]},"github":{"url":"https://github.com/your/repo"},"search":{},"sharing-plus":{"qq":false,"all":["facebook","google","twitter","instapaper","linkedin","pocket","stumbleupon"],"douban":false,"facebook":true,"weibo":false,"instapaper":false,"whatsapp":false,"hatenaBookmark":false,"twitter":true,"messenger":false,"line":false,"vk":false,"pocket":true,"google":false,"viber":false,"stumbleupon":false,"qzone":false,"linkedin":false},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"serif","size":2},"anchor-navigation-ex":{"associatedWithSummary":false,"float":{"floatIcon":"fa fa-navicon","level1Icon":"","level2Icon":"","level3Icon":"","showLevelIcon":false},"mode":"float","multipleH1":true,"pageTop":{"level1Icon":"fa fa-hand-o-right","level2Icon":"fa fa-hand-o-right","level3Icon":"fa fa-hand-o-right","showLevelIcon":false},"printLog":false,"showGoTop":true,"showLevel":true},"sharing":{"qq":true,"all":["weibo","qzone","google","douban"],"douban":false,"facebook":true,"weibo":false,"instapaper":false,"whatsapp":false,"hatenaBookmark":false,"twitter":true,"messenger":false,"line":false,"vk":false,"pocket":false,"google":false,"viber":false,"stumbleupon":false,"qzone":false,"linkedin":false},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":true}},"theme":"default","author":"NGBT","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"NGBT tutorial","language":"zh-hans","links":{"sidebar":{}},"gitbook":"3.2.3"},"file":{"path":"content/Setup/file-formats.md","mtime":"2019-03-13T12:31:10.460Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2019-03-13T12:31:24.005Z"},"basePath":"../..","book":{"language":""}});
         });
     </script>
 </div>
