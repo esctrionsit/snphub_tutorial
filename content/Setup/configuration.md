@@ -15,8 +15,12 @@ path_groupdata <- "/data2/rawdata2/shinyZavitan/group_info.txt"
 path_bcftools <- "/data/user/shinyug/bin/bcftools"
 path_samtools <- "samtools"
 path_seqkit <- "/data/user/shinyug/bin/seqkit"
+
+#system
+.libPaths(c(.libPaths(), "/home/wangzh/R/x86_64-redhat-linux-gnu-library/3.4"))
 ```
 
+## Related files
 In the first part, the meaning of the variables are:
 - **path_fasta**: the path of reference genome file, which should be in `fasta format`.
 
@@ -30,4 +34,10 @@ In the first part, the meaning of the variables are:
 
 - **path_groupdata**: the path of group information file. More datail is writen in the next section.
 
+## Tool path
 In the second part, variables contains the path of 3 tools: `bcftools`, `samtools` and `seqkit`. If the path is default, then just leave them.
+
+But, if the default tool is not fit for NGBT, due to the version problem or somehow, you can change the path to somewhere new.
+
+## Lib path
+The path **need not** to be changed, if all the needed R pachages is installed to the default user. But, if some of the R packages in instelled only by some other user, and you don't want to install it to the default user, add the path to the list.
