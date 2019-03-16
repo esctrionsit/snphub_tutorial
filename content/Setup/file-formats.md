@@ -43,9 +43,9 @@ In this file, information of group is recorded. There are 2 columns in totall, w
 ### Example
 
 ```
-Group1 S1,S2,S3
-Group2 S4,S5
-Group3 S1,S2,S3,S4,S5
+Group1    S1,S2,S3
+Group2    S4,S5
+Group3    S1,S2,S3,S4,S5
 ```
 
 ### Column Description
