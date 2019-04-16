@@ -16,6 +16,7 @@ path_sam_location <- "./test/location_info.txt"
 #path_sysinfo <- NA
 path_sysinfo <- "./test/sys_info.txt"
 
+#path_UIsetting <- NA
 path_UIsetting <- "./test/Aet.json"
 #tool application paths
 path_bcftools <- "bcftools"

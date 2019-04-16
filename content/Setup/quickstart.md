@@ -10,3 +10,22 @@ runApp()
 ```
 
 Our source on Github already have a test data set. If the system environment is well configurated, you could already get start with it.
+
+## Environment request
+
+To run the SnpHub, make sure these softwares are **already** installed:
+- samtools
+- bcftools
+- seqkit
+- tabix
+
+Alse, these R packages are also **needed**:
+- ggplot2
+- ggmap
+- dplyr
+- rjson
+- shiny
+- pegas
+- vcfR
+- ape
+- DT
