@@ -6,8 +6,8 @@ Further more, there are several R packages need to be installed, which are `cray
 
 ## Check your config
 
-To check your config, use:
+Each time you set/changed your configuration, use:
 ``` shell
-Rscript ./check.R
+./install.sh
 ```
-while you currently in the root folder of the NGBT application.
+to get the new data file processed and checked.

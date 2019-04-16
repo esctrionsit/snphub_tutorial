@@ -1,8 +1,6 @@
-# HapNet
+# SnpFreq
 
-Haplotype networks represent the relationships among the different haploid genotypes observed from the sample list. For more information about haplotype, see [here](http://markscherz.tumblr.com/post/80597912898/haplotypes-and-understanding-haplotype-networks) or [here](http://phylonetworks.blogspot.com/2013/09/how-do-we-interpret-rooted-haplotype.html)
-
-![HapNet tag](./../img/HapNet-1.jpg)
+![SnpFreq tag](./../img/SnpFreq-1.jpg)
 
 ## Panel ① on the left provides severial options:
 - **Groups**: samples that divided into group(s) are wanted. You can define your own group here, by inputing `self-group-name-1{sample1,sample2},self-group-name-2{sample3}`, which means we inputed two groups whose names are "self-group-name-1" and "self-group-name-2". Self-group-name-1 contains sample1 and sample2, while self-group-name-2 contains sample3. You can also use pre-defined groups, by inputing `pre-defined-group-name-1,pre-defined-group-name-2`. **Note** that you could use only **one** type of them, self-defined group or pre-defined group.

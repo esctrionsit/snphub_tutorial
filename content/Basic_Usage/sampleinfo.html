@@ -4,7 +4,7 @@
     <head>
         <meta charset="UTF-8">
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
-        <title>HapNet · NGBT tutorial</title>
+        <title>SampleInfo · NGBT tutorial</title>
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="description" content="">
         <meta name="generator" content="GitBook 3.2.3">
@@ -57,10 +57,10 @@
     <link rel="shortcut icon" href="../../gitbook/images/favicon.ico" type="image/x-icon">
 
     
-    <link rel="next" href="phylotree.html" />
+    <link rel="next" href="vartable.html" />
     
     
-    <link rel="prev" href="heatmap.html" />
+    <link rel="prev" href="overview.html" />
     
 
     </head>
@@ -126,7 +126,7 @@
             
         </li>
     
-        <li class="chapter " data-level="2.2" data-path="sampleinfo.html">
+        <li class="chapter active" data-level="2.2" data-path="sampleinfo.html">
             
                 <a href="sampleinfo.html">
             
@@ -171,7 +171,7 @@
             
         </li>
     
-        <li class="chapter active" data-level="2.5" data-path="hapnet.html">
+        <li class="chapter " data-level="2.5" data-path="hapnet.html">
             
                 <a href="hapnet.html">
             
@@ -343,7 +343,7 @@
     <!-- Title -->
     <h1>
         <i class="fa fa-circle-o-notch fa-spin"></i>
-        <a href="../.." >HapNet</a>
+        <a href="../.." >SampleInfo</a>
     </h1>
 </div>
 
@@ -355,22 +355,25 @@
                             
                                 <section class="normal markdown-section">
                                 
-                                <div id="anchor-navigation-ex-navbar"><i class="fa fa-navicon"></i><ul><li><span class="title-icon "></span><a href="#hapnet"><b>1. </b>HapNet</a></li><ul><li><span class="title-icon "></span><a href="#panel-&#x2460;-on-the-left-provides-severial-options"><b>1.1. </b>Panel &#x2460; on the left provides severial options:</a></li><li><span class="title-icon "></span><a href="#download-options"><b>1.2. </b>Download Options</a></li></ul></ul></div><a href="#hapnet" id="anchorNavigationExGoTop"><i class="fa fa-arrow-up"></i></a><h1 id="hapnet"><a name="hapnet" class="anchor-navigation-ex-anchor" href="#hapnet"><i class="fa fa-link" aria-hidden="true"></i></a>1. HapNet</h1>
-<p>Haplotype networks represent the relationships among the different haploid genotypes observed from the sample list. For more information about haplotype, see <a href="http://markscherz.tumblr.com/post/80597912898/haplotypes-and-understanding-haplotype-networks" target="_blank">here</a> or <a href="http://phylonetworks.blogspot.com/2013/09/how-do-we-interpret-rooted-haplotype.html" target="_blank">here</a></p>
-<p><img src="../img/HapNet-1.jpg" alt="HapNet tag"></p>
-<h2 id="panel-&#x2460;-on-the-left-provides-severial-options"><a name="panel-&#x2460;-on-the-left-provides-severial-options" class="anchor-navigation-ex-anchor" href="#panel-&#x2460;-on-the-left-provides-severial-options"><i class="fa fa-link" aria-hidden="true"></i></a>1.1. Panel &#x2460; on the left provides severial options:</h2>
+                                <div id="anchor-navigation-ex-navbar"><i class="fa fa-navicon"></i><ul><li><span class="title-icon "></span><a href="#sampleinfo"><b>1. </b>SampleInfo</a></li></ul></div><a href="#sampleinfo" id="anchorNavigationExGoTop"><i class="fa fa-arrow-up"></i></a><h1 id="sampleinfo"><a name="sampleinfo" class="anchor-navigation-ex-anchor" href="#sampleinfo"><i class="fa fa-link" aria-hidden="true"></i></a>1. SampleInfo</h1>
+<p>The tag <strong>SampleInfo</strong> is the first functional tag, shows the state of the setups.</p>
+<p><img src="../img/SampleInfo-1.jpg" alt="SampleInfo tag"></p>
 <ul>
-<li><p><strong>Groups</strong>: samples that divided into group(s) are wanted. You can define your own group here, by inputing <code>self-group-name-1{sample1,sample2},self-group-name-2{sample3}</code>, which means we inputed two groups whose names are &quot;self-group-name-1&quot; and &quot;self-group-name-2&quot;. Self-group-name-1 contains sample1 and sample2, while self-group-name-2 contains sample3. You can also use pre-defined groups, by inputing <code>pre-defined-group-name-1,pre-defined-group-name-2</code>. <strong>Note</strong> that you could use only <strong>one</strong> type of them, self-defined group or pre-defined group.</p>
+<li><p>&#x2460;: <strong>Avaliable samples</strong> shows all the samples that could use on the platform. The column <code>Accession name</code> is what the user input into the textbox, and <code>Display name</code> is what the sample will appear on the plot as a result.</p>
 </li>
-<li><p><strong>Region</strong>: a region is wanted here. Input format should be <code>chr:from-to</code>, like <code>chr1A:1-100</code>. You could find the avaliable chromsomes and their length in <code>SampleInfo</code> panel. Also, gene name is acceptable.</p>
-</li>
-<li><p><strong>Flanking region length</strong>: when you want to use the gene name as region, you may want some extra postions in the upstream or downstream. Value here is simply added to the maximum , and subtracted from the minimum of the region.</p>
-</li>
-<li><p><strong>Draw</strong>: click after fulfill options, and panel &#x2461; will display the plot (if every settings are correct).</p>
+<li><p>&#x2461;: <strong>Avaliable chromosomes</strong> shows all the avaliable chromsomes, as well as their length.</p>
 </li>
 </ul>
-<h2 id="download-options"><a name="download-options" class="anchor-navigation-ex-anchor" href="#download-options"><i class="fa fa-link" aria-hidden="true"></i></a>1.2. Download Options</h2>
-<p>Click the <strong>Download Options</strong> button, and then you can select the format, the width, the height of the file you download. Then, click <code>Download</code> to download the plot.</p>
+<p><img src="../img/SampleInfo-2.jpg" alt="SampleInfo tag"></p>
+<ul>
+<li><p>&#x2462;: <strong>Pre-defined sample groups</strong> shows all the avaliable pre-defined groups. You can use them in <code>Samples</code> textbox by adding a hash tag before the group name, or input the group name directly in <code>Groups</code> textbox.</p>
+</li>
+<li><p>&#x2463;: <strong>Other system informations</strong> shows some other information the administrator wants to show about the system or dataset or some other things.</p>
+</li>
+</ul>
+<p><img src="../img/SampleInfo-3.jpg" alt="SampleInfo tag"></p>
+<p>All tables can be searched (right upper) or filtered (top of each column).</p>
+<p>When you forget what to input, nor how to input, check here.</p>
 
                                 
                                 </section>
@@ -382,12 +385,12 @@
 
             
                 
-                <a href="heatmap.html" class="navigation navigation-prev " aria-label="Previous page: Heatmap">
+                <a href="overview.html" class="navigation navigation-prev " aria-label="Previous page: Overview">
                     <i class="fa fa-angle-left"></i>
                 </a>
                 
                 
-                <a href="phylotree.html" class="navigation navigation-next " aria-label="Next page: PhyloTree">
+                <a href="vartable.html" class="navigation navigation-next " aria-label="Next page: VarTable">
                     <i class="fa fa-angle-right"></i>
                 </a>
                 
@@ -398,7 +401,7 @@
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"HapNet","level":"2.5","depth":1,"next":{"title":"PhyloTree","level":"2.6","depth":1,"path":"content/Basic_Usage/phylotree.md","ref":"./content/Basic_Usage/phylotree.md","articles":[]},"previous":{"title":"Heatmap","level":"2.4","depth":1,"path":"content/Basic_Usage/heatmap.md","ref":"./content/Basic_Usage/heatmap.md","articles":[]},"dir":"ltr"},"config":{"plugins":["github","-sharing","sharing-plus","anchor-navigation-ex","highlight","-lunr","-search","livereload"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"prism":{"css":["prismjs/themes/prism-tomorrow.css"]},"github":{"url":"https://github.com/your/repo"},"livereload":{},"sharing-plus":{"qq":false,"all":["facebook","google","twitter","instapaper","linkedin","pocket","stumbleupon"],"douban":false,"facebook":true,"weibo":false,"instapaper":false,"whatsapp":false,"hatenaBookmark":false,"twitter":true,"messenger":false,"line":false,"vk":false,"pocket":true,"google":false,"viber":false,"stumbleupon":false,"qzone":false,"linkedin":false},"fontsettings":{"theme":"white","family":"serif","size":2},"highlight":{},"anchor-navigation-ex":{"associatedWithSummary":false,"float":{"floatIcon":"fa fa-navicon","level1Icon":"","level2Icon":"","level3Icon":"","showLevelIcon":false},"mode":"float","multipleH1":true,"pageTop":{"level1Icon":"fa fa-hand-o-right","level2Icon":"fa fa-hand-o-right","level3Icon":"fa fa-hand-o-right","showLevelIcon":false},"printLog":false,"showGoTop":true,"showLevel":true},"sharing":{"qq":true,"all":["weibo","qzone","google","douban"],"douban":false,"facebook":true,"weibo":false,"instapaper":false,"whatsapp":false,"hatenaBookmark":false,"twitter":true,"messenger":false,"line":false,"vk":false,"pocket":false,"google":false,"viber":false,"stumbleupon":false,"qzone":false,"linkedin":false},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":true}},"theme":"default","author":"NGBT","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"NGBT tutorial","language":"zh-hans","links":{"sidebar":{}},"gitbook":"3.2.3"},"file":{"path":"content/Basic_Usage/hapnet.md","mtime":"2019-04-16T08:54:03.857Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2019-04-16T08:52:16.659Z"},"basePath":"../..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"SampleInfo","level":"2.2","depth":1,"next":{"title":"VarTable","level":"2.3","depth":1,"path":"content/Basic_Usage/vartable.md","ref":"./content/Basic_Usage/vartable.md","articles":[]},"previous":{"title":"Overview","level":"2.1","depth":1,"path":"content/Basic_Usage/overview.md","ref":"./content/Basic_Usage/overview.md","articles":[]},"dir":"ltr"},"config":{"plugins":["github","-sharing","sharing-plus","anchor-navigation-ex","highlight","-lunr","-search","livereload"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"prism":{"css":["prismjs/themes/prism-tomorrow.css"]},"github":{"url":"https://github.com/your/repo"},"livereload":{},"sharing-plus":{"qq":false,"all":["facebook","google","twitter","instapaper","linkedin","pocket","stumbleupon"],"douban":false,"facebook":true,"weibo":false,"instapaper":false,"whatsapp":false,"hatenaBookmark":false,"twitter":true,"messenger":false,"line":false,"vk":false,"pocket":true,"google":false,"viber":false,"stumbleupon":false,"qzone":false,"linkedin":false},"fontsettings":{"theme":"white","family":"serif","size":2},"highlight":{},"anchor-navigation-ex":{"associatedWithSummary":false,"float":{"floatIcon":"fa fa-navicon","level1Icon":"","level2Icon":"","level3Icon":"","showLevelIcon":false},"mode":"float","multipleH1":true,"pageTop":{"level1Icon":"fa fa-hand-o-right","level2Icon":"fa fa-hand-o-right","level3Icon":"fa fa-hand-o-right","showLevelIcon":false},"printLog":false,"showGoTop":true,"showLevel":true},"sharing":{"qq":true,"all":["weibo","qzone","google","douban"],"douban":false,"facebook":true,"weibo":false,"instapaper":false,"whatsapp":false,"hatenaBookmark":false,"twitter":true,"messenger":false,"line":false,"vk":false,"pocket":false,"google":false,"viber":false,"stumbleupon":false,"qzone":false,"linkedin":false},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":true}},"theme":"default","author":"NGBT","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"NGBT tutorial","language":"zh-hans","links":{"sidebar":{}},"gitbook":"3.2.3"},"file":{"path":"content/Basic_Usage/sampleinfo.md","mtime":"2019-04-16T07:49:43.751Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2019-04-16T08:52:16.659Z"},"basePath":"../..","book":{"language":""}});
         });
     </script>
 </div>

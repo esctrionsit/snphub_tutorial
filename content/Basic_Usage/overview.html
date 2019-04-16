@@ -21,7 +21,7 @@
                 
             
                 
-                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-search/search.css">
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-highlight/website.css">
                 
             
                 
@@ -57,7 +57,7 @@
     <link rel="shortcut icon" href="../../gitbook/images/favicon.ico" type="image/x-icon">
 
     
-    <link rel="next" href="about.html" />
+    <link rel="next" href="sampleinfo.html" />
     
     
     <link rel="prev" href="../../" />
@@ -70,10 +70,6 @@
     <div class="book-summary">
         
             
-<div id="book-search-input" role="search">
-    <input type="text" placeholder="输入并搜索" />
-</div>
-
             
                 <nav role="navigation">
                 
@@ -88,6 +84,8 @@
     
 
     
+        
+        <li class="header">About</li>
         
         
     
@@ -128,14 +126,14 @@
             
         </li>
     
-        <li class="chapter " data-level="2.2" data-path="about.html">
+        <li class="chapter " data-level="2.2" data-path="sampleinfo.html">
             
-                <a href="about.html">
+                <a href="sampleinfo.html">
             
                     
                         <b>2.2.</b>
                     
-                    About
+                    SampleInfo
             
                 </a>
             
@@ -143,14 +141,14 @@
             
         </li>
     
-        <li class="chapter " data-level="2.3" data-path="subset.html">
+        <li class="chapter " data-level="2.3" data-path="vartable.html">
             
-                <a href="subset.html">
+                <a href="vartable.html">
             
                     
                         <b>2.3.</b>
                     
-                    Variation Subset
+                    VarTable
             
                 </a>
             
@@ -158,14 +156,14 @@
             
         </li>
     
-        <li class="chapter " data-level="2.4" data-path="haplotype.html">
+        <li class="chapter " data-level="2.4" data-path="heatmap.html">
             
-                <a href="haplotype.html">
+                <a href="heatmap.html">
             
                     
                         <b>2.4.</b>
                     
-                    Haplotype plot
+                    Heatmap
             
                 </a>
             
@@ -188,14 +186,14 @@
             
         </li>
     
-        <li class="chapter " data-level="2.6" data-path="distree.html">
+        <li class="chapter " data-level="2.6" data-path="phylotree.html">
             
-                <a href="distree.html">
+                <a href="phylotree.html">
             
                     
                         <b>2.6.</b>
                     
-                    Dist-tree
+                    PhyloTree
             
                 </a>
             
@@ -203,14 +201,44 @@
             
         </li>
     
-        <li class="chapter " data-level="2.7" data-path="sequence.html">
+        <li class="chapter " data-level="2.7" data-path="hapmap.html">
             
-                <a href="sequence.html">
+                <a href="hapmap.html">
             
                     
                         <b>2.7.</b>
                     
-                    Sequence Maker
+                    HapMap
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.8" data-path="snpfreq.html">
+            
+                <a href="snpfreq.html">
+            
+                    
+                        <b>2.8.</b>
+                    
+                    SnpFreq
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.9" data-path="seqmaker.html">
+            
+                <a href="seqmaker.html">
+            
+                    
+                        <b>2.9.</b>
+                    
+                    SeqMaker
             
                 </a>
             
@@ -240,12 +268,27 @@
             
         </li>
     
-        <li class="chapter " data-level="3.2" data-path="../Setup/configuration.html">
+        <li class="chapter " data-level="3.2" data-path="../Setup/quickstart.html">
+            
+                <a href="../Setup/quickstart.html">
+            
+                    
+                        <b>3.2.</b>
+                    
+                    Quick Start
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.3" data-path="../Setup/configuration.html">
             
                 <a href="../Setup/configuration.html">
             
                     
-                        <b>3.2.</b>
+                        <b>3.3.</b>
                     
                     Configuration
             
@@ -255,12 +298,12 @@
             
         </li>
     
-        <li class="chapter " data-level="3.3" data-path="../Setup/file-formats.html">
+        <li class="chapter " data-level="3.4" data-path="../Setup/file-formats.html">
             
                 <a href="../Setup/file-formats.html">
             
                     
-                        <b>3.3.</b>
+                        <b>3.4.</b>
                     
                     File Formats
             
@@ -310,43 +353,29 @@
                     <div class="page-wrapper" tabindex="-1" role="main">
                         <div class="page-inner">
                             
-<div id="book-search-results">
-    <div class="search-noresults">
-    
                                 <section class="normal markdown-section">
                                 
                                 <div id="anchor-navigation-ex-navbar"><i class="fa fa-navicon"></i><ul><li><span class="title-icon "></span><a href="#basic-usage"><b>1. </b>Basic Usage</a></li></ul></div><a href="#basic-usage" id="anchorNavigationExGoTop"><i class="fa fa-arrow-up"></i></a><h1 id="basic-usage"><a name="basic-usage" class="anchor-navigation-ex-anchor" href="#basic-usage"><i class="fa fa-link" aria-hidden="true"></i></a>1. Basic Usage</h1>
-<p>In this section, we will introduce every functions of the NGBT, and explain how to use them.</p>
-<p>When you open NGBT in the browser, you may see the page like the picture below.</p>
-<p><img src="../img/NGBT-overview.jpg" alt=""></p>
-<p>Basically, we can devide the whole page into three parts:</p>
+<p>In this section, we will introduce every function of the SnpHub, and explain how to use them.</p>
+<p>When you open Snphub in the browser, you may see the page like the picture below.</p>
+<p><img src="../img/overview-1.jpg" alt="Overview of SnpHub"></p>
+<p>Basically, we can devide the whole page into two parts:</p>
 <ul>
-<li>&#x2460;: The name of the application, which is NGBT.</li>
-<li>&#x2461;: Tags. By clicking them, the content will switch to the tagged function.</li>
-<li>&#x2462;: Content. Here is the main panel where you actually use the application.</li>
+<li>&#x2460;: Tags. The content will switch to the tagged function by clicking them.</li>
+<li>&#x2461;: Content. Which is the main panel where you actually use the application.</li>
 </ul>
-<p>In the part of tags, as you can see, there&apos;re 6 of them that can be clicked. The current displayed tag is marked by a light shadow. In the picture, it&apos;s the <strong>About</strong> tag that is selected by now, and it looks slightly different to others.</p>
+<p>In the content part of the page, you may found the input panal on the left, in most of the tags. Some of the inputs are similar, and, of course, some are not.</p>
+<p>When the textbox has a title of &quot;<strong>Samples</strong>&quot;, that means sample names are wanted here. For example, you could input <code>sample1,sample2,sample3</code>. Also, if a sample group has been defined by the administrator, which you could see in the <code>SampleInfo</code> panel, and all samples in a particular group are needed, you could use <code>#pre-defined-group-name-1</code> to add all of the samples in the group pre-defined-group-name1. <strong>NOTE</strong> that a hash mark is needed because the input shoud be <strong>samples</strong> rather than <strong>groups</strong>.</p>
+<p><img src="../img/overview-2.jpg" alt="mixture use of sample and group in sample input"></p>
+<p>When the textbox has a title of &quot;<strong>Groups</strong>, that means <strong>not only</strong> sample names are wanted here, but they also should be divided into groups. You can define your own group here, by inputing <code>self-group-name-1{sample1,sample2},self-group-name-2{sample3}</code>, which means we inputed two groups whose names are &quot;self-group-name-1&quot; and &quot;self-group-name-2&quot;. Self-group-name-1 contains sample1 and sample2, while self-group-name-2 contains sample3. You can also use pre-defined groups, by inputing <code>pre-defined-group-name-1,pre-defined-group-name-2</code>. <strong>Notice</strong> that you could use only <strong>one</strong> type of them, self-defined group or pre-defined group.</p>
+<p><img src="../img/overview-3.jpg" alt="group input using self-defined group"></p>
+<p>When the textbox has a title of &quot;<strong>Region</strong>, that means a region is wanted here. Input format should be <code>chr:from-to</code>, like <code>chr1A:1-100</code>. You could find the avaliable chromsomes and their length in <code>SampleInfo</code> panel. Also, gene name is acceptable.</p>
+<p><img src="../img/overview-4.jpg" alt="region input"></p>
 <p>We will talk about more details in the later tutorial.</p>
 
                                 
                                 </section>
                             
-    </div>
-    <div class="search-results">
-        <div class="has-results">
-            
-            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
-            <ul class="search-results-list"></ul>
-            
-        </div>
-        <div class="no-results">
-            
-            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
-            
-        </div>
-    </div>
-</div>
-
                         </div>
                     </div>
                 
@@ -359,7 +388,7 @@
                 </a>
                 
                 
-                <a href="about.html" class="navigation navigation-next " aria-label="Next page: About">
+                <a href="sampleinfo.html" class="navigation navigation-next " aria-label="Next page: SampleInfo">
                     <i class="fa fa-angle-right"></i>
                 </a>
                 
@@ -370,7 +399,7 @@
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"Overview","level":"2.1","depth":1,"next":{"title":"About","level":"2.2","depth":1,"path":"content/Basic_Usage/about.md","ref":"./content/Basic_Usage/about.md","articles":[]},"previous":{"title":"About NGBT","level":"1.1","depth":1,"path":"README.md","ref":"README.md","articles":[]},"dir":"ltr"},"config":{"plugins":["github","-sharing","sharing-plus","anchor-navigation-ex","-highlight"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"prism":{"css":["prismjs/themes/prism-tomorrow.css"]},"github":{"url":"https://github.com/your/repo"},"search":{},"sharing-plus":{"qq":false,"all":["facebook","google","twitter","instapaper","linkedin","pocket","stumbleupon"],"douban":false,"facebook":true,"weibo":false,"instapaper":false,"whatsapp":false,"hatenaBookmark":false,"twitter":true,"messenger":false,"line":false,"vk":false,"pocket":true,"google":false,"viber":false,"stumbleupon":false,"qzone":false,"linkedin":false},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"serif","size":2},"anchor-navigation-ex":{"associatedWithSummary":false,"float":{"floatIcon":"fa fa-navicon","level1Icon":"","level2Icon":"","level3Icon":"","showLevelIcon":false},"mode":"float","multipleH1":true,"pageTop":{"level1Icon":"fa fa-hand-o-right","level2Icon":"fa fa-hand-o-right","level3Icon":"fa fa-hand-o-right","showLevelIcon":false},"printLog":false,"showGoTop":true,"showLevel":true},"sharing":{"qq":true,"all":["weibo","qzone","google","douban"],"douban":false,"facebook":true,"weibo":false,"instapaper":false,"whatsapp":false,"hatenaBookmark":false,"twitter":true,"messenger":false,"line":false,"vk":false,"pocket":false,"google":false,"viber":false,"stumbleupon":false,"qzone":false,"linkedin":false},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":true}},"theme":"default","author":"NGBT","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"NGBT tutorial","language":"zh-hans","links":{"sidebar":{}},"gitbook":"3.2.3"},"file":{"path":"content/Basic_Usage/overview.md","mtime":"2019-03-11T02:40:44.601Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2019-03-16T08:25:10.338Z"},"basePath":"../..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"Overview","level":"2.1","depth":1,"next":{"title":"SampleInfo","level":"2.2","depth":1,"path":"content/Basic_Usage/sampleinfo.md","ref":"./content/Basic_Usage/sampleinfo.md","articles":[]},"previous":{"title":"About NGBT","level":"1.1","depth":1,"path":"README.md","ref":"README.md","articles":[]},"dir":"ltr"},"config":{"plugins":["github","-sharing","sharing-plus","anchor-navigation-ex","highlight","-lunr","-search","livereload"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"prism":{"css":["prismjs/themes/prism-tomorrow.css"]},"github":{"url":"https://github.com/your/repo"},"livereload":{},"sharing-plus":{"qq":false,"all":["facebook","google","twitter","instapaper","linkedin","pocket","stumbleupon"],"douban":false,"facebook":true,"weibo":false,"instapaper":false,"whatsapp":false,"hatenaBookmark":false,"twitter":true,"messenger":false,"line":false,"vk":false,"pocket":true,"google":false,"viber":false,"stumbleupon":false,"qzone":false,"linkedin":false},"fontsettings":{"theme":"white","family":"serif","size":2},"highlight":{},"anchor-navigation-ex":{"associatedWithSummary":false,"float":{"floatIcon":"fa fa-navicon","level1Icon":"","level2Icon":"","level3Icon":"","showLevelIcon":false},"mode":"float","multipleH1":true,"pageTop":{"level1Icon":"fa fa-hand-o-right","level2Icon":"fa fa-hand-o-right","level3Icon":"fa fa-hand-o-right","showLevelIcon":false},"printLog":false,"showGoTop":true,"showLevel":true},"sharing":{"qq":true,"all":["weibo","qzone","google","douban"],"douban":false,"facebook":true,"weibo":false,"instapaper":false,"whatsapp":false,"hatenaBookmark":false,"twitter":true,"messenger":false,"line":false,"vk":false,"pocket":false,"google":false,"viber":false,"stumbleupon":false,"qzone":false,"linkedin":false},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":true}},"theme":"default","author":"NGBT","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"NGBT tutorial","language":"zh-hans","links":{"sidebar":{}},"gitbook":"3.2.3"},"file":{"path":"content/Basic_Usage/overview.md","mtime":"2019-04-16T08:32:56.244Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2019-04-16T08:52:16.659Z"},"basePath":"../..","book":{"language":""}});
         });
     </script>
 </div>
@@ -388,19 +417,7 @@
         
     
         
-        <script src="../../gitbook/gitbook-plugin-search/search-engine.js"></script>
-        
-    
-        
-        <script src="../../gitbook/gitbook-plugin-search/search.js"></script>
-        
-    
-        
-        <script src="../../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
-        
-    
-        
-        <script src="../../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        <script src="../../gitbook/gitbook-plugin-livereload/plugin.js"></script>
         
     
         
