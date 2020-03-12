@@ -1,6 +1,6 @@
 # SeqMaker
 
-In this tag, you can get the sequence of samples by exchanging the mutation into the reference genome sequence.
+In this tag, you can create a consensus sequence by substituting variants based on the reference genome, and the result can be downloaded directly as FASTA file.
 
 ![SeqMaker tag](./../img/SeqMaker-1.jpg)
 
@@ -12,6 +12,9 @@ Options here are pretty simple.
 
 - **Replace homozygous/heterozygous?**: choose weather to change homozygous mutation only.
 
-- **Samples**: sample names are wanted here. For example, you could input `sample1,sample2,sample3`. Also, if a sample group has been defined by the administrator, which you could see in the `SampleInfo` panel, and all samples in a particular group are needed, you could use `#pre-defined-group-name-1` to add all of the samples in the group pre-defined-group-name1. **NOTE** that a hash mark is needed because the input shoud be **samples** rather than **groups**.
+- **Samples**: **sample names** are wanted here. There are three ways are avaliable to input:
+	- Pure sample name list. Sample names are divided by *,*, like `sample1,sample2,sample3`.
+	- Pure group list. Use a *#* before group name to transfer group into sample name list, like `#pre-defined-group-name-1,#pre-defined-group-name-2`. 
+	- Mixed list. Something looks like `sample1,sample2,sample3,#pre-defined-group-name-1`.
 
-- **Region**: a region is wanted here. Input format should be `chr:from-to`, like `chr1A:1-100`. You could find the avaliable chromsomes and their length in `SampleInfo` panel. Also, gene name is acceptable.
+- **Region**: a region is wanted here. Input format should be `chr:from-to`, like `chr1A:1-100`. You could find all the avaliable chromsomes and their maximum length in `SampleInfo` panel. Also, gene name is acceptable.

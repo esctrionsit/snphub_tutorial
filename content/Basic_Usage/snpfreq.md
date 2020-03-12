@@ -1,16 +1,25 @@
 # SnpFreq
 
+The **SnpFreq** function allows users to visualize the SNPs/INDELs and functional annotations along with the transcript-tracks. The previously proposed Lollipop graph is adopted to visualize the positions and frequencies of genomic variations to distinguish the low-frequency variants and un-detected variations.
+
+Variants causing amino acid changes are annotated in different colours, including *missense variation*, *synonymous variant*, *frameshift variant*, *stop code gained/lost* and *splice region variants*. Transcripts in the same region are displayed as different tracks at the bottom, indicating the *exons*, *introns*, *CDSs* and *transcription directions*. Samples in different groups are summarized independently and visualized in different tracks, which can be useful for exploring the different frequencies of SNPs between groups.
+
 ![SnpFreq tag](./../img/SnpFreq-1.jpg)
 
 ## Panel ① on the left provides severial options:
-- **Groups**: samples that divided into group(s) are wanted. You can define your own group here, by inputing `self-group-name-1{sample1,sample2},self-group-name-2{sample3}`, which means we inputed two groups whose names are "self-group-name-1" and "self-group-name-2". Self-group-name-1 contains sample1 and sample2, while self-group-name-2 contains sample3. You can also use pre-defined groups, by inputing `pre-defined-group-name-1,pre-defined-group-name-2`. **Note** that you could use only **one** type of them, self-defined group or pre-defined group.
+- **Groups**: samples that divided into group(s) are wanted. Three ways are avaliable as well.
+	- Pure sample name group list. Assume that we have samples `S1,S2,S3,S4`, and `S1,S2` are in a group called `G1`, while `S3,S4` in `G2`, a string like `G1{S1,S2},G2{S3,S4}` could be used as an input.
+	- Pure group list. Assume that we have two pre-defined groups called `PG1` and `PG2`, a string like `PG1,PG2` could be used as an input.
+	- Mixed list. String like `G1{S1,S2},PG1,PG2,G2{S3,S4}` is also able to use as an input.
+	- **Make sure** that `S1`, `S2`, `S3` and `S4` should **NOT** be contained in neither `PG1` nor `PG2`.
+	- **Make sure** that the samples in total should **NOT** less than 3, or the tree couldn't be built.
 
-- **Region**: a region is wanted here. Input format should be `chr:from-to`, like `chr1A:1-100`. You could find the avaliable chromsomes and their length in `SampleInfo` panel. Also, gene name is acceptable.
+- **Region**: a region is wanted here. Input format should be `chr:from-to`, like `chr1A:1-100`. You could find all the avaliable chromsomes and their maximum length in `SampleInfo` panel. Also, gene name is acceptable.
 
-- **Flanking region length**: when you want to use the gene name as region, you may want some extra postions in the upstream or downstream. Value here is simply added to the maximum , and subtracted from the minimum of the region.
+- **Flanking region length**: when using the gene name as input, you may want some extra length in the upstream and downstream. Both ends of the region will be extended by the value here.
 
-- **Draw**: click after fulfill options, and panel ② will display the plot (if every settings are correct).
+- **Draw**: click when getting all options ready.
 
 ## Download Options
 
-Click the **Download Options** button, and then you can select the format, the width, the height of the file you download. Then, click `Download` to download the plot.
+Click the **Download Options** button, and then you can select format, width and height of the plot shown as the result. Then, click `Download` to download it.

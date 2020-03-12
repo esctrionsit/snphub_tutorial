@@ -1,27 +1,36 @@
-# Basic Usage
+# Overview
 
-In this section, we will introduce every function of the SnpHub, and explain how to use them.
+In this section, we would like to introduce basic functions of `SnpHub`.
 
-When you open Snphub in the browser, you may see the page like the picture below.
+When you open `Snphub` in browser, you would see the page like the picture below.
 
 ![Overview of SnpHub](./../img/overview-1.jpg)
 
 Basically, we can devide the whole page into two parts:
-- ①: Tags. The content will switch to the tagged function by clicking them.
-- ②: Content. Which is the main panel where you actually use the application.
+- ①: *Tag*s. By clicking them, you could change from different functions.
+- ②: *Content*. This is the main panel where you actually use the application.
 
-In the content part of the page, you may found the input panal on the left, in most of the tags. Some of the inputs are similar, and, of course, some are not.
+In the *content* part of the page, you may found the input panal on the left, in most of the functions. Some of the inputs are similar.
 
-When the textbox has a title of "**Samples**", that means sample names are wanted here. For example, you could input `sample1,sample2,sample3`. Also, if a sample group has been defined by the administrator, which you could see in the `SampleInfo` panel, and all samples in a particular group are needed, you could use `#pre-defined-group-name-1` to add all of the samples in the group pre-defined-group-name1. **NOTE** that a hash mark is needed because the input shoud be **samples** rather than **groups**.
+## Common input boxes
 
-![mixture use of sample and group in sample input](./../img/overview-2.jpg)
+When the textbox has a title called "**Samples**", **sample names** are wanted here. Three ways are avaliable to input:
+- Pure sample name list. Sample names are divided by *,*, like `sample1,sample2,sample3`.
+- Pure group list. Use a *#* before group name to transfer group into sample name list, like `#pre-defined-group-name-1,#pre-defined-group-name-2`. 
+- Mixed list. Something looks like `sample1,sample2,sample3,#pre-defined-group-name-1`
 
-When the textbox has a title of "**Groups**, that means **not only** sample names are wanted here, but they also should be divided into groups. You can define your own group here, by inputing `self-group-name-1{sample1,sample2},self-group-name-2{sample3}`, which means we inputed two groups whose names are "self-group-name-1" and "self-group-name-2". Self-group-name-1 contains sample1 and sample2, while self-group-name-2 contains sample3. You can also use pre-defined groups, by inputing `pre-defined-group-name-1,pre-defined-group-name-2`. **Notice** that you could use only **one** type of them, self-defined group or pre-defined group.
+![Mixed use of sample and group in sample input](./../img/overview-2.jpg)
+
+When the textbox has a title of "**Groups**, **groups** are needed here. Three ways are avaliable as well.
+- Pure sample name group list. Assume that we have samples `S1,S2,S3,S4`, and `S1,S2` are in a group called `G1`, while `S3,S4` in `G2`, a string like `G1{S1,S2},G2{S3,S4}` could be used as an input.
+- Pure group list. Assume that we have two pre-defined groups called `PG1` and `PG2`, a string like `PG1,PG2` could be used as an input.
+- Mixed list. String like `G1{S1,S2},PG1,PG2,G2{S3,S4}` is also able to use as an input.
+Make sure that `S1`, `S2`, `S3` and `S4` should **NOT** be contained in neither `PG1` nor `PG2`.
 
 ![group input using self-defined group](./../img/overview-3.jpg)
 
-When the textbox has a title of "**Region**, that means a region is wanted here. Input format should be `chr:from-to`, like `chr1A:1-100`. You could find the avaliable chromsomes and their length in `SampleInfo` panel. Also, gene name is acceptable.
+When the textbox has a title of "**Region**, a region is wanted here. Input format should be `chr:from-to`, like `chr1A:1-100`. You could find the avaliable chromsomes and their length in `SampleInfo` tag. Also, gene name is acceptable.
 
 ![region input](./../img/overview-4.jpg)
 
-We will talk about more details in the later tutorial.
+We will show more details later.

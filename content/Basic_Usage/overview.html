@@ -268,14 +268,44 @@
             
         </li>
     
-        <li class="chapter " data-level="3.2" data-path="../Setup/quickstart.html">
+        <li class="chapter " data-level="3.2" data-path="../Setup/configuration.html">
             
-                <a href="../Setup/quickstart.html">
+                <a href="../Setup/configuration.html">
             
                     
                         <b>3.2.</b>
                     
-                    Quick Start
+                    Configuration
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.3" data-path="../Setup/file-formats.html">
+            
+                <a href="../Setup/file-formats.html">
+            
+                    
+                        <b>3.3.</b>
+                    
+                    File Formats
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.4" data-path="../Setup/uisetting.html">
+            
+                <a href="../Setup/uisetting.html">
+            
+                    
+                        <b>3.4.</b>
+                    
+                    UI Setting
             
                 </a>
             
@@ -313,58 +343,6 @@
                         <b>4.2.</b>
                     
                     Quick Start
-            
-                </a>
-            
-
-            
-        </li>
-    
-
-    
-        
-        <li class="header">File Formats</li>
-        
-        
-    
-        <li class="chapter " data-level="5.1" data-path="../fileformats/configuration.html">
-            
-                <a href="../fileformats/configuration.html">
-            
-                    
-                        <b>5.1.</b>
-                    
-                    Configuration
-            
-                </a>
-            
-
-            
-        </li>
-    
-        <li class="chapter " data-level="5.2" data-path="../fileformats/file-formats.html">
-            
-                <a href="../fileformats/file-formats.html">
-            
-                    
-                        <b>5.2.</b>
-                    
-                    File Formats
-            
-                </a>
-            
-
-            
-        </li>
-    
-        <li class="chapter " data-level="5.3" data-path="../fileformats/uisetting.html">
-            
-                <a href="../fileformats/uisetting.html">
-            
-                    
-                        <b>5.3.</b>
-                    
-                    UI Setting
             
                 </a>
             
@@ -414,23 +392,35 @@
                             
                                 <section class="normal markdown-section">
                                 
-                                <div id="anchor-navigation-ex-navbar"><i class="fa fa-navicon"></i><ul><li><span class="title-icon "></span><a href="#basic-usage"><b>2.1. </b>Basic Usage</a></li></ul></div><a href="#basic-usage" id="anchorNavigationExGoTop"><i class="fa fa-arrow-up"></i></a><h1 id="basic-usage"><a name="basic-usage" class="anchor-navigation-ex-anchor" href="#basic-usage"><i class="fa fa-link" aria-hidden="true"></i></a>2.1. Basic Usage</h1>
-<p>In this section, we will introduce every function of the <code>SnpHub</code>, and explain how to use them.</p>
-<p>When you open <code>Snphub</code> in the browser, you may see the page like the picture below.</p>
+                                <div id="anchor-navigation-ex-navbar"><i class="fa fa-navicon"></i><ul><li><span class="title-icon "></span><a href="#overview"><b>2.1. </b>Overview</a></li><ul><li><span class="title-icon "></span><a href="#common-input-boxes"><b>2.1.1. </b>Common input boxes</a></li></ul></ul></div><a href="#overview" id="anchorNavigationExGoTop"><i class="fa fa-arrow-up"></i></a><h1 id="overview"><a name="overview" class="anchor-navigation-ex-anchor" href="#overview"><i class="fa fa-link" aria-hidden="true"></i></a>2.1. Overview</h1>
+<p>In this section, we would like to introduce basic functions of <code>SnpHub</code>.</p>
+<p>When you open <code>Snphub</code> in browser, you would see the page like the picture below.</p>
 <p><img src="../img/overview-1.jpg" alt="Overview of SnpHub"></p>
 <p>Basically, we can devide the whole page into two parts:</p>
 <ul>
-<li>&#x2460;: Tags. The content will switch to the tagged function by clicking them.</li>
-<li>&#x2461;: Content. Which is the main panel where you actually use the application.</li>
+<li>&#x2460;: <em>Tag</em>s. By clicking them, you could change from different functions.</li>
+<li>&#x2461;: <em>Content</em>. This is the main panel where you actually use the application.</li>
 </ul>
-<p>In the content part of the page, you may found the input panal on the left, in most of the tags. Some of the inputs are similar, and, of course, some are not.</p>
-<p>When the textbox has a title of &quot;<strong>Samples</strong>&quot;, that means sample names are wanted here. For example, you could input <code>sample1,sample2,sample3</code>. Also, if a sample group has been defined by the administrator, which you could see in the <code>SampleInfo</code> panel, and all samples in a particular group are needed, you could use <code>#pre-defined-group-name-1</code> to add all of the samples in the group pre-defined-group-name1. <strong>NOTE</strong> that a hash mark is needed because the input shoud be <strong>samples</strong> rather than <strong>groups</strong>.</p>
-<p><img src="../img/overview-2.jpg" alt="mixture use of sample and group in sample input"></p>
-<p>When the textbox has a title of &quot;<strong>Groups</strong>, that means <strong>not only</strong> sample names are wanted here, but they also should be divided into groups. You can define your own group here, by inputing <code>self-group-name-1{sample1,sample2},self-group-name-2{sample3}</code>, which means we inputed two groups whose names are &quot;self-group-name-1&quot; and &quot;self-group-name-2&quot;. Self-group-name-1 contains sample1 and sample2, while self-group-name-2 contains sample3. You can also use pre-defined groups, by inputing <code>pre-defined-group-name-1,pre-defined-group-name-2</code>. <strong>Notice</strong> that you could use only <strong>one</strong> type of them, self-defined group or pre-defined group.</p>
+<p>In the <em>content</em> part of the page, you may found the input panal on the left, in most of the functions. Some of the inputs are similar.</p>
+<h2 id="common-input-boxes"><a name="common-input-boxes" class="anchor-navigation-ex-anchor" href="#common-input-boxes"><i class="fa fa-link" aria-hidden="true"></i></a>2.1.1. Common input boxes</h2>
+<p>When the textbox has a title called &quot;<strong>Samples</strong>&quot;, <strong>sample names</strong> are wanted here. Three ways are avaliable to input:</p>
+<ul>
+<li>Pure sample name list. Sample names are divided by <em>,</em>, like <code>sample1,sample2,sample3</code>.</li>
+<li>Pure group list. Use a <em>#</em> before group name to transfer group into sample name list, like <code>#pre-defined-group-name-1,#pre-defined-group-name-2</code>. </li>
+<li>Mixed list. Something looks like <code>sample1,sample2,sample3,#pre-defined-group-name-1</code></li>
+</ul>
+<p><img src="../img/overview-2.jpg" alt="Mixed use of sample and group in sample input"></p>
+<p>When the textbox has a title of &quot;<strong>Groups</strong>, <strong>groups</strong> are needed here. Three ways are avaliable as well.</p>
+<ul>
+<li>Pure sample name group list. Assume that we have samples <code>S1,S2,S3,S4</code>, and <code>S1,S2</code> are in a group called <code>G1</code>, while <code>S3,S4</code> in <code>G2</code>, a string like <code>G1{S1,S2},G2{S3,S4}</code> could be used as an input.</li>
+<li>Pure group list. Assume that we have two pre-defined groups called <code>PG1</code> and <code>PG2</code>, a string like <code>PG1,PG2</code> could be used as an input.</li>
+<li>Mixed list. String like <code>G1{S1,S2},PG1,PG2,G2{S3,S4}</code> is also able to use as an input.
+Make sure that <code>S1</code>, <code>S2</code>, <code>S3</code> and <code>S4</code> should <strong>NOT</strong> be contained in neither <code>PG1</code> nor <code>PG2</code>.</li>
+</ul>
 <p><img src="../img/overview-3.jpg" alt="group input using self-defined group"></p>
-<p>When the textbox has a title of &quot;<strong>Region</strong>, that means a region is wanted here. Input format should be <code>chr:from-to</code>, like <code>chr1A:1-100</code>. You could find the avaliable chromsomes and their length in <code>SampleInfo</code> panel. Also, gene name is acceptable.</p>
+<p>When the textbox has a title of &quot;<strong>Region</strong>, a region is wanted here. Input format should be <code>chr:from-to</code>, like <code>chr1A:1-100</code>. You could find the avaliable chromsomes and their length in <code>SampleInfo</code> tag. Also, gene name is acceptable.</p>
 <p><img src="../img/overview-4.jpg" alt="region input"></p>
-<p>We will talk about more details in the later tutorial.</p>
+<p>We will show more details later.</p>
 
                                 
                                 </section>
@@ -458,7 +448,7 @@
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"Overview","level":"2.1","depth":1,"next":{"title":"SampleInfo","level":"2.2","depth":1,"path":"content/Basic_Usage/sampleinfo.md","ref":"./content/Basic_Usage/sampleinfo.md","articles":[]},"previous":{"title":"SnpHub","level":"1.1","depth":1,"path":"README.md","ref":"README.md","articles":[]},"dir":"ltr"},"config":{"plugins":["github","-sharing","sharing-plus","anchor-navigation-ex","highlight","-lunr","-search","livereload"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"prism":{"css":["prismjs/themes/prism-tomorrow.css"]},"github":{"url":"https://github.com/esctrionsit/snphub"},"livereload":{},"sharing-plus":{"qq":false,"all":["facebook","google","twitter","instapaper","linkedin","pocket","stumbleupon"],"douban":false,"facebook":true,"weibo":false,"instapaper":false,"whatsapp":false,"hatenaBookmark":false,"twitter":true,"messenger":false,"line":false,"vk":false,"pocket":true,"google":false,"viber":false,"stumbleupon":false,"qzone":false,"linkedin":false},"fontsettings":{"theme":"white","family":"serif","size":2},"highlight":{},"anchor-navigation-ex":{"associatedWithSummary":true,"float":{"floatIcon":"fa fa-navicon","level1Icon":"","level2Icon":"","level3Icon":"","showLevelIcon":false},"mode":"float","multipleH1":false,"pageTop":{"level1Icon":"fa fa-hand-o-right","level2Icon":"fa fa-hand-o-right","level3Icon":"fa fa-hand-o-right","showLevelIcon":false},"printLog":false,"showGoTop":true,"showLevel":true},"sharing":{"qq":false,"all":["twitter","facebook","google"],"douban":false,"facebook":false,"weibo":false,"instapaper":false,"whatsapp":false,"hatenaBookmark":false,"twitter":false,"messenger":false,"line":false,"vk":false,"pocket":false,"google":false,"viber":false,"stumbleupon":false,"qzone":false,"linkedin":false},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":true}},"theme":"default","author":"","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"SnpHub Tutorial","language":"en","links":{"sidebar":{}},"gitbook":"3.2.3"},"file":{"path":"content/Basic_Usage/overview.md","mtime":"2020-01-06T04:45:23.573Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2020-01-06T15:47:02.447Z"},"basePath":"../..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"Overview","level":"2.1","depth":1,"next":{"title":"SampleInfo","level":"2.2","depth":1,"path":"content/Basic_Usage/sampleinfo.md","ref":"./content/Basic_Usage/sampleinfo.md","articles":[]},"previous":{"title":"SnpHub","level":"1.1","depth":1,"path":"README.md","ref":"README.md","articles":[]},"dir":"ltr"},"config":{"plugins":["github","-sharing","sharing-plus","anchor-navigation-ex","highlight","-lunr","-search","livereload"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"prism":{"css":["prismjs/themes/prism-tomorrow.css"]},"github":{"url":"https://github.com/esctrionsit/snphub"},"livereload":{},"sharing-plus":{"qq":false,"all":["facebook","google","twitter","instapaper","linkedin","pocket","stumbleupon"],"douban":false,"facebook":true,"weibo":false,"instapaper":false,"whatsapp":false,"hatenaBookmark":false,"twitter":true,"messenger":false,"line":false,"vk":false,"pocket":true,"google":false,"viber":false,"stumbleupon":false,"qzone":false,"linkedin":false},"fontsettings":{"theme":"white","family":"serif","size":2},"highlight":{},"anchor-navigation-ex":{"associatedWithSummary":true,"float":{"floatIcon":"fa fa-navicon","level1Icon":"","level2Icon":"","level3Icon":"","showLevelIcon":false},"mode":"float","multipleH1":false,"pageTop":{"level1Icon":"fa fa-hand-o-right","level2Icon":"fa fa-hand-o-right","level3Icon":"fa fa-hand-o-right","showLevelIcon":false},"printLog":false,"showGoTop":true,"showLevel":true},"sharing":{"qq":false,"all":["twitter","facebook","google"],"douban":false,"facebook":false,"weibo":false,"instapaper":false,"whatsapp":false,"hatenaBookmark":false,"twitter":false,"messenger":false,"line":false,"vk":false,"pocket":false,"google":false,"viber":false,"stumbleupon":false,"qzone":false,"linkedin":false},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":true}},"theme":"default","author":"","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"SnpHub Tutorial","language":"en","links":{"sidebar":{}},"gitbook":"3.2.3"},"file":{"path":"content/Basic_Usage/overview.md","mtime":"2020-03-11T05:58:29.659Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2020-03-12T07:47:27.024Z"},"basePath":"../..","book":{"language":""}});
         });
     </script>
 </div>

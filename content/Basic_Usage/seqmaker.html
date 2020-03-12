@@ -268,14 +268,44 @@
             
         </li>
     
-        <li class="chapter " data-level="3.2" data-path="../Setup/quickstart.html">
+        <li class="chapter " data-level="3.2" data-path="../Setup/configuration.html">
             
-                <a href="../Setup/quickstart.html">
+                <a href="../Setup/configuration.html">
             
                     
                         <b>3.2.</b>
                     
-                    Quick Start
+                    Configuration
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.3" data-path="../Setup/file-formats.html">
+            
+                <a href="../Setup/file-formats.html">
+            
+                    
+                        <b>3.3.</b>
+                    
+                    File Formats
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.4" data-path="../Setup/uisetting.html">
+            
+                <a href="../Setup/uisetting.html">
+            
+                    
+                        <b>3.4.</b>
+                    
+                    UI Setting
             
                 </a>
             
@@ -313,58 +343,6 @@
                         <b>4.2.</b>
                     
                     Quick Start
-            
-                </a>
-            
-
-            
-        </li>
-    
-
-    
-        
-        <li class="header">File Formats</li>
-        
-        
-    
-        <li class="chapter " data-level="5.1" data-path="../fileformats/configuration.html">
-            
-                <a href="../fileformats/configuration.html">
-            
-                    
-                        <b>5.1.</b>
-                    
-                    Configuration
-            
-                </a>
-            
-
-            
-        </li>
-    
-        <li class="chapter " data-level="5.2" data-path="../fileformats/file-formats.html">
-            
-                <a href="../fileformats/file-formats.html">
-            
-                    
-                        <b>5.2.</b>
-                    
-                    File Formats
-            
-                </a>
-            
-
-            
-        </li>
-    
-        <li class="chapter " data-level="5.3" data-path="../fileformats/uisetting.html">
-            
-                <a href="../fileformats/uisetting.html">
-            
-                    
-                        <b>5.3.</b>
-                    
-                    UI Setting
             
                 </a>
             
@@ -415,7 +393,7 @@
                                 <section class="normal markdown-section">
                                 
                                 <div id="anchor-navigation-ex-navbar"><i class="fa fa-navicon"></i><ul><li><span class="title-icon "></span><a href="#seqmaker"><b>2.9. </b>SeqMaker</a></li><ul><li><span class="title-icon "></span><a href="#ui"><b>2.9.1. </b>UI</a></li></ul></ul></div><a href="#seqmaker" id="anchorNavigationExGoTop"><i class="fa fa-arrow-up"></i></a><h1 id="seqmaker"><a name="seqmaker" class="anchor-navigation-ex-anchor" href="#seqmaker"><i class="fa fa-link" aria-hidden="true"></i></a>2.9. SeqMaker</h1>
-<p>In this tag, you can get the sequence of samples by exchanging the mutation into the reference genome sequence.</p>
+<p>In this tag, you can create a consensus sequence by substituting variants based on the reference genome, and the result can be downloaded directly as FASTA file.</p>
 <p><img src="../img/SeqMaker-1.jpg" alt="SeqMaker tag"></p>
 <h2 id="ui"><a name="ui" class="anchor-navigation-ex-anchor" href="#ui"><i class="fa fa-link" aria-hidden="true"></i></a>2.9.1. UI</h2>
 <p>Options here are pretty simple.</p>
@@ -424,9 +402,14 @@
 </li>
 <li><p><strong>Replace homozygous/heterozygous?</strong>: choose weather to change homozygous mutation only.</p>
 </li>
-<li><p><strong>Samples</strong>: sample names are wanted here. For example, you could input <code>sample1,sample2,sample3</code>. Also, if a sample group has been defined by the administrator, which you could see in the <code>SampleInfo</code> panel, and all samples in a particular group are needed, you could use <code>#pre-defined-group-name-1</code> to add all of the samples in the group pre-defined-group-name1. <strong>NOTE</strong> that a hash mark is needed because the input shoud be <strong>samples</strong> rather than <strong>groups</strong>.</p>
+<li><p><strong>Samples</strong>: <strong>sample names</strong> are wanted here. There are three ways are avaliable to input:</p>
+<ul>
+<li>Pure sample name list. Sample names are divided by <em>,</em>, like <code>sample1,sample2,sample3</code>.</li>
+<li>Pure group list. Use a <em>#</em> before group name to transfer group into sample name list, like <code>#pre-defined-group-name-1,#pre-defined-group-name-2</code>. </li>
+<li>Mixed list. Something looks like <code>sample1,sample2,sample3,#pre-defined-group-name-1</code>.</li>
+</ul>
 </li>
-<li><p><strong>Region</strong>: a region is wanted here. Input format should be <code>chr:from-to</code>, like <code>chr1A:1-100</code>. You could find the avaliable chromsomes and their length in <code>SampleInfo</code> panel. Also, gene name is acceptable.</p>
+<li><p><strong>Region</strong>: a region is wanted here. Input format should be <code>chr:from-to</code>, like <code>chr1A:1-100</code>. You could find all the avaliable chromsomes and their maximum length in <code>SampleInfo</code> panel. Also, gene name is acceptable.</p>
 </li>
 </ul>
 
@@ -456,7 +439,7 @@
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"SeqMaker","level":"2.9","depth":1,"next":{"title":"Overview","level":"3.1","depth":1,"path":"content/Setup/overview.md","ref":"./content/Setup/overview.md","articles":[]},"previous":{"title":"SnpFreq","level":"2.8","depth":1,"path":"content/Basic_Usage/snpfreq.md","ref":"./content/Basic_Usage/snpfreq.md","articles":[]},"dir":"ltr"},"config":{"plugins":["github","-sharing","sharing-plus","anchor-navigation-ex","highlight","-lunr","-search","livereload"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"prism":{"css":["prismjs/themes/prism-tomorrow.css"]},"github":{"url":"https://github.com/esctrionsit/snphub"},"livereload":{},"sharing-plus":{"qq":false,"all":["facebook","google","twitter","instapaper","linkedin","pocket","stumbleupon"],"douban":false,"facebook":true,"weibo":false,"instapaper":false,"whatsapp":false,"hatenaBookmark":false,"twitter":true,"messenger":false,"line":false,"vk":false,"pocket":true,"google":false,"viber":false,"stumbleupon":false,"qzone":false,"linkedin":false},"fontsettings":{"theme":"white","family":"serif","size":2},"highlight":{},"anchor-navigation-ex":{"associatedWithSummary":true,"float":{"floatIcon":"fa fa-navicon","level1Icon":"","level2Icon":"","level3Icon":"","showLevelIcon":false},"mode":"float","multipleH1":false,"pageTop":{"level1Icon":"fa fa-hand-o-right","level2Icon":"fa fa-hand-o-right","level3Icon":"fa fa-hand-o-right","showLevelIcon":false},"printLog":false,"showGoTop":true,"showLevel":true},"sharing":{"qq":false,"all":["twitter","facebook","google"],"douban":false,"facebook":false,"weibo":false,"instapaper":false,"whatsapp":false,"hatenaBookmark":false,"twitter":false,"messenger":false,"line":false,"vk":false,"pocket":false,"google":false,"viber":false,"stumbleupon":false,"qzone":false,"linkedin":false},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":true}},"theme":"default","author":"","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"SnpHub Tutorial","language":"en","links":{"sidebar":{}},"gitbook":"3.2.3"},"file":{"path":"content/Basic_Usage/seqmaker.md","mtime":"2019-04-16T08:54:35.000Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2020-01-06T15:47:02.447Z"},"basePath":"../..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"SeqMaker","level":"2.9","depth":1,"next":{"title":"Overview","level":"3.1","depth":1,"path":"content/Setup/overview.md","ref":"./content/Setup/overview.md","articles":[]},"previous":{"title":"SnpFreq","level":"2.8","depth":1,"path":"content/Basic_Usage/snpfreq.md","ref":"./content/Basic_Usage/snpfreq.md","articles":[]},"dir":"ltr"},"config":{"plugins":["github","-sharing","sharing-plus","anchor-navigation-ex","highlight","-lunr","-search","livereload"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"prism":{"css":["prismjs/themes/prism-tomorrow.css"]},"github":{"url":"https://github.com/esctrionsit/snphub"},"livereload":{},"sharing-plus":{"qq":false,"all":["facebook","google","twitter","instapaper","linkedin","pocket","stumbleupon"],"douban":false,"facebook":true,"weibo":false,"instapaper":false,"whatsapp":false,"hatenaBookmark":false,"twitter":true,"messenger":false,"line":false,"vk":false,"pocket":true,"google":false,"viber":false,"stumbleupon":false,"qzone":false,"linkedin":false},"fontsettings":{"theme":"white","family":"serif","size":2},"highlight":{},"anchor-navigation-ex":{"associatedWithSummary":true,"float":{"floatIcon":"fa fa-navicon","level1Icon":"","level2Icon":"","level3Icon":"","showLevelIcon":false},"mode":"float","multipleH1":false,"pageTop":{"level1Icon":"fa fa-hand-o-right","level2Icon":"fa fa-hand-o-right","level3Icon":"fa fa-hand-o-right","showLevelIcon":false},"printLog":false,"showGoTop":true,"showLevel":true},"sharing":{"qq":false,"all":["twitter","facebook","google"],"douban":false,"facebook":false,"weibo":false,"instapaper":false,"whatsapp":false,"hatenaBookmark":false,"twitter":false,"messenger":false,"line":false,"vk":false,"pocket":false,"google":false,"viber":false,"stumbleupon":false,"qzone":false,"linkedin":false},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":true}},"theme":"default","author":"","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"SnpHub Tutorial","language":"en","links":{"sidebar":{}},"gitbook":"3.2.3"},"file":{"path":"content/Basic_Usage/seqmaker.md","mtime":"2020-03-12T03:15:23.717Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2020-03-12T07:47:27.024Z"},"basePath":"../..","book":{"language":""}});
         });
     </script>
 </div>

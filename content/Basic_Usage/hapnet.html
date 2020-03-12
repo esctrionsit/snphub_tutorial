@@ -268,14 +268,44 @@
             
         </li>
     
-        <li class="chapter " data-level="3.2" data-path="../Setup/quickstart.html">
+        <li class="chapter " data-level="3.2" data-path="../Setup/configuration.html">
             
-                <a href="../Setup/quickstart.html">
+                <a href="../Setup/configuration.html">
             
                     
                         <b>3.2.</b>
                     
-                    Quick Start
+                    Configuration
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.3" data-path="../Setup/file-formats.html">
+            
+                <a href="../Setup/file-formats.html">
+            
+                    
+                        <b>3.3.</b>
+                    
+                    File Formats
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.4" data-path="../Setup/uisetting.html">
+            
+                <a href="../Setup/uisetting.html">
+            
+                    
+                        <b>3.4.</b>
+                    
+                    UI Setting
             
                 </a>
             
@@ -313,58 +343,6 @@
                         <b>4.2.</b>
                     
                     Quick Start
-            
-                </a>
-            
-
-            
-        </li>
-    
-
-    
-        
-        <li class="header">File Formats</li>
-        
-        
-    
-        <li class="chapter " data-level="5.1" data-path="../fileformats/configuration.html">
-            
-                <a href="../fileformats/configuration.html">
-            
-                    
-                        <b>5.1.</b>
-                    
-                    Configuration
-            
-                </a>
-            
-
-            
-        </li>
-    
-        <li class="chapter " data-level="5.2" data-path="../fileformats/file-formats.html">
-            
-                <a href="../fileformats/file-formats.html">
-            
-                    
-                        <b>5.2.</b>
-                    
-                    File Formats
-            
-                </a>
-            
-
-            
-        </li>
-    
-        <li class="chapter " data-level="5.3" data-path="../fileformats/uisetting.html">
-            
-                <a href="../fileformats/uisetting.html">
-            
-                    
-                        <b>5.3.</b>
-                    
-                    UI Setting
             
                 </a>
             
@@ -414,22 +392,31 @@
                             
                                 <section class="normal markdown-section">
                                 
-                                <div id="anchor-navigation-ex-navbar"><i class="fa fa-navicon"></i><ul><li><span class="title-icon "></span><a href="#hapnet"><b>2.5. </b>HapNet</a></li><ul><li><span class="title-icon "></span><a href="#panel-&#x2460;-on-the-left-provides-severial-options"><b>2.5.1. </b>Panel &#x2460; on the left provides severial options:</a></li><li><span class="title-icon "></span><a href="#download-options"><b>2.5.2. </b>Download Options</a></li></ul></ul></div><a href="#hapnet" id="anchorNavigationExGoTop"><i class="fa fa-arrow-up"></i></a><h1 id="hapnet"><a name="hapnet" class="anchor-navigation-ex-anchor" href="#hapnet"><i class="fa fa-link" aria-hidden="true"></i></a>2.5. HapNet</h1>
-<p>Haplotype networks represent the relationships among the different haploid genotypes observed from the sample list. For more information about haplotype, see <a href="http://markscherz.tumblr.com/post/80597912898/haplotypes-and-understanding-haplotype-networks" target="_blank">here</a> or <a href="http://phylonetworks.blogspot.com/2013/09/how-do-we-interpret-rooted-haplotype.html" target="_blank">here</a></p>
+                                <div id="anchor-navigation-ex-navbar"><i class="fa fa-navicon"></i><ul><li><span class="title-icon "></span><a href="#hapnet"><b>2.5. </b>HapNet</a></li><ul><li><span class="title-icon "></span><a href="#panel-&#x2460;-on-the-left-provides-severial-options"><b>2.5.1. </b>Panel &#x2460; on the left provides severial options:</a></li><li><span class="title-icon "></span><a href="#download-options"><b>2.5.2. </b>Download Options</a></li><li><span class="title-icon "></span><a href="#details"><b>2.5.3. </b>Details</a></li></ul></ul></div><a href="#hapnet" id="anchorNavigationExGoTop"><i class="fa fa-arrow-up"></i></a><h1 id="hapnet"><a name="hapnet" class="anchor-navigation-ex-anchor" href="#hapnet"><i class="fa fa-link" aria-hidden="true"></i></a>2.5. HapNet</h1>
+<p>Haplotype networks represent the relationships among the different haploid genotypes observed from the sample list based on package <em>pegas</em>. For more information about haplotype, see <a href="http://markscherz.tumblr.com/post/80597912898/haplotypes-and-understanding-haplotype-networks" target="_blank">here</a> or <a href="http://phylonetworks.blogspot.com/2013/09/how-do-we-interpret-rooted-haplotype.html" target="_blank">here</a></p>
 <p><img src="../img/HapNet-1.jpg" alt="HapNet tag"></p>
 <h2 id="panel-&#x2460;-on-the-left-provides-severial-options"><a name="panel-&#x2460;-on-the-left-provides-severial-options" class="anchor-navigation-ex-anchor" href="#panel-&#x2460;-on-the-left-provides-severial-options"><i class="fa fa-link" aria-hidden="true"></i></a>2.5.1. Panel &#x2460; on the left provides severial options:</h2>
 <ul>
-<li><p><strong>Groups</strong>: samples that divided into group(s) are wanted. You can define your own group here, by inputing <code>self-group-name-1{sample1,sample2},self-group-name-2{sample3}</code>, which means we inputed two groups whose names are &quot;self-group-name-1&quot; and &quot;self-group-name-2&quot;. Self-group-name-1 contains sample1 and sample2, while self-group-name-2 contains sample3. You can also use pre-defined groups, by inputing <code>pre-defined-group-name-1,pre-defined-group-name-2</code>. <strong>Note</strong> that you could use only <strong>one</strong> type of them, self-defined group or pre-defined group.</p>
+<li><p><strong>Groups</strong>: samples that divided into group(s) are wanted. Three ways are avaliable as well.</p>
+<ul>
+<li>Pure sample name group list. Assume that we have samples <code>S1,S2,S3,S4</code>, and <code>S1,S2</code> are in a group called <code>G1</code>, while <code>S3,S4</code> in <code>G2</code>, a string like <code>G1{S1,S2},G2{S3,S4}</code> could be used as an input.</li>
+<li>Pure group list. Assume that we have two pre-defined groups called <code>PG1</code> and <code>PG2</code>, a string like <code>PG1,PG2</code> could be used as an input.</li>
+<li>Mixed list. String like <code>G1{S1,S2},PG1,PG2,G2{S3,S4}</code> is also able to use as an input.</li>
+<li><strong>Make sure</strong> that <code>S1</code>, <code>S2</code>, <code>S3</code> and <code>S4</code> should <strong>NOT</strong> be contained in neither <code>PG1</code> nor <code>PG2</code>.</li>
+</ul>
 </li>
-<li><p><strong>Region</strong>: a region is wanted here. Input format should be <code>chr:from-to</code>, like <code>chr1A:1-100</code>. You could find the avaliable chromsomes and their length in <code>SampleInfo</code> panel. Also, gene name is acceptable.</p>
+<li><p><strong>Region</strong>: a region is wanted here. Input format should be <code>chr:from-to</code>, like <code>chr1A:1-100</code>. You could find all the avaliable chromsomes and their maximum length in <code>SampleInfo</code> panel. Also, gene name is acceptable.</p>
 </li>
-<li><p><strong>Flanking region length</strong>: when you want to use the gene name as region, you may want some extra postions in the upstream or downstream. Value here is simply added to the maximum , and subtracted from the minimum of the region.</p>
+<li><p><strong>Flanking region length</strong>: when using the gene name as input, you may want some extra length in the upstream and downstream. Both ends of the region will be extended by the value here.</p>
 </li>
-<li><p><strong>Draw</strong>: click after fulfill options, and panel &#x2461; will display the plot (if every settings are correct).</p>
+<li><p><strong>Draw</strong>: click when getting all options ready.</p>
 </li>
 </ul>
 <h2 id="download-options"><a name="download-options" class="anchor-navigation-ex-anchor" href="#download-options"><i class="fa fa-link" aria-hidden="true"></i></a>2.5.2. Download Options</h2>
-<p>Click the <strong>Download Options</strong> button, and then you can select the format, the width, the height of the file you download. Then, click <code>Download</code> to download the plot.</p>
+<p>Click the <strong>Download Options</strong> button, and then you can select format, width and height of the plot shown as the result. Then, click <code>Download</code> to download it.</p>
+<h2 id="details"><a name="details" class="anchor-navigation-ex-anchor" href="#details"><i class="fa fa-link" aria-hidden="true"></i></a>2.5.3. Details</h2>
+<p><img src="../img/HapNet-2.jpg" alt="HapNet tag"></p>
+<p>There is a table below the plot, showing samples in each haplotype drawn in the plot.</p>
 
                                 
                                 </section>
@@ -457,7 +444,7 @@
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"HapNet","level":"2.5","depth":1,"next":{"title":"PhyloTree","level":"2.6","depth":1,"path":"content/Basic_Usage/phylotree.md","ref":"./content/Basic_Usage/phylotree.md","articles":[]},"previous":{"title":"Heatmap","level":"2.4","depth":1,"path":"content/Basic_Usage/heatmap.md","ref":"./content/Basic_Usage/heatmap.md","articles":[]},"dir":"ltr"},"config":{"plugins":["github","-sharing","sharing-plus","anchor-navigation-ex","highlight","-lunr","-search","livereload"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"prism":{"css":["prismjs/themes/prism-tomorrow.css"]},"github":{"url":"https://github.com/esctrionsit/snphub"},"livereload":{},"sharing-plus":{"qq":false,"all":["facebook","google","twitter","instapaper","linkedin","pocket","stumbleupon"],"douban":false,"facebook":true,"weibo":false,"instapaper":false,"whatsapp":false,"hatenaBookmark":false,"twitter":true,"messenger":false,"line":false,"vk":false,"pocket":true,"google":false,"viber":false,"stumbleupon":false,"qzone":false,"linkedin":false},"fontsettings":{"theme":"white","family":"serif","size":2},"highlight":{},"anchor-navigation-ex":{"associatedWithSummary":true,"float":{"floatIcon":"fa fa-navicon","level1Icon":"","level2Icon":"","level3Icon":"","showLevelIcon":false},"mode":"float","multipleH1":false,"pageTop":{"level1Icon":"fa fa-hand-o-right","level2Icon":"fa fa-hand-o-right","level3Icon":"fa fa-hand-o-right","showLevelIcon":false},"printLog":false,"showGoTop":true,"showLevel":true},"sharing":{"qq":false,"all":["twitter","facebook","google"],"douban":false,"facebook":false,"weibo":false,"instapaper":false,"whatsapp":false,"hatenaBookmark":false,"twitter":false,"messenger":false,"line":false,"vk":false,"pocket":false,"google":false,"viber":false,"stumbleupon":false,"qzone":false,"linkedin":false},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":true}},"theme":"default","author":"","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"SnpHub Tutorial","language":"en","links":{"sidebar":{}},"gitbook":"3.2.3"},"file":{"path":"content/Basic_Usage/hapnet.md","mtime":"2019-04-16T08:54:03.000Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2020-01-06T15:47:02.447Z"},"basePath":"../..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"HapNet","level":"2.5","depth":1,"next":{"title":"PhyloTree","level":"2.6","depth":1,"path":"content/Basic_Usage/phylotree.md","ref":"./content/Basic_Usage/phylotree.md","articles":[]},"previous":{"title":"Heatmap","level":"2.4","depth":1,"path":"content/Basic_Usage/heatmap.md","ref":"./content/Basic_Usage/heatmap.md","articles":[]},"dir":"ltr"},"config":{"plugins":["github","-sharing","sharing-plus","anchor-navigation-ex","highlight","-lunr","-search","livereload"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"prism":{"css":["prismjs/themes/prism-tomorrow.css"]},"github":{"url":"https://github.com/esctrionsit/snphub"},"livereload":{},"sharing-plus":{"qq":false,"all":["facebook","google","twitter","instapaper","linkedin","pocket","stumbleupon"],"douban":false,"facebook":true,"weibo":false,"instapaper":false,"whatsapp":false,"hatenaBookmark":false,"twitter":true,"messenger":false,"line":false,"vk":false,"pocket":true,"google":false,"viber":false,"stumbleupon":false,"qzone":false,"linkedin":false},"fontsettings":{"theme":"white","family":"serif","size":2},"highlight":{},"anchor-navigation-ex":{"associatedWithSummary":true,"float":{"floatIcon":"fa fa-navicon","level1Icon":"","level2Icon":"","level3Icon":"","showLevelIcon":false},"mode":"float","multipleH1":false,"pageTop":{"level1Icon":"fa fa-hand-o-right","level2Icon":"fa fa-hand-o-right","level3Icon":"fa fa-hand-o-right","showLevelIcon":false},"printLog":false,"showGoTop":true,"showLevel":true},"sharing":{"qq":false,"all":["twitter","facebook","google"],"douban":false,"facebook":false,"weibo":false,"instapaper":false,"whatsapp":false,"hatenaBookmark":false,"twitter":false,"messenger":false,"line":false,"vk":false,"pocket":false,"google":false,"viber":false,"stumbleupon":false,"qzone":false,"linkedin":false},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":true}},"theme":"default","author":"","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"SnpHub Tutorial","language":"en","links":{"sidebar":{}},"gitbook":"3.2.3"},"file":{"path":"content/Basic_Usage/hapnet.md","mtime":"2020-03-12T02:42:30.118Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2020-03-12T07:47:27.024Z"},"basePath":"../..","book":{"language":""}});
         });
     </script>
 </div>
