@@ -1,6 +1,6 @@
 # HapNet
 
-Haplotype networks represent the relationships among the different haploid genotypes observed from the sample list based on package *pegas*. For more information about haplotype, see [here](http://markscherz.tumblr.com/post/80597912898/haplotypes-and-understanding-haplotype-networks) or [here](http://phylonetworks.blogspot.com/2013/09/how-do-we-interpret-rooted-haplotype.html)
+Haplotype networks represent the relationships among the different haploid genotypes observed from the sample list based on package *[pegas](http://ape-package.ird.fr/pegas.html)*. You may find more informations about haplotype [here](http://phylonetworks.blogspot.com/2013/09/how-do-we-interpret-rooted-haplotype.html).
 
 ![HapNet tag](./../img/HapNet-1.jpg)
 

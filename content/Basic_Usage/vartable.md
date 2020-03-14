@@ -1,6 +1,6 @@
 # VarTable
 
-There are 2 panels: the Left one, ①, is the input panel, and the right one is the result display panel.
+There are 2 panels: the left one (①) is the input panel, and the right one is the result display panel.
 
 ![VarTable tag](./../img/VarTable-1.jpg)
 
@@ -10,13 +10,13 @@ This function subsets the VCF file by the parameters given in the left panel (�
 
 ## Fill the parameters:
 
-- **Variation Type**: select one of the three ratios that represent `SNP (Single Nucleotide Polymorphism) only`, `indel (input/delete) only` or `snp + indel`.
+- **Variation Type**: select one of the three ratios that represent `SNP (Single Nucleotide Polymorphism) only`, `indel (input/delete) only` or `SNP + indel`.
 
-- **Optional information**: there are 3 check boxes, and additional information would display by selecting them. For more information, check the [vcf format document](https://samtools.github.io/hts-specs/VCFv4.2.pdf).
+- **Optional information**: there are 3 check boxes, deciding additional informations. For more information, check the [vcf format document](https://samtools.github.io/hts-specs/VCFv4.2.pdf).
 
 - **Samples**: **sample names** are wanted here.
-	- Basically, three ways are avaliable to input:
-		- Pure sample name list. Sample names are divided by *,*, like `sample1,sample2,sample3`.
+	- Basically, there are three ways avaliable to input:
+		- Pure sample name list. Sample names are divided by "`,`", like `sample1,sample2,sample3`.
 		- Pure group list. Use a *#* before group name to transfer group into sample name list, like `#pre-defined-group-name-1,#pre-defined-group-name-2`. 
 		- Mixed list. Something looks like `sample1,sample2,sample3,#pre-defined-group-name-1`.
 	- **List of samples, must have variant**: samples here will be asked to have mutations in the result. If they do not have mutation in some sites, these sites won't appear in result.
@@ -45,7 +45,7 @@ Click `Download genotype in nucleotide as csv` to download a `.csv` file, contai
 
 ![Advanced options of VarTable](./../img/VarTable-3.jpg)
 
-Click the button called `Advanced Options`, then some more options will appeare.**Note** that when these options are hidden, they **won't** affect the result.
+Click the button `Advanced Options`, then some more options will appeare.**Note** that when these options are hidden, they **won't** affect the result.
 
 - **Minimum allele frequency (MAF)**: Minor allele frequency (MAF) is the frequency at which the second most common allele occurs in a given population. Larger the value is, lesser sites will be in result. If the value is 0 (by default), this filter function is disabled.
 
