@@ -21,6 +21,10 @@ The parameters of the two dimensions can be exchanged. Different colours are use
 
 ## Download Options
 
-![Download options of Heatmap tag](./../img/Heatmap-2.jpg)
+![Download options of Heatmap](./../img/Download-options.gif)
 
 Click the **Download Options** button, and then you can select format, width and height of the plot shown as the result. Then, click `Download` to download it.
+
+## GIF Demonstration
+
+![GIF Demonstration of Heatmap](./../img/Heatmap-0.gif)

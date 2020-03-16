@@ -28,6 +28,8 @@ There're two kinds of output in this function, which are NJ-tree and MDS (multid
 
 ## Download Options
 
+![Download options](./../img/Download-options-2.gif)
+
 Click the **Download Options** button, and then you can select format, width and height of the plot shown as the result. Then, click `Download` to download it.
 
 ## Details
@@ -35,3 +37,7 @@ Click the **Download Options** button, and then you can select format, width and
 ![HapNet tag](./../img/PhyloTree-3.jpg)
 
 There is a table below the plot, showing the distance matrix.
+
+## GIF Demonstration
+
+![GIF Demonstration of PhyloTree](./../img/PhyloTree-0.gif)

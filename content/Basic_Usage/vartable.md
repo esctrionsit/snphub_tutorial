@@ -43,7 +43,7 @@ Click `Download genotype in nucleotide as csv` to download a `.csv` file, contai
 
 ## Advanced Options
 
-![Advanced options of VarTable](./../img/VarTable-3.jpg)
+![Advanced options of VarTable](./../img/VarTable-1.gif)
 
 Click the button `Advanced Options`, then some more options will appeare.**Note** that when these options are hidden, they **won't** affect the result.
 
@@ -52,3 +52,7 @@ Click the button `Advanced Options`, then some more options will appeare.**Note*
 - **Biallelic sites only**: A **biallelic** site is a specific locus in a genome that contains two observed alleles, counting the reference as one, and therefore allowing for one variant allele. A **multiallelic** site is a specific locus in a genome that contains three or more observed alleles, again counting the reference as one, and therefore allowing for two or more variant alleles. Select `Yes`, all postions in the result that have multiallelic will be deleted.
 
 - **Maximum missing rate**: filter option of maximum missing rate.
+
+## GIF Demonstration
+
+![GIF Demonstration of VarTable](./../img/VarTable-0.gif)

@@ -18,3 +18,7 @@ Options here are pretty simple.
 	- Mixed list. Something looks like `sample1,sample2,sample3,#pre-defined-group-name-1`.
 
 - **Region**: a region is wanted here. Input format should be `chr:from-to`, like `chr1A:1-100`. You could find all the avaliable chromsomes and their maximum length in `SampleInfo` panel. Also, gene name is acceptable.
+
+## GIF Demonstration
+
+![GIF Demonstration of SeqMaker](./../img/SeqMaker-0.gif)

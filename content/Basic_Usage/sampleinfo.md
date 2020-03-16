@@ -17,3 +17,7 @@
 ![SampleInfo tag](./../img/SampleInfo-3.jpg)
 
 All tables can be searched (right upper) or filtered (top of each column).
+
+## GIF Demonstration
+
+![GIF Demonstration of SampleInfo](./../img/SampleInfo-0.gif)

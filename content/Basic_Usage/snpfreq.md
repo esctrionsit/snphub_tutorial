@@ -22,4 +22,10 @@ Variants causing amino acid changes are annotated in different colours, includin
 
 ## Download Options
 
+![Download options](./../img/Download-options-2.gif)
+
 Click the **Download Options** button, and then you can select format, width and height of the plot shown as the result. Then, click `Download` to download it.
+
+## GIF Demonstration
+
+![GIF Demonstration of SnpFreq](./../img/SnpFreq-0.gif)
