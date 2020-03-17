@@ -27,7 +27,7 @@ Click the **Download Options** button, and then you can select format, width and
 
 ![HapNet tag](./../img/HapNet-2.jpg)
 
-There is a table below the plot, showing samples in each haplotype drawn in the plot.
+There is a table below the plot, showing informations of samples in each haplotype drawn in the plot.
 
 ## GIF Demonstration
 

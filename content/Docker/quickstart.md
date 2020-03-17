@@ -16,7 +16,7 @@ Creat `Docker` image of `SnpHub`.
 cd snphub4docker
 sudo ./snphub creat image
 ```
-Root permission is needed when running commands with `Docker` behind.
+Root permission is needed because of `Docker`.
 
 ## Step.3
 

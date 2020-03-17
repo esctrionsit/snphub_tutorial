@@ -19,8 +19,8 @@ This function subsets the VCF file by the parameters given in the left panel (â‘
 		- Pure sample name list. Sample names are divided by "`,`", like `sample1,sample2,sample3`.
 		- Pure group list. Use a *#* before group name to transfer group into sample name list, like `#pre-defined-group-name-1,#pre-defined-group-name-2`. 
 		- Mixed list. Something looks like `sample1,sample2,sample3,#pre-defined-group-name-1`.
-	- **List of samples, must have variant**: samples here will be asked to have mutations in the result. If they do not have mutation in some sites, these sites won't appear in result.
-	- **List of samples, must NOT have variant**: contrary to the former, sites which samples here have mutations will be deleted in result.
+	- **List of samples, must have variant**: samples here will be asked to have mutations in the result. If they do not have mutation in some sites, these sites won't appear in the result.
+	- **List of samples, must NOT have variant**: contrary to the former, sites which samples here have mutations will be deleted in the result.
 	- **List of samples, independent of having variant**: samples here won't be dealed, just display.
 
 ![Samples of VarTable](./../img/VarTable-2.jpg)

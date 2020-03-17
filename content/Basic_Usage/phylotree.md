@@ -2,7 +2,7 @@
 
 ![PhyloTree tag](./../img/PhyloTree-1.jpg)
 
-There're two kinds of output in this function, which are NJ-tree and MDS (multidimensional scaling). The former, clearly, is the [phylogenetic tree](https://en.wikipedia.org/wiki/Phylogenetic_tree) made by [neighbor joining](https://en.wikipedia.org/wiki/Neighbor_joining) algorithm. And the latter is multidimensional scaling, which present the relationship in the second dimension by the distance on the graph.
+There're two kinds of output in this function, which are NJ-tree and MDS (multidimensional scaling). The former, clearly, is the [phylogenetic tree](https://en.wikipedia.org/wiki/Phylogenetic_tree) made by [neighbor joining](https://en.wikipedia.org/wiki/Neighbor_joining) algorithm. And the latter is multidimensional scaling, which presents the relationship in the second dimension by the distance on the graph.
 
 ![MDS of PhyloTree tag](./../img/PhyloTree-2.jpg)
 
@@ -11,7 +11,7 @@ There're two kinds of output in this function, which are NJ-tree and MDS (multid
 
 - **Tree layout**: if `NJ-tree` is choosen as the plot type, this option would appear. Select a tree layout here.
 
-- **Real branch length**: real branch length means the length of branch present exactly how far the sample from each other. However, some times the real distance between samples is not that importent, and you just want to see the relationship or just want to make a beautiful plot, in this situation, just click `No`. 
+- **Real branch length**: `real branch length` means the length of branch presents exactly how far the sample from each other. However, some times the real distance between samples is not that importent, and you just want to see the relationship or just want to make a beautiful plot, in this situation, just click `No`. 
 
 - **Groups**: samples that divided into group(s) are wanted. Three ways are avaliable as well.
 	- Pure sample name group list. Assume that we have samples `S1,S2,S3,S4`, and `S1,S2` are in a group called `G1`, while `S3,S4` in `G2`, a string like `G1{S1,S2},G2{S3,S4}` could be used as an input.

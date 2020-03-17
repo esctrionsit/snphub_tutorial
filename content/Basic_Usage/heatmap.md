@@ -15,7 +15,7 @@ The parameters of the two dimensions can be exchanged. Different colours are use
 
 - **Flanking region length**: when using the gene name as input, you may want some extra length in the upstream and downstream. Both ends of the region will be extended by the value here.
 
-- **Minimum allele frequency (MAF)**: Minor allele frequency (MAF) is the frequency at which the second most common allele occurs in a given population. Larger the value is, lesser the result postions are. If the value is 0 (by default), this filter function is disabled.
+- **Minimum allele frequency (MAF)**: Minor allele frequency (MAF) is the frequency at which the second most common allele occurs in a given population. Larger the value is, lesser sites will be in the result. If the value is 0 (by default), this filter function is disabled.
 
 - **Draw**: click when getting all options ready.
 
