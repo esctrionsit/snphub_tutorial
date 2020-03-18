@@ -4,7 +4,7 @@
     <head>
         <meta charset="UTF-8">
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
-        <title>Quick Start · SnpHub Tutorial</title>
+        <title>Hapmap to VCF · SnpHub Tutorial</title>
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="description" content="">
         <meta name="generator" content="GitBook 3.2.3">
@@ -57,10 +57,8 @@
     <link rel="shortcut icon" href="../../gitbook/images/favicon.ico" type="image/x-icon">
 
     
-    <link rel="next" href="../data_transfer/hapmap_to_vcf.html" />
     
-    
-    <link rel="prev" href="overview.html" />
+    <link rel="prev" href="../Docker/quickstart.html" />
     
 
     </head>
@@ -320,9 +318,9 @@
         
         
     
-        <li class="chapter " data-level="4.1" data-path="overview.html">
+        <li class="chapter " data-level="4.1" data-path="../Docker/overview.html">
             
-                <a href="overview.html">
+                <a href="../Docker/overview.html">
             
                     
                         <b>4.1.</b>
@@ -335,9 +333,9 @@
             
         </li>
     
-        <li class="chapter active" data-level="4.2" data-path="quickstart.html">
+        <li class="chapter " data-level="4.2" data-path="../Docker/quickstart.html">
             
-                <a href="quickstart.html">
+                <a href="../Docker/quickstart.html">
             
                     
                         <b>4.2.</b>
@@ -357,9 +355,9 @@
         
         
     
-        <li class="chapter " data-level="5.1" data-path="../data_transfer/hapmap_to_vcf.html">
+        <li class="chapter active" data-level="5.1" data-path="hapmap_to_vcf.html">
             
-                <a href="../data_transfer/hapmap_to_vcf.html">
+                <a href="hapmap_to_vcf.html">
             
                     
                         <b>5.1.</b>
@@ -402,7 +400,7 @@
     <!-- Title -->
     <h1>
         <i class="fa fa-circle-o-notch fa-spin"></i>
-        <a href="../.." >Quick Start</a>
+        <a href="../.." >Hapmap to VCF</a>
     </h1>
 </div>
 
@@ -414,59 +412,15 @@
                             
                                 <section class="normal markdown-section">
                                 
-                                <div id="anchor-navigation-ex-navbar"><i class="fa fa-navicon"></i><ul><li><span class="title-icon "></span><a href="#quick-start"><b>4.2. </b>Quick start</a></li><ul><li><span class="title-icon "></span><a href="#step1"><b>4.2.1. </b>Step.1</a></li><li><span class="title-icon "></span><a href="#step2"><b>4.2.2. </b>Step.2</a></li><li><span class="title-icon "></span><a href="#step3"><b>4.2.3. </b>Step.3</a></li><li><span class="title-icon "></span><a href="#step4"><b>4.2.4. </b>Step.4</a></li><li><span class="title-icon "></span><a href="#step5"><b>4.2.5. </b>Step.5</a></li><li><span class="title-icon "></span><a href="#addendum&#xFF1A;-parameters-of-snphub"><b>4.2.6. </b>Addendum&#xFF1A; parameters of snphub</a></li></ul></ul></div><a href="#quick-start" id="anchorNavigationExGoTop"><i class="fa fa-arrow-up"></i></a><h1 id="quick-start"><a name="quick-start" class="anchor-navigation-ex-anchor" href="#quick-start"><i class="fa fa-link" aria-hidden="true"></i></a>4.2. Quick start</h1>
-<h2 id="step1"><a name="step1" class="anchor-navigation-ex-anchor" href="#step1"><i class="fa fa-link" aria-hidden="true"></i></a>4.2.1. Step.1</h2>
-<p>Clone (or download) project <code>snphub4docker</code> from github.</p>
-<pre><code class="lang-sh">git <span class="hljs-built_in">clone</span> https://github.com/esctrionsit/snphub4docker
-</code></pre>
-<h2 id="step2"><a name="step2" class="anchor-navigation-ex-anchor" href="#step2"><i class="fa fa-link" aria-hidden="true"></i></a>4.2.2. Step.2</h2>
-<p>Creat <code>Docker</code> image of <code>SnpHub</code>.</p>
-<pre><code class="lang-sh"><span class="hljs-built_in">cd</span> snphub4docker
-sudo ./snphub creat image
-</code></pre>
-<p>Root permission is needed because of <code>Docker</code>.</p>
-<h2 id="step3"><a name="step3" class="anchor-navigation-ex-anchor" href="#step3"><i class="fa fa-link" aria-hidden="true"></i></a>4.2.3. Step.3</h2>
-<p>Pre-process your own re-seq data.(Or <strong>jump</strong> this step if just want to try on our <strong>sample</strong> data.)</p>
-<p><strong>Firstly</strong>, you need to <strong>fulfill</strong> the <code>setup.conf</code>.</p>
-<pre><code class="lang-sh">vi ./setup.conf
-</code></pre>
-<p>Put the needed files into a folder, and fulfill <code>setup_config.R</code> with their name and folder path.
-An <strong>template data folder</strong> is provided at <code>snphub4docker/Template_data</code>.</p>
-<p><strong>Then</strong>, run command below to pre-process your data.</p>
-<pre><code class="lang-sh">./snphub init -y
-</code></pre>
-<h2 id="step4"><a name="step4" class="anchor-navigation-ex-anchor" href="#step4"><i class="fa fa-link" aria-hidden="true"></i></a>4.2.4. Step.4</h2>
-<p>Now, you can try <code>SnpHub</code> by createing a container (instance), binding your host port with it, and mount your own data (if there is).</p>
-<pre><code class="lang-sh">sudo ./snphub creat container -p 5123 -v /data/user_data
-</code></pre>
-<p>Options:</p>
+                                <div id="anchor-navigation-ex-navbar"><i class="fa fa-navicon"></i><ul><li><span class="title-icon "></span><a href="#hapmap-to-vcf"><b>5.1. </b>Hapmap to VCF</a></li></ul></div><a href="#hapmap-to-vcf" id="anchorNavigationExGoTop"><i class="fa fa-arrow-up"></i></a><h1 id="hapmap-to-vcf"><a name="hapmap-to-vcf" class="anchor-navigation-ex-anchor" href="#hapmap-to-vcf"><i class="fa fa-link" aria-hidden="true"></i></a>5.1. Hapmap to VCF</h1>
+<p>Considering that there are also a lot of SNP array data, we here provide an interface to transfer <code>.hapmap</code> format data into <code>.vcf</code>.</p>
+<p>Before doing that, please make sure that the following software has been installed:</p>
 <ul>
-<li><code>-p</code>: Dind the host port with container. A <strong>random</strong> port will be binded when <strong>ignoring</strong> this parameter.</li>
-<li><code>-v</code>: Mount your own <strong>pre-processed</strong> re-seq data into container. <code>SnpHub</code> will run on a <strong>sample data</strong> when <strong>ignoring</strong> this parameter.</li>
+<li><code>Java</code> (no earlier than Java6)</li>
+<li><code>git</code></li>
 </ul>
-<h2 id="step5"><a name="step5" class="anchor-navigation-ex-anchor" href="#step5"><i class="fa fa-link" aria-hidden="true"></i></a>4.2.5. Step.5</h2>
-<p>Open your browser, and enjoy at <code>http://localhost:5123</code>.</p>
-<p>(Port is the one that you choose at step.4 or a random value. Check more details using <code>./snphub list</code>)</p>
-<h2 id="addendum&#xFF1A;-parameters-of-snphub"><a name="addendum&#xFF1A;-parameters-of-snphub" class="anchor-navigation-ex-anchor" href="#addendum&#xFF1A;-parameters-of-snphub"><i class="fa fa-link" aria-hidden="true"></i></a>4.2.6. Addendum&#xFF1A; parameters of snphub</h2>
-<pre><code class="lang-text">Program : snphub (Tools for visualizing re-seq data)
-Version:  1.0.0
-Updated on: Jun. 4th, 2020
-Usage:    snphub &lt;command&gt; [options]
-Commands:
-  -- SnpHub on docker
-     create      + to create a SnpHub Docker image or container
-     list          to list all the containers created
-     start         start a specific container
-     stop          stop a specific container
-     kill          kill (force stop) a specific container
-     rm            delete a specific container
-  -- SnpHub data pre-processing
-     init          pre-processing the user provided re-seq data
-Note: 
-  Commands contain sub-commands are marked with &quot;+&quot; 
-  Generally any operate on Docker needs root authority.
-  We recomand to use root account when using commands related to Docker.
-  Or using &quot;sudo snphub &lt;command&gt; [options]&quot;.
+<p>To get data transfered, just useing the following command.</p>
+<pre><code class="lang-sh">python snphub/data_transfer/hapmap2vcf.py -i [input hapmap path] -o [output vcf path]
 </code></pre>
 
                                 
@@ -479,14 +433,10 @@ Note:
 
             
                 
-                <a href="overview.html" class="navigation navigation-prev " aria-label="Previous page: Overview">
+                <a href="../Docker/quickstart.html" class="navigation navigation-prev navigation-unique" aria-label="Previous page: Quick Start">
                     <i class="fa fa-angle-left"></i>
                 </a>
                 
-                
-                <a href="../data_transfer/hapmap_to_vcf.html" class="navigation navigation-next " aria-label="Next page: Hapmap to VCF">
-                    <i class="fa fa-angle-right"></i>
-                </a>
                 
             
         
@@ -495,7 +445,7 @@ Note:
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"Quick Start","level":"4.2","depth":1,"next":{"title":"Hapmap to VCF","level":"5.1","depth":1,"path":"content/data_transfer/hapmap_to_vcf.md","ref":"./content/data_transfer/hapmap_to_vcf.md","articles":[]},"previous":{"title":"Overview","level":"4.1","depth":1,"path":"content/Docker/overview.md","ref":"./content/Docker/overview.md","articles":[]},"dir":"ltr"},"config":{"plugins":["github","-sharing","sharing-plus","anchor-navigation-ex","highlight","-lunr","-search"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"sharing":{"qq":false,"all":["twitter","facebook","google"],"douban":false,"facebook":false,"weibo":false,"instapaper":false,"whatsapp":false,"hatenaBookmark":false,"twitter":false,"messenger":false,"line":false,"vk":false,"pocket":false,"google":false,"viber":false,"stumbleupon":false,"qzone":false,"linkedin":false},"github":{"url":"https://github.com/esctrionsit/snphub"},"anchor-navigation-ex":{"associatedWithSummary":true,"float":{"floatIcon":"fa fa-navicon","level1Icon":"","level2Icon":"","level3Icon":"","showLevelIcon":false},"mode":"float","multipleH1":false,"pageTop":{"level1Icon":"fa fa-hand-o-right","level2Icon":"fa fa-hand-o-right","level3Icon":"fa fa-hand-o-right","showLevelIcon":false},"printLog":false,"showGoTop":true,"showLevel":true},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":true},"fontsettings":{"theme":"white","family":"serif","size":2},"prism":{"css":["prismjs/themes/prism-tomorrow.css"]},"sharing-plus":{"qq":false,"all":["facebook","google","twitter","instapaper","linkedin","pocket","stumbleupon"],"douban":false,"facebook":true,"weibo":false,"instapaper":false,"whatsapp":false,"hatenaBookmark":false,"twitter":true,"messenger":false,"line":false,"vk":false,"pocket":true,"google":false,"viber":false,"stumbleupon":false,"qzone":false,"linkedin":false},"highlight":{}},"theme":"default","author":"","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"SnpHub Tutorial","language":"en","links":{"sidebar":{}},"gitbook":"3.2.3"},"file":{"path":"content/Docker/quickstart.md","mtime":"2020-03-17T05:22:03.989Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2020-03-18T01:57:16.500Z"},"basePath":"../..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"Hapmap to VCF","level":"5.1","depth":1,"previous":{"title":"Quick Start","level":"4.2","depth":1,"path":"content/Docker/quickstart.md","ref":"./content/Docker/quickstart.md","articles":[]},"dir":"ltr"},"config":{"plugins":["github","-sharing","sharing-plus","anchor-navigation-ex","highlight","-lunr","-search"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"sharing":{"qq":false,"all":["twitter","facebook","google"],"douban":false,"facebook":false,"weibo":false,"instapaper":false,"whatsapp":false,"hatenaBookmark":false,"twitter":false,"messenger":false,"line":false,"vk":false,"pocket":false,"google":false,"viber":false,"stumbleupon":false,"qzone":false,"linkedin":false},"github":{"url":"https://github.com/esctrionsit/snphub"},"anchor-navigation-ex":{"associatedWithSummary":true,"float":{"floatIcon":"fa fa-navicon","level1Icon":"","level2Icon":"","level3Icon":"","showLevelIcon":false},"mode":"float","multipleH1":false,"pageTop":{"level1Icon":"fa fa-hand-o-right","level2Icon":"fa fa-hand-o-right","level3Icon":"fa fa-hand-o-right","showLevelIcon":false},"printLog":false,"showGoTop":true,"showLevel":true},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":true},"fontsettings":{"theme":"white","family":"serif","size":2},"prism":{"css":["prismjs/themes/prism-tomorrow.css"]},"sharing-plus":{"qq":false,"all":["facebook","google","twitter","instapaper","linkedin","pocket","stumbleupon"],"douban":false,"facebook":true,"weibo":false,"instapaper":false,"whatsapp":false,"hatenaBookmark":false,"twitter":true,"messenger":false,"line":false,"vk":false,"pocket":true,"google":false,"viber":false,"stumbleupon":false,"qzone":false,"linkedin":false},"highlight":{}},"theme":"default","author":"","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"SnpHub Tutorial","language":"en","links":{"sidebar":{}},"gitbook":"3.2.3"},"file":{"path":"content/data_transfer/hapmap_to_vcf.md","mtime":"2020-03-18T01:55:58.102Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2020-03-18T01:57:16.500Z"},"basePath":"../..","book":{"language":""}});
         });
     </script>
 </div>
