@@ -8,12 +8,27 @@ There is a configuration file called `setup.conf` in the `SnpHub` root directory
 
 # Note: please DON'T end path_datafolder and path_vcfolder with "/"
 
-# Folder that contains all files EXCEPT vcf files.
-# Also our output folder, so make sure the write permission is given
-path_datafolder = "./test2"
+# Type of your data format, could be "vcf" or "hapmap"
+data_type = "vcf"
+# data_type = "hapmap"
 
-# Folder contains vcf files
+# Path of folder contains vcf files
+# All of the vcf files will be loaded in the folder
+# Could be ignored if the data format is hapmap 
 path_vcfolder = "./test2"
+
+# Path of hapmap data file
+# Only accept a single file
+# Could be ignored if the data format is vcf
+path_hapmap = "./example.hmp.txt"
+
+
+####################################################
+# Path of folder contains other files (below).
+# Also our output folder, so make sure the write permission has been given
+# DO NOT end with "/"
+# WRONG demonstration: "./test2/"
+path_datafolder = "./test2"
 
 ####################################################
 # File names
@@ -61,11 +76,15 @@ path_tabix = "tabix"
 ## Related files
 In the first part, the meaning of the variables are:
 
+- **data_type**: type of the variation data. Could be `"vcf"` or `"hapmap"`
+
+- **path_vcfolder**: the folder path of vcf(vcf.gz) files of the resequencing data. **ALL** vcf files in the folder would be **merged together**, and annoated with `gff3` file below. This could be ignored if your data format is hapmap.
+
+- **path_hapmap**: path of your hapmap data file. **Note** that we only accept a single hapmap data file for now. Could be ignored if your data format is vcf.
+
 - **path_datafolder**: the folder path of **all files** except vcfs. New created files would also be puted here.
 
-- **path_vcfolder**: the folder path of vcf(vcf.gz) files of the resequencing data. **ALL** vcf files in the folder would be **merged together**, and annoated with `gff3` file.
-
-- **path_gff3**: the path of gff3 file, or Generic Feature Format file.
+- **path_gff3**: the path of gff3 file, which has the full name called "the Generic Feature Format Version 3" file.
 
 - **path_fasta**: the path of reference genome file, which should be in fasta format.
 
