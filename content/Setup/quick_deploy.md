@@ -40,7 +40,7 @@ Only two steps are needed to run on demo data set:
 Basic config file is named `setup.conf`, fulfill it and then run command:
 
 ``` sh
-./setup.R
+Rscript ./setup.R
 ```
 
 Check [configuration](/content/Setup/configuration.html) for more details about `setup.conf`.
@@ -53,6 +53,6 @@ If it is your **first time** setting up `SnpHub`, you will also need to delete `
 
 Each time you reset/changed your configuration, use:
 ``` sh
-./setup.R
+Rscript ./setup.R
 ```
 to get the new data file pre-processed and checked.

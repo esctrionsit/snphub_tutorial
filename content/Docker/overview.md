@@ -61,7 +61,7 @@ Open your browser, and enjoy at `http://localhost:5123`.
 
 (Port is the one that you choose at step.4 or a random value. Check more details using `./snphub list`)
 
-## Addendum： parameters of snphub
+## Addendum: parameters of snphub
 
 ```text
 Program : snphub (Tools for visualizing re-seq data)
