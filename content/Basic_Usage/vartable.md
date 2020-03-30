@@ -12,10 +12,10 @@ This function subsets the VCF file by the parameters given in the left panel (â‘
 
 - **Variation Type**: select one of the three ratios that represent `SNP (Single Nucleotide Polymorphism) only`, `indel (input/delete) only` or `SNP + indel`.
 
-- **Optional information**: there are 3 check boxes, deciding additional informations. For more information, check the [vcf format document](https://samtools.github.io/hts-specs/VCFv4.2.pdf).
+- **Optional information**: there are 3 check boxes, deciding additional information. For more information, check the [vcf format document](https://samtools.github.io/hts-specs/VCFv4.2.pdf).
 
 - **Samples**: **sample names** are wanted here.
-	- Basically, there are three ways avaliable to input:
+	- Basically, there are three ways available to input:
 		- Pure sample name list. Sample names are divided by "`,`", like `sample1,sample2,sample3`.
 		- Pure group list. Use a *#* before group name to transfer group into sample name list, like `#pre-defined-group-name-1,#pre-defined-group-name-2`. 
 		- Mixed list. Something looks like `sample1,sample2,sample3,#pre-defined-group-name-1`.
@@ -25,7 +25,7 @@ This function subsets the VCF file by the parameters given in the left panel (â‘
 
 ![Samples of VarTable](./../img/VarTable-2.jpg)
 
-- **Region**: a region is wanted here. Input format should be `chr:from-to`, like `chr1A:1-100`. You could find all the avaliable chromsomes and their maximum length in `SampleInfo` panel. Also, gene name is acceptable.
+- **Region**: a region is wanted here. Input format should be `chr:from-to`, like `chr1A:1-100`. You could find all the available chromsomes and their maximum length in `SampleInfo` panel. Also, gene name is acceptable.
 
 - **Flanking region length**: when using the gene name as input, you may want some extra length in the upstream and downstream. Both ends of the region will be extended by the value here.
 
@@ -45,11 +45,11 @@ Click `Download genotype in nucleotide as csv` to download a `.csv` file, contai
 
 ![Advanced options of VarTable](./../img/VarTable-1.gif)
 
-Click the button `Advanced Options`, then some more options will appeare.**Note** that when these options are hidden, they **won't** affect the result.
+Click the button `Advanced Options`, then some more options will appear.**Note** that when these options are hidden, they **won't** affect the result.
 
 - **Minimum allele frequency (MAF)**: Minor allele frequency (MAF) is the frequency at which the second most common allele occurs in a given population. Larger the value is, lesser sites will be in result. If the value is 0 (by default), this filter function is disabled.
 
-- **Biallelic sites only**: A **biallelic** site is a specific locus in a genome that contains two observed alleles, counting the reference as one, and therefore allowing for one variant allele. A **multiallelic** site is a specific locus in a genome that contains three or more observed alleles, again counting the reference as one, and therefore allowing for two or more variant alleles. Select `Yes`, all postions in the result that have multiallelic will be deleted.
+- **Biallelic sites only**: A **biallelic** site is a specific locus in a genome that contains two observed alleles, counting the reference as one, and therefore allowing for one variant allele. A **multiallelic** site is a specific locus in a genome that contains three or more observed alleles, again counting the reference as one, and therefore allowing for two or more variant alleles. Select `Yes`, all positions in the result that have multiallelic will be deleted.
 
 - **Maximum missing rate**: filter option of maximum missing rate.
 

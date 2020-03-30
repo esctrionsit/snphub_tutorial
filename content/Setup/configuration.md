@@ -88,15 +88,15 @@ In the first part, the meaning of the variables are:
 
 - **path_fasta**: the path of reference genome file, which should be in fasta format.
 
-- **path_metadata**: the path of metadata file. More datail is writen in the next section.
+- **path_metadata**: the path of metadata file. For more details, please see next section.
 
-- **path_groupdata**: the path of group information file. More datail is writen in the next section.
+- **path_groupdata**: the path of group information file. For more details, please see next section.
 
-- **path_sam_location**: the path of sample location information file. More datail is writen in the next section.
+- **path_sam_location**: the path of sample location information file. For more details, please see next section.
 
-- **path_sysinfo**: the path of system information file. It's value could be NA. More datail is writen in the next section.
+- **path_sysinfo**: the path of system information file. It's value could be NA. For more details, please see next section.
 
-- **path_UIsetting**: the path of UI setting file. It's value could be `NA`. More datail is writen in the next section.
+- **path_UIsetting**: the path of UI setting file. It's value could be `NA`. For more details, please see section "*UI Setting*".
 
 ## Tool path
 In the second part, variables contains the path of 3 tools: `bcftools`, `samtools`, `seqkit` and `tabix`. If the path is default, just leave them then.

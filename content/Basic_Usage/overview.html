@@ -446,33 +446,61 @@
                             
                                 <section class="normal markdown-section">
                                 
-                                <div id="anchor-navigation-ex-navbar"><i class="fa fa-navicon"></i><ul><li><span class="title-icon "></span><a href="#overview"><b>2. </b>Overview</a></li><ul><li><span class="title-icon "></span><a href="#common-input-boxes"><b>2.1. </b>Common input boxes</a></li></ul></ul></div><a href="#overview" id="anchorNavigationExGoTop"><i class="fa fa-arrow-up"></i></a><h1 id="overview"><a name="overview" class="anchor-navigation-ex-anchor" href="#overview"><i class="fa fa-link" aria-hidden="true"></i></a>2. Overview</h1>
-<p>In this section, we would like to introduce basic functions of <code>SnpHub</code>.</p>
-<p>When you open <code>Snphub</code> in browser, you would see the page like the picture below.</p>
+                                <div id="anchor-navigation-ex-navbar"><i class="fa fa-navicon"></i><ul><li><span class="title-icon "></span><a href="#overview"><b>2. </b>Overview</a></li><ul><li><span class="title-icon "></span><a href="#basic-input-boxes"><b>2.1. </b>Basic input boxes</a></li><ul><li><span class="title-icon "></span><a href="#the-input-box--samples"><b>2.1.1. </b>The input box : &quot;Samples&quot;</a></li><li><span class="title-icon "></span><a href="#the-input-box--groups"><b>2.1.2. </b>The input box : &quot;Groups&quot;</a></li><li><span class="title-icon "></span><a href="#the-input-box--region"><b>2.1.3. </b>The input box : &quot;Region&quot;</a></li></ul></ul></ul></div><a href="#overview" id="anchorNavigationExGoTop"><i class="fa fa-arrow-up"></i></a><h1 id="overview"><a name="overview" class="anchor-navigation-ex-anchor" href="#overview"><i class="fa fa-link" aria-hidden="true"></i></a>2. Overview</h1>
+<p>In this section, we would like to introduce the main functions supported by <code>SnpHub</code>.</p>
+<p>When you open a <code>Snphub</code> instance in your browser, you would see the page as below.</p>
 <p><img src="../img/overview-1.jpg" alt="Overview of SnpHub"></p>
-<p>Basically, we can devide the whole page into two parts:</p>
+<p>Basically, the whole page is composed of two parts: &quot;<em>menu</em>&quot; part and &quot;<em>workspace</em>&quot; part.</p>
 <ul>
-<li>&#x2460;: <em>Tag</em>s. By clicking them, you could change from different functions.</li>
-<li>&#x2461;: <em>Content</em>. This is the main panel where you actually use the application.</li>
+<li>&#x2460;: <em>Menu</em>: users can select different channels of SnpHub here.</li>
+<li>&#x2461;: <em>Workspace</em>: each channel corresponds with specific content panel, providing the interfaces for interactively exploring the data set. The left sub-panel provides boxes or menus for specifying input parameters. Results in forms of tables or figures will be display in the right sub-panel.</li>
 </ul>
-<p>In the <em>content</em> part of the page, you may found the input panal on the left, in most of the functions. Some of the inputs are similar.</p>
-<h2 id="common-input-boxes"><a name="common-input-boxes" class="anchor-navigation-ex-anchor" href="#common-input-boxes"><i class="fa fa-link" aria-hidden="true"></i></a>2.1. Common input boxes</h2>
+<h2 id="basic-input-boxes"><a name="basic-input-boxes" class="anchor-navigation-ex-anchor" href="#basic-input-boxes"><i class="fa fa-link" aria-hidden="true"></i></a>2.1. Basic input boxes</h2>
+<h3 id="the-input-box--samples"><a name="the-input-box--samples" class="anchor-navigation-ex-anchor" href="#the-input-box--samples"><i class="fa fa-link" aria-hidden="true"></i></a>2.1.1. The input box : &quot;Samples&quot;</h3>
+<p>The textbox titled &quot;Samples&quot; inquiry a sample list for querying. Three styles are supported for the sample-list input box.</p>
 <p>When the textbox has a title called &quot;<strong>Samples</strong>&quot;, <strong>sample names</strong> are wanted here. Three ways are avaliable to input:</p>
 <ul>
-<li>Pure sample name list. Sample names are divided by <em>,</em>, like <code>sample1,sample2,sample3</code>.</li>
-<li>Pure group list. Use a <em>#</em> before group name to transfer group into sample name list, like <code>#pre-defined-group-name-1,#pre-defined-group-name-2</code>. </li>
-<li>Mixed list. Something looks like <code>sample1,sample2,sample3,#pre-defined-group-name-1</code></li>
+<li>A list of sample names (Accession name according to the &#x201C;SampleInfo&#x201D; channel), separated with comma &quot;,&quot;. Example:<ul>
+<li><code>sample1,sample2,sample3</code>.</li>
+<li><em>Tips: User can save frequently queried sample lists in their own NotePad.</em></li>
+</ul>
+</li>
+<li>Use group IDs. The system manager could define groups of samples and gave the GroupIDs as identifiers for these sample lists. Information of pre-defined groups could be found in the &#x201C;SampleInfo&#x201D; channel. Use a <em>#</em> before group name to transfer group into sample name list. Example:<ul>
+<li><code>#PredefinedGroup1,#PredefinedGroup2</code>. </li>
+</ul>
+</li>
+<li>Mixture. You can combine both sample names (Accession IDs) and group IDs. For the mixture style, SnpHub frameworks will expand the GroupIDs as lists of samples. Examples:<ul>
+<li><code>sample1,sample2,sample3,#PredefinedGroup1</code></li>
+</ul>
+</li>
 </ul>
 <p><img src="../img/overview-2.jpg" alt="Mixed use of sample and group in sample input"></p>
-<p>When the textbox has a title of &quot;<strong>Groups</strong>, <strong>groups</strong> are needed here. Three ways are avaliable as well.</p>
+<h3 id="the-input-box--groups"><a name="the-input-box--groups" class="anchor-navigation-ex-anchor" href="#the-input-box--groups"><i class="fa fa-link" aria-hidden="true"></i></a>2.1.2. The input box : &quot;Groups&quot;</h3>
+<p>The textbox has a title oftitled &#x201C;&quot;Groups&#x201D;, groups are needed hereinquiries a list of group IDs, rather than a list of samples. Channels with the &#x201C;Groups&#x201D; input box usually perform inter-group analysis, and support inter-group visualizations. Both pre-defined groups and user-defined groups are supported. </p>
 <ul>
-<li>Pure sample name group list. Assume that we have samples <code>S1,S2,S3,S4</code>, and <code>S1,S2</code> are in a group called <code>G1</code>, while <code>S3,S4</code> in <code>G2</code>, a string like <code>G1{S1,S2},G2{S3,S4}</code> could be used as an input.</li>
-<li>Pure group list. Assume that we have two pre-defined groups called <code>PG1</code> and <code>PG2</code>, a string like <code>PG1,PG2</code> could be used as an input.</li>
-<li>Mixed list. String like <code>G1{S1,S2},PG1,PG2,G2{S3,S4}</code> is also able to use as an input.
-Make sure that <code>S1</code>, <code>S2</code>, <code>S3</code> and <code>S4</code> should <strong>NOT</strong> be contained in neither <code>PG1</code> nor <code>PG2</code>.</li>
+<li>Predefined Groups. The pre-defined groups are listed in &#x201C;SampleInfo&#x201D; channel, and are supported to be maintained by the system manager. For the &#x201C;Groups&#x201D; input box, you shall only input the group IDs, WITHOUT putting &#x201C;#&#x201D; ahead of the IDS. The list of group IDs shall be seperated by comma &#x201C;,&#x201D;. For examples:<ul>
+<li><code>PredefineGroup1,PredefineGroup2,PredefineGroup3</code></li>
+</ul>
+</li>
+<li>User-defined Groups. Sometimes, the users would expect to define their own groups of samples, without bothering the system manager. SnpHub supports user define their own list of samples in the following ways.<ul>
+<li><code>MyGroupA{Sample1,Sample2,Sample3}</code></li>
+</ul>
+</li>
+<li>If users would define multiples groups, define them in similar way and make sure to use different Groupd-IDs (also shall be different with predefined groups in system). For example:<ul>
+<li><code>MyGroupA{Sample1,Sample2,Sample3},MyGroupB{Sample8,Sample9,Sample10}</code></li>
+</ul>
+</li>
+<li>Also, the SnpHub supports the mixture styles, such as<ul>
+<li><code>MyGroupA{Sample1,Sample2,Sample3},PredefineGroup1,PredefineGroup2,MyGroupB{Sample8,Sample9,Sample10}</code></li>
+</ul>
+</li>
 </ul>
 <p><img src="../img/overview-3.jpg" alt="group input using self-defined group"></p>
-<p>When the textbox has a title of &quot;<strong>Region</strong>, a region is wanted here. Input format should be <code>chr:from-to</code>, like <code>chr1A:1-100</code>. You could find the avaliable chromsomes and their length in <code>SampleInfo</code> tag. Also, gene name is acceptable.</p>
+<h3 id="the-input-box--region"><a name="the-input-box--region" class="anchor-navigation-ex-anchor" href="#the-input-box--region"><i class="fa fa-link" aria-hidden="true"></i></a>2.1.3. The input box : &quot;Region&quot;</h3>
+<p>The textbox titled &quot;<strong>Region</strong> inquire the input for querying genomic regions. The input text shall be in form of <code>chr:from-to</code>. For example, <code>chr1A:1-100</code>.</p>
+<p>It is noted that the chromosome IDs shall be concordant with the chromosome IDs listed in &quot;<em>SampleInfo</em>&quot; channel. The valid ranges for each chromosome (total length in base pairs) is also available in &quot;<em>SampleInfo</em>&quot; channel.</p>
+<p>The gene-IDs is also supported, too. When a gene-ID is provided, the system will resolve it as real location according the gene-annotation information (provided by the administrator when setting-up the instance).</p>
+<p><em>Users can also specifying the flanking regions of a gene (or a given region), through the input box &#x201C;Flanking region length (bp)&#x201D;. It is usually <code>0</code> bp in the box by default, indicating no flanking region is considered. If <code>2000</code> is provided in this input box, then the flanking regions in length of &quot;2000bp&quot; will be included for both upstream and down stream.</em></p>
 <p><img src="../img/overview-4.jpg" alt="region input"></p>
 <p>We will show more details later.</p>
 
@@ -502,7 +530,7 @@ Make sure that <code>S1</code>, <code>S2</code>, <code>S3</code> and <code>S4</c
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"Function Details","level":"2","depth":0,"next":{"title":"Overview","level":"2.1","depth":1,"path":"content/Basic_Usage/overview.md","ref":"./content/Basic_Usage/overview.md","articles":[]},"previous":{"title":"What is SnpHub","level":"1","depth":0,"path":"README.md","ref":"README.md","articles":[]},"dir":"ltr"},"config":{"plugins":["github","-sharing","sharing-plus","anchor-navigation-ex","highlight","-lunr","-search","expandable-chapters-small","splitter","livereload"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"prism":{"css":["prismjs/themes/prism-tomorrow.css"]},"github":{"url":"https://github.com/esctrionsit/snphub"},"livereload":{},"splitter":{},"sharing-plus":{"qq":false,"all":["facebook","google","twitter","instapaper","linkedin","pocket","stumbleupon"],"douban":false,"facebook":true,"weibo":false,"instapaper":false,"whatsapp":false,"hatenaBookmark":false,"twitter":true,"messenger":false,"line":false,"vk":false,"pocket":true,"google":false,"viber":false,"stumbleupon":false,"qzone":false,"linkedin":false},"fontsettings":{"theme":"white","family":"serif","size":2},"highlight":{},"anchor-navigation-ex":{"associatedWithSummary":true,"float":{"floatIcon":"fa fa-navicon","level1Icon":"","level2Icon":"","level3Icon":"","showLevelIcon":false},"mode":"float","multipleH1":false,"pageTop":{"level1Icon":"fa fa-hand-o-right","level2Icon":"fa fa-hand-o-right","level3Icon":"fa fa-hand-o-right","showLevelIcon":false},"printLog":false,"showGoTop":true,"showLevel":true},"expandable-chapters-small":{},"sharing":{"qq":false,"all":["twitter","facebook","google"],"douban":false,"facebook":false,"weibo":false,"instapaper":false,"whatsapp":false,"hatenaBookmark":false,"twitter":false,"messenger":false,"line":false,"vk":false,"pocket":false,"google":false,"viber":false,"stumbleupon":false,"qzone":false,"linkedin":false},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":true}},"theme":"default","author":"","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"SnpHub Tutorial","language":"en","links":{"sidebar":{}},"gitbook":"3.2.3"},"file":{"path":"content/Basic_Usage/overview.md","mtime":"2020-03-11T05:58:29.659Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2020-03-27T08:05:11.936Z"},"basePath":"../..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"Function Details","level":"2","depth":0,"next":{"title":"Overview","level":"2.1","depth":1,"path":"content/Basic_Usage/overview.md","ref":"./content/Basic_Usage/overview.md","articles":[]},"previous":{"title":"What is SnpHub","level":"1","depth":0,"path":"README.md","ref":"README.md","articles":[]},"dir":"ltr"},"config":{"plugins":["github","-sharing","sharing-plus","anchor-navigation-ex","highlight","-lunr","-search","expandable-chapters-small","splitter"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"prism":{"css":["prismjs/themes/prism-tomorrow.css"]},"github":{"url":"https://github.com/esctrionsit/snphub"},"splitter":{},"sharing-plus":{"qq":false,"all":["facebook","google","twitter","instapaper","linkedin","pocket","stumbleupon"],"douban":false,"facebook":true,"weibo":false,"instapaper":false,"whatsapp":false,"hatenaBookmark":false,"twitter":true,"messenger":false,"line":false,"vk":false,"pocket":true,"google":false,"viber":false,"stumbleupon":false,"qzone":false,"linkedin":false},"fontsettings":{"theme":"white","family":"serif","size":2},"highlight":{},"anchor-navigation-ex":{"associatedWithSummary":true,"float":{"floatIcon":"fa fa-navicon","level1Icon":"","level2Icon":"","level3Icon":"","showLevelIcon":false},"mode":"float","multipleH1":false,"pageTop":{"level1Icon":"fa fa-hand-o-right","level2Icon":"fa fa-hand-o-right","level3Icon":"fa fa-hand-o-right","showLevelIcon":false},"printLog":false,"showGoTop":true,"showLevel":true},"expandable-chapters-small":{},"sharing":{"qq":false,"all":["twitter","facebook","google"],"douban":false,"facebook":false,"weibo":false,"instapaper":false,"whatsapp":false,"hatenaBookmark":false,"twitter":false,"messenger":false,"line":false,"vk":false,"pocket":false,"google":false,"viber":false,"stumbleupon":false,"qzone":false,"linkedin":false},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":true}},"theme":"default","author":"","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"SnpHub Tutorial","language":"en","links":{"sidebar":{}},"gitbook":"3.2.3"},"file":{"path":"content/Basic_Usage/overview.md","mtime":"2020-03-30T08:38:23.190Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2020-03-30T11:28:34.212Z"},"basePath":"../..","book":{"language":""}});
         });
     </script>
 </div>
@@ -525,10 +553,6 @@ Make sure that <code>S1</code>, <code>S2</code>, <code>S3</code> and <code>S4</c
     
         
         <script src="../../gitbook/gitbook-plugin-splitter/splitter.js"></script>
-        
-    
-        
-        <script src="../../gitbook/gitbook-plugin-livereload/plugin.js"></script>
         
     
         

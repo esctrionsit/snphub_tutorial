@@ -18,11 +18,11 @@ git clone https://github.com/esctrionsit/snphub4docker
 
 ## Step.2
 
-Creat `Docker` image of `SnpHub`.
+Create `Docker` image of `SnpHub`.
 
 ```sh
 cd snphub4docker
-sudo ./snphub creat image
+sudo ./snphub create image
 ```
 Root permission is needed because of `Docker`.
 
@@ -52,7 +52,7 @@ sudo ./snphub creat container -p 5123 -v /data/user_data
 ```
 
 Options:
-- `-p`: Dind the host port with container. A **random** port will be binded when **ignoring** this parameter.
+- `-p`: Dind the host port with container. A **random** port will be bound when **ignoring** this parameter.
 - `-v`: Mount your own **pre-processed** re-seq data into container. `SnpHub` will run on a **sample data** when **ignoring** this parameter.
 
 ## Step.5
@@ -81,6 +81,6 @@ Commands:
 Note: 
   Commands contain sub-commands are marked with "+" 
   Generally any operate on Docker needs root authority.
-  We recomand to use root account when using commands related to Docker.
+  We recommend to use root account when using commands related to Docker.
   Or using "sudo snphub <command> [options]".
 ```

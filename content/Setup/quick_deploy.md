@@ -1,4 +1,4 @@
-# Overview
+# Quick Deploy
 
 > If you don't want to setup the whole environment, we also offer a **Docker-encapsulated version**. For more details, see [here](https://esctrionsit.github.io/snphub_tutorial/content/Docker/overview.html)
 
@@ -7,10 +7,10 @@ In this section, we will introduce how to setup the `SnpHub`. Some basic knowled
 ## Environment
 
 To run the SnpHub, make sure these softwares are **already** installed:
-- samtools (no eariler than **v1.4**)
-- bcftools (no eariler than **v1.8**)
+- samtools (≥ **v1.4**)
+- bcftools (≥ **v1.8**)
 - seqkit
-- tabix (no eariler than **v1.6**)
+- tabix (≥ **v1.6**)
 
 Also, these R packages are also **needed**:
 - ggplot2

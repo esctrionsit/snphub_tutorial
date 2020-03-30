@@ -4,7 +4,7 @@ To draw the plots, 3 self-defined files need to be added into configuration file
 
 ## Metadata File
 
-In this file, there are at least 3 columns seperated by `\t`. It is used to gives the user a simpler way to select samples. First 3 columns, which are `vcfID`, `AccessionName` and `DisplayName` are **required**, and others are optional. `vcfID` means the id of the sample in the vcf file, `AccessionName` is the simple and easy to remember name for users to input at the browser, and `DisplayName` is the full name that will display in plot. Other columns are optional, to show some other informations that users may need. 
+In this file, there are at least 3 columns separated by `\t`. It is used to gives the user a simpler way to select samples. First 3 columns, which are `vcfID`, `AccessionName` and `DisplayName` are **required**, and others are optional. `vcfID` means the id of the sample in the vcf file, `AccessionName` is the simple and easy to remember name for users to input at the browser, and `DisplayName` is the full name that will display in plot. Other columns are optional, to show some other information that users may need. 
 
 It's the **ONLY** file that have **header**.
 
@@ -28,7 +28,7 @@ TA10210	TA10210	TA10210	Uzbekistan	930	MC
 
 ## Group Information File
 
-In this file, information of group is recorded. There are 2 columns in totall, without header, seperated by `\t`.
+In this file, information of group is recorded. There are 2 columns in total, without header, separated by `\t`.
 
 **Example**
 
@@ -44,7 +44,7 @@ Group3    S1,S2,S3,S4,S5
 
 ## Sample location File
 
-In this file, location of group is recorded. There are 4 columns in totall, without header, seperated by `\t`.
+In this file, location of group is recorded. There are 4 columns in total, without header, separated by `\t`.
 
 **Example**
 
