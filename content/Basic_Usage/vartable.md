@@ -1,6 +1,6 @@
-# VarTable
+# Filter Variations with VarTable
 
-There are 2 panels: the left one (①) is the input panel, and the right one is the result display panel.
+There are 2 panels in channel **`VarTable`**: the left one (①) is the input panel, and the right one is the result display panel.
 
 ![VarTable tag](./../img/VarTable-1.jpg)
 
@@ -16,16 +16,16 @@ This function subsets the VCF file by the parameters given in the left panel (�
 
 - **Samples**: **sample names** are wanted here.
 	- Basically, there are three ways available to input:
-		- Pure sample name list. Sample names are divided by "`,`", like `sample1,sample2,sample3`.
-		- Pure group list. Use a *#* before group name to transfer group into sample name list, like `#pre-defined-group-name-1,#pre-defined-group-name-2`. 
-		- Mixed list. Something looks like `sample1,sample2,sample3,#pre-defined-group-name-1`.
+		- Pure sample name list. Sample names are divided by comma *(,)*, such as `sample1,sample2,sample3`.
+		- Pure group list. Use a *#* before group name to transfer group into sample name list, such as `#pre-defined-group-name-1,#pre-defined-group-name-2`. 
+		- Mixed list. Something looks such as `sample1,sample2,sample3,#pre-defined-group-name-1`.
 	- **List of samples, must have variant**: samples here will be asked to have mutations in the result. If they do not have mutation in some sites, these sites won't appear in the result.
 	- **List of samples, must NOT have variant**: contrary to the former, sites which samples here have mutations will be deleted in the result.
 	- **List of samples, independent of having variant**: samples here won't be dealed, just display.
 
 ![Samples of VarTable](./../img/VarTable-2.jpg)
 
-- **Region**: a region is wanted here. Input format should be `chr:from-to`, like `chr1A:1-100`. You could find all the available chromsomes and their maximum length in `SampleInfo` panel. Also, gene name is acceptable.
+- **Region**: a region is wanted here. Input format should be `chr:from-to`, such as `chr1A:1-100`. You could find all the available chromosomes and their maximum length in `SampleInfo` panel. Also, gene name is acceptable.
 
 - **Flanking region length**: when using the gene name as input, you may want some extra length in the upstream and downstream. Both ends of the region will be extended by the value here.
 
