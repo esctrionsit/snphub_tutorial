@@ -4,7 +4,7 @@
 
 In this section, we will introduce how to setup the `SnpHub`. Basic knowledge about Linux, R and resequencing is required. Also, you need to have a server installed with **shiny server**. For more information, please read [here](https://www.rstudio.com/products/shiny/download-server/).
 
-## Environment
+#### Environment
 
 To run the SnpHub, make sure the following software programs are **already** installed:
 - samtools (≥ **v1.4**)
@@ -25,7 +25,7 @@ Also, the following R packages are also prerequisites:
 - ape
 - DT
 
-## Demo
+#### Demo
 
 Two steps are needed to run on demo data set:
 
@@ -41,9 +41,9 @@ R -e "shiny::runApp('./snphub', port=5000, host='0.0.0.0')"
 
 *Make sure that `samtools`, `bcftools`, `seqkit` and `tabix` are added to system PATH. Otherwise, `tool application paths` part in `setup.conf` is needed to change to fit.*
 
-## Setup with your own data set
+#### Setup with your own data set
 
-### Fulfill config file
+##### Fulfill config file
 
 Basic config file is named `setup.conf`, fulfill it and then run command:
 
@@ -57,7 +57,7 @@ Check [file format](/content/Setup/file-formats.html) for more details about req
 
 If it is your **first time** to set up `SnpHub`, you need to **delete** `advanced_config.R`, and then **rename** `advanced_config_O.R` to `advanced_config.R`.
 
-### Check the config file
+##### Check the config file
 
 Each time you reset/changed your configuration, use:
 ``` sh

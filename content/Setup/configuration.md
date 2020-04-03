@@ -54,13 +54,13 @@ name_sam_location = "sample_location.txt"
 # file name of system information file
 # use NA without "" to ignore this file
 name_sysinfo = NA
-#name_sysinfo = "./test/sys_info.txt" 
+#name_sysinfo = "sys_info.txt" 
 
 
 # file name of UI setting information file
 # use NA without "" to ignore this file
 name_UIsetting = NA
-#name_UIsetting = "./test/Aet.json"
+#name_UIsetting = "Aet.json"
 
 ####################################################
 # tool application paths
@@ -73,30 +73,30 @@ path_tabix = "tabix"
 
 ```
 
-## Related files
+#### Related files
 In the first part, the meaning of the variables are:
 
-- **data_type**: type of the variation data. Could be `"vcf"` or `"hapmap"`
+- **data_type**: Type of the variation data. Could be `"vcf"` or `"hapmap"`
 
-- **path_vcfolder**: the folder path of vcf (zipped by `bgzip` as vcf.gz) files of the resequencing data. **ALL** vcf files in the folder would be **merged together**, and annotated with `gff3` file below. This could be ignored if your data format is hapmap.
+- **path_vcfolder**: The folder path of vcf (zipped by `bgzip` as vcf.gz) files of the resequencing data. **ALL** vcf files in the folder would be **merged together**, and annotated with `gff3` file below. This could be ignored if your data format is hapmap.
 
 - **path_hapmap**: path of your hapmap data file. **Note** that we only accept a single hapmap data file for now. Could be ignored if your data format is vcf.
 
-- **path_datafolder**: the folder path of **all files** except vcfs. New created files would also be put here.
+- **path_datafolder**: The folder path of **all files** except vcfs. New created files would also be put here.
 
-- **path_gff3**: the path of gff3 file, which has the full name called "the Generic Feature Format Version 3" file.
+- **name_gff3**: The file name of gff3 file, which has the full name called "the Generic Feature Format Version 3" file.
 
-- **path_fasta**: the path of reference genome file, which should be in fasta format.
+- **name_fasta**: The file name of reference genome file, which should be in fasta format.
 
-- **path_metadata**: the path of metadata file. For more details, please see next section.
+- **name_metadata**: The file name of metadata file (the file is built **by user**). For more format details, please see next section.
 
-- **path_groupdata**: the path of group information file. For more details, please see next section.
+- **name_groupdata**: The file name of group information file (the file is built **by user**). For more format details, please see next section.
 
-- **path_sam_location**: the path of sample location information file. For more details, please see next section.
+- **name_sam_location**: The file name of sample location information file (the file is built **by user**). For more format details, please see next section.
 
-- **path_sysinfo**: the path of system information file. Its value could be NA. For more details, please see next section.
+- **name_sysinfo**: The file name of system information file (the file is built **by user**). Its value could be `NA`. For more format details, please see next section.
 
-- **path_UIsetting**: the path of UI setting file. Its value could be `NA`. For more details, please see section "*UI Setting*".
+- **name_UIsetting**: The file name of UI setting file (the file is built **by user**). Its value could be `NA`. For more details, please see section "*UI Setting*".
 
-## Tool path
+#### Tool path
 In the second part, variables contains the path of 4 tools: `bcftools`, `samtools`, `seqkit` and `tabix`. 
