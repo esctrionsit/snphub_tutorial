@@ -94,9 +94,9 @@ In the first part, the meaning of the variables are:
 
 - **name_sam_location**: The file name of sample location information file (the file is built **by user**). For more format details, please see next section.
 
-- **name_sysinfo**: The file name of system information file (the file is built **by user**). Its value could be `NA`. For more format details, please see next section.
+- **name_sysinfo**: The file name of system information file (the file is built **by user**). Its value could be `NA` when there is nothing to show as "system info" on the webpage of the instance. For more format details, please see next section.
 
-- **name_UIsetting**: The file name of UI setting file (the file is built **by user**). Its value could be `NA`. For more details, please see section "*UI Setting*".
+- **name_UIsetting**: The file name of UI setting file (the file is built **by user**). Its value could be `NA` if the default value of each parameter on the webpage is not necessary. For more details, please see section "*UI Setting*".
 
 #### Tool path
 In the second part, variables contains the path of 4 tools: `bcftools`, `samtools`, `seqkit` and `tabix`. 
