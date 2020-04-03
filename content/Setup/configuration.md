@@ -1,6 +1,6 @@
 # Configuration
 
-There is a configuration file called `setup.conf` in the `SnpHub` root directory. Content of the file is shown below.
+There is a configuration file named `setup.conf` under the `SnpHub` home directory. Content of the file is shown as below.
 
 ```R
 ####################################################
@@ -78,11 +78,11 @@ In the first part, the meaning of the variables are:
 
 - **data_type**: type of the variation data. Could be `"vcf"` or `"hapmap"`
 
-- **path_vcfolder**: the folder path of vcf(vcf.gz) files of the resequencing data. **ALL** vcf files in the folder would be **merged together**, and annoated with `gff3` file below. This could be ignored if your data format is hapmap.
+- **path_vcfolder**: the folder path of vcf (zipped by `bgzip` as vcf.gz) files of the resequencing data. **ALL** vcf files in the folder would be **merged together**, and annotated with `gff3` file below. This could be ignored if your data format is hapmap.
 
 - **path_hapmap**: path of your hapmap data file. **Note** that we only accept a single hapmap data file for now. Could be ignored if your data format is vcf.
 
-- **path_datafolder**: the folder path of **all files** except vcfs. New created files would also be puted here.
+- **path_datafolder**: the folder path of **all files** except vcfs. New created files would also be put here.
 
 - **path_gff3**: the path of gff3 file, which has the full name called "the Generic Feature Format Version 3" file.
 
@@ -94,11 +94,9 @@ In the first part, the meaning of the variables are:
 
 - **path_sam_location**: the path of sample location information file. For more details, please see next section.
 
-- **path_sysinfo**: the path of system information file. It's value could be NA. For more details, please see next section.
+- **path_sysinfo**: the path of system information file. Its value could be NA. For more details, please see next section.
 
-- **path_UIsetting**: the path of UI setting file. It's value could be `NA`. For more details, please see section "*UI Setting*".
+- **path_UIsetting**: the path of UI setting file. Its value could be `NA`. For more details, please see section "*UI Setting*".
 
 ## Tool path
-In the second part, variables contains the path of 3 tools: `bcftools`, `samtools`, `seqkit` and `tabix`. If the path is default, just leave them then.
-
-But, if the default tool is not fit for `SnpHub`, due to the version problem or somehow, you can change the path to somewhere new.
+In the second part, variables contains the path of 4 tools: `bcftools`, `samtools`, `seqkit` and `tabix`. 

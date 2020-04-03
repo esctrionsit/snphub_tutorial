@@ -1,24 +1,23 @@
-# Creating Consensus Sequence with SeqMaker
+# SeqMaker, create consensus sequence
 
 In this channel, you can create a consensus sequence by substituting variants based on the reference genome, and the result can be downloaded directly as FASTA file.
 
-![SeqMaker tag](./../img/SeqMaker-1.jpg)
+![SeqMaker channel](./../img/SeqMaker-1.jpg)
 
 ## UI
 
 Options here are pretty simple.
 
-- **Variation type to be replaced**: to choose whether to exchange snp or indel variation only, or to exchange all variations.
+- **Variation type to be replaced**: To choose whether to exchange **`snp`** or **`indel`** variation only, or to exchange all variations.
 
-- **Replace homozygous/heterozygous?**: choose whether to change homozygous mutation only.
+- **Replace homozygous/heterozygous?**: Choose whether to *only replace homozygous mutations*, or *replace both types together*.
 
-- **Samples**: **sample names** are wanted here. There are three ways are available to input:
-	- Pure sample name list. Sample names are divided by comma *(,)*, such as `sample1,sample2,sample3`.
-	- Pure group list. Use a *#* before group name to transfer group into sample name list, such as `#pre-defined-group-name-1,#pre-defined-group-name-2`. 
-	- Mixed list. Something looks such as `sample1,sample2,sample3,#pre-defined-group-name-1`.
+- **Samples**: The textbox titled "Samples" inquiry a sample list for querying. Three styles are supported for the sample-list input box, which are 
+`list of sample names (Accession name according to the “SampleInfo” channel)`, `use group IDs with "#"` and `mixture`. For more details, please see [the overview section](/content/Basic_Usage/overview.html).
+	- **Note:**  **#RAW** is a **RESERVED** ID presents to retrieve the REF (reference genome) sequence directly.
 
-- **Region**: a region is wanted here. Input format should be `chr:from-to`, such as `chr1A:1-100`. You could find all the available chromosomes and their maximum length in `SampleInfo` panel. Also, gene name is acceptable.
+- **Region or GeneID**: The textbox titled "**Region or GeneID** inquires the input for querying genomic regions. The input text shall be in form of `chr:from-to`. For example, `chr1A:1-100`. Also, gene ID is acceptable.
 
-## GIF Demonstration
+## Demonstration
 
-![GIF Demonstration of SeqMaker](./../img/SeqMaker-0.gif)
+![Demonstration of SeqMaker](./../img/SeqMaker-0.gif)

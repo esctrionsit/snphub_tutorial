@@ -1,33 +1,32 @@
-# Visualize Genotypes Geographically HapMap
+# HapMap, visualize the genotypes geographically
 
 The **`HapMap`** channel provides a way to project the allele distribution of a single site geographically on a map, utilizing the provided resource-gathering locations.
 
-![HapMap tag](./../img/HapMap-2.jpg)
+![HapMap channel](./../img/HapMap-2.jpg)
 
 ## Panel ① on the left provides several options:
-- **Samples**: sample names are needed here. Three ways are available to input:
-	- Pure sample name list. Sample names are divided by comma *(,)*, such as `sample1,sample2,sample3`.
-	- Pure group list. Use a *#* before group name to transfer group into sample name list, such as `#pre-defined-group-name-1,#pre-defined-group-name-2`. 
-	- Mixed list. Something looks such as `sample1,sample2,sample3,#pre-defined-group-name-1`.
+- **Samples**:The textbox titled "Samples" inquiry a sample list for querying. Three styles are supported for the sample-list input box, which are 
+`list of sample names (Accession name according to the “SampleInfo” channel)`, `use group IDs with "#"` and `mixture`. For more details, please read [the overview section](/content/Basic_Usage/overview.html).
 
-- **Site**: a **SINGLE site** is needed here.
-	- Input format should be `chr:pos`, such as `chr1A:123`.
-	- If a genomic region is provided, the first variant site in this region will be used for the analysis.
+- **Site**: A specific genomic site is required for the querying input boxes, such as "`chr:pos`".
+	- If a genomic region is provided, such as "`chr:posA-posB`", the first variantion site within the region will be used.
 
-- **Longitude range**: decide the maximum and minimum of the longitude to draw on the plot. A way to cut plot.
+- **Longitude range**: To adjust the maximum and minimum limitations of the longitude to be shown on the map.
 
-- **Latitude range**: decide the maximum and minimum of the latitude  to draw on the plot. Another way to cut plot.
+- **Latitude range**: To adjust the maximum and minimum limitations of the latitude to be shown on the map.
 
-- **Distance merge range**: coefficient of the merge range. Larger the coefficient is, bigger the merge range is. And merge range means the pies on the plot may be merged into one, because they are too close (in the merge range).
+- **Distance merge range**: Coefficient of the merge range. Users can select the proper distance for merging geographically closely distributed accessions in one circle. Larger the coefficient will merge more geographically closed sample together, leaving with fewer points on the map.
 
-- **Draw**: click when getting all options ready.
+- **Draw**: Click for action when getting all options ready.
 
 ## Download Options
 
 ![Download options](./../img/Download-options-2.gif)
 
-Click the **Download Options** button, and then you can select format, width and height of the plot shown as the result. Then, click `Download` to download it.
+Click the **Download Options** button, and then you can select downloading format (`PNG` or `PDF`) of figure, and specify the width and height to appropriate presentation.
 
-## GIF Demonstration
+Then, click `Download` to download the figure.
 
-![GIF Demonstration of HapMap](./../img/HapMap-0.gif)
+## Demonstration
+
+![Demonstration of HapMap](./../img/HapMap-0.gif)

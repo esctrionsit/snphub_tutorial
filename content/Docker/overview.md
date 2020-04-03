@@ -1,8 +1,8 @@
-# Setup with Docker
+# Quick set up with Docker
 
 ## Overview
 
-As Docker is a convenient way to setup the software environment, we also provide a more easier way to deploy `SnpHub` based on [Docker](https://www.docker.com/).
+As Docker is a convenient way to setup the software environment, we also provide an easier way to deploy `SnpHub` based on [Docker](https://www.docker.com/).
 
 To setup `Snphub` using `Docker`, you need to **install** `Docker` on your server first.
 
@@ -10,7 +10,7 @@ Also, `samtools`, along with `bcftools`, `tabix` and `seqkit` still need to **be
 
 ## Step.1
 
-Clone (or download) project `snphub4docker` from github.
+Clone (or download) project `snphub4docker` from GitHub.
 
 ```sh
 git clone https://github.com/esctrionsit/snphub4docker
@@ -28,7 +28,7 @@ Root permission is needed because of `Docker`.
 
 ## Step.3
 
-Pre-process your own re-seq data.(Or **jump** this step if just want to try on our **sample** data.)
+Pre-process your own re-seq data. (Or **jump** this step if just want to try on our **sample** data.)
 
 **Firstly**, you need to **fulfill** the `setup.conf`.
 ```sh
@@ -45,14 +45,14 @@ An **template data folder** is provided at `snphub4docker/Template_data`.
 
 ## Step.4
 
-Now, you can try `SnpHub` by createing a container (instance), binding your host port with it, and mount your own data (if there is).
+Now, you can try `SnpHub` by creating a container (instance), binding your host port with it, and mount your own data (if there is).
 
 ```sh
-sudo ./snphub creat container -p 5123 -v /data/user_data
+sudo ./snphub create container -p 5123 -v /data/user_data
 ```
 
 Options:
-- `-p`: Dind the host port with container. A **random** port will be bound when **ignoring** this parameter.
+- `-p`: Bind the host port with container. A **random** port will be bound when **ignoring** this parameter.
 - `-v`: Mount your own **pre-processed** re-seq data into container. `SnpHub` will run on a **sample data** when **ignoring** this parameter.
 
 ## Step.5
@@ -61,7 +61,7 @@ Open your browser, and enjoy at `http://localhost:5123`.
 
 (Port is the one that you choose at step.4 or a random value. Check more details using `./snphub list`)
 
-## Addendum: parameters of snphub
+## Parameters of the command: snphub
 
 ```text
 Program : snphub (Tools for visualizing re-seq data)

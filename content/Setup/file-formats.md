@@ -64,7 +64,7 @@ TA10075	Afghanistan	68.712273	35.956332
 
 ## System Info file
 
-**Optional**. In this file, you can write anything you want to show on the snphub instance.
+**Optional**. In this file, you can write anything you want to show on the SnpHub instance.
 
 **Example**
 

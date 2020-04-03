@@ -1,34 +1,34 @@
-# Construct Haplotype Network with HapNet
+# HapNet, construct a haplotype network
 
-Haplotype networks represent the relationships among the different haploid genotypes observed from the sample list based on package *[pegas](http://ape-package.ird.fr/pegas.html)*. You may find more information about haplotype [here](http://phylonetworks.blogspot.com/2013/09/how-do-we-interpret-rooted-haplotype.html).
+Haplotype networks represent the relationships among the different haploid genotypes observed from the sample list based on package *[pegas](http://ape-package.ird.fr/pegas.html)*. You may find more information about haplotype network [here](http://phylonetworks.blogspot.com/2013/09/how-do-we-interpret-rooted-haplotype.html).
 
-![HapNet tag](./../img/HapNet-1.jpg)
+![HapNet channel](./../img/HapNet-1.jpg)
 
 ## Panel ① on the left provides several options:
-- **Groups**: samples that divided into group(s) are wanted. Three ways are available as well.
-	- Pure sample name group list. Assume that we have samples `S1,S2,S3,S4`, and `S1,S2` are in a group called `G1`, while `S3,S4` in `G2`, a string such as `G1{S1,S2},G2{S3,S4}` could be used as an input.
-	- Pure group list. Assume that we have two pre-defined groups called `PG1` and `PG2`, a string such as `PG1,PG2` could be used as an input.
-	- Mixed list. String such as `G1{S1,S2},PG1,PG2,G2{S3,S4}` is also able to use as an input.
-	- **Make sure** that `S1`, `S2`, `S3` and `S4` should **NOT** be contained in neither `PG1` nor `PG2`.
+- **Groups**: The textbox titled "Groups" inquiries a list of group IDs. Both `pre-defined group` and `user-defined group` styles are supported. For more details, please see [the overview section](/content/Basic_Usage/overview.html).
 
-- **Region**: a region is wanted here. Input format should be `chr:from-to`, such as `chr1A:1-100`. You could find all the available chromosomes and their maximum length in `SampleInfo` panel. Also, gene name is acceptable.
+- **Region or GeneID**: The textbox titled "**Region or GeneID** inquire the input for querying genomic regions. The input text shall be in form of `chr:from-to`. For example, `chr1A:1-100`. Also, gene name is acceptable.
 
-- **Flanking region length**: when using the gene name as input, you may want some extra length in the upstream and downstream. Both ends of the region will be extended by the value here.
+- **Embed sample names in figure**: The option `Yes` presents "to draw the information of samples in each haplotype in figure".
 
-- **Draw**: click when getting all options ready.
+- **Flanking region length**: When using the gene name as input, you may want to extend the regions. It is usually `0` bp in the box by default, indicating no flanking region is considered. If `2000` is provided in this input box, then the flanking regions in length of "2000bp" will be included for both upstream and downstream.
+
+- **Draw**: Click for action when getting all options ready.
 
 ## Download Options
 
 ![Download options](./../img/Download-options-2.gif)
 
-Click the **Download Options** button, and then you can select format, width and height of the plot shown as the result. Then, click `Download` to download it.
+Click the **Download Options** button, and then you can select downloading format (`PNG` or `PDF`) of figure, and specify the width and height to appropriate presentation.
+
+Then, click `Download` to download the figure.
 
 ## Details
 
-![HapNet tag](./../img/HapNet-2.jpg)
+![HapNet channel](./../img/HapNet-2.jpg)
 
-There is a table below the plot, showing information of samples in each haplotype drawn in the plot.
+A table containing the information of samples with haplotype groups will be shown under the plot on webpage.
 
-## GIF Demonstration
+## Demonstration
 
-![GIF Demonstration of HapNet](./../img/HapNet-0.gif)
+![Demonstration of HapNet](./../img/HapNet-0.gif)

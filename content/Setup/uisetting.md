@@ -1,6 +1,6 @@
 # UI Setting
 
-**Optional**.Sometimes you may want the ui has some default value on the browser. Here is a fast way to set them. Just fill the json below, save it as a json file like `ui.json`. Then, change the value of **path_UIsetting** in the `config.R` as the path of your own ui setting json.
+**Optional**.Sometimes you may want the UI has some default value on the browser. Here is a fast way to set them. Just fill the json below, save it as a json file like `ui.json`. Then, change the value of **path_UIsetting** in the `config.R` as the path of your own UI setting json.
 
 ```json
 {
