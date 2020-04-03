@@ -21,7 +21,7 @@
                 
             
                 
-                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-highlight/website.css">
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-prism/prism-ghcolors.css">
                 
             
                 
@@ -367,39 +367,18 @@
             
         </li>
     
-        <li class="chapter " data-level="4.2" >
+        <li class="chapter " data-level="4.2" data-path="../Docker/overview.html">
             
-                <span>
+                <a href="../Docker/overview.html">
             
                     
                         <b>4.2.</b>
                     
                     Setup with Docker
             
-                </span>
-            
-
-            
-            <ul class="articles">
-                
-    
-        <li class="chapter " data-level="4.2.1" data-path="../Docker/overview.html">
-            
-                <a href="../Docker/overview.html">
-            
-                    
-                        <b>4.2.1.</b>
-                    
-                    Quick Start
-            
                 </a>
             
 
-            
-        </li>
-    
-
-            </ul>
             
         </li>
     
@@ -471,7 +450,7 @@
 <p>In this file, there are at least 3 columns separated by <code>\t</code>. It is used to gives the user a simpler way to select samples. First 3 columns, which are <code>vcfID</code>, <code>AccessionName</code> and <code>DisplayName</code> are <strong>required</strong>, and others are optional. <code>vcfID</code> means the id of the sample in the vcf file, <code>AccessionName</code> is the simple and easy to remember name for users to input at the browser, and <code>DisplayName</code> is the full name that will display in plot. Other columns are optional, to show some other information that users may need. </p>
 <p>It&apos;s the <strong>ONLY</strong> file that have <strong>header</strong>.</p>
 <p><strong>Example</strong></p>
-<pre><code>vcfID    AccessionName    DisplayName    Passport    Altitude    MiniCore
+<pre class="language-"><code>vcfID    AccessionName    DisplayName    Passport    Altitude    MiniCore
 TA10108    TA10108    TA10108    Tajikistan    NA    MC
 TA10106    TA10106    TA10106    Kyrgyzstan    743    MC
 TA10103    TA10103    TA10103    Georgia    NA    -
@@ -485,7 +464,7 @@ TA10210    TA10210    TA10210    Uzbekistan    930    MC
 <h4 id="group-information-file"><a name="group-information-file" class="anchor-navigation-ex-anchor" href="#group-information-file"><i class="fa fa-link" aria-hidden="true"></i></a>Group Information File</h4>
 <p>In this file, information of group is recorded. There are 2 columns in total, without header, separated by <code>\t</code>.</p>
 <p><strong>Example</strong></p>
-<pre><code>Group1    S1,S2,S3
+<pre class="language-"><code>Group1    S1,S2,S3
 Group2    S4,S5
 Group3    S1,S2,S3,S4,S5
 </code></pre><p><strong>Column Description</strong></p>
@@ -493,7 +472,7 @@ Group3    S1,S2,S3,S4,S5
 <h4 id="sample-location-file"><a name="sample-location-file" class="anchor-navigation-ex-anchor" href="#sample-location-file"><i class="fa fa-link" aria-hidden="true"></i></a>Sample location File</h4>
 <p>In this file, location of group is recorded. There are 4 columns in total, without header, separated by <code>\t</code>.</p>
 <p><strong>Example</strong></p>
-<pre><code>TA10069    Afghanistan    69.166667    34.5
+<pre class="language-"><code>TA10069    Afghanistan    69.166667    34.5
 TA10070    Afghanistan    69.166667    34.5
 TA10071    Afghanistan    68.833333    36
 TA10072    Afghanistan    68.712273    35.956332
@@ -505,7 +484,7 @@ TA10075    Afghanistan    68.712273    35.956332
 <h4 id="system-info-file"><a name="system-info-file" class="anchor-navigation-ex-anchor" href="#system-info-file"><i class="fa fa-link" aria-hidden="true"></i></a>System Info file</h4>
 <p><strong>Optional</strong>. In this file, you can write anything you want to show on the SnpHub instance.</p>
 <p><strong>Example</strong></p>
-<pre><code>OS: Centos7
+<pre class="language-"><code>OS: Centos7
 Administrator: Tom
 Contact: Tom@some_email.com
 </code></pre><p><strong>Column Description</strong></p>
@@ -537,7 +516,7 @@ Contact: Tom@some_email.com
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"File Formats","level":"4.1.3","depth":2,"next":{"title":"UI Setting","level":"4.1.4","depth":2,"path":"content/Setup/uisetting.md","ref":"./content/Setup/uisetting.md","articles":[]},"previous":{"title":"Configuration","level":"4.1.2","depth":2,"path":"content/Setup/configuration.md","ref":"./content/Setup/configuration.md","articles":[]},"dir":"ltr"},"config":{"plugins":["github","-sharing","sharing-plus","anchor-navigation-ex","highlight","-lunr","-search","expandable-chapters-small","splitter","code","livereload"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"prism":{"css":["prismjs/themes/prism-tomorrow.css"]},"github":{"url":"https://github.com/esctrionsit/snphub"},"livereload":{},"splitter":{},"sharing-plus":{"qq":false,"all":["facebook","google","twitter","instapaper","linkedin","pocket","stumbleupon"],"douban":false,"facebook":true,"weibo":false,"instapaper":false,"whatsapp":false,"hatenaBookmark":false,"twitter":true,"messenger":false,"line":false,"vk":false,"pocket":true,"google":false,"viber":false,"stumbleupon":false,"qzone":false,"linkedin":false},"code":{"copyButtons":true},"fontsettings":{"theme":"white","family":"serif","size":2},"highlight":{},"anchor-navigation-ex":{"associatedWithSummary":true,"float":{"floatIcon":"fa fa-navicon","level1Icon":"","level2Icon":"","level3Icon":"","showLevelIcon":false},"mode":"float","multipleH1":false,"pageTop":{"level1Icon":"fa fa-hand-o-right","level2Icon":"fa fa-hand-o-right","level3Icon":"fa fa-hand-o-right","showLevelIcon":false},"printLog":false,"showGoTop":true,"showLevel":true},"expandable-chapters-small":{},"sharing":{"qq":false,"all":["twitter","facebook","google"],"douban":false,"facebook":false,"weibo":false,"instapaper":false,"whatsapp":false,"hatenaBookmark":false,"twitter":false,"messenger":false,"line":false,"vk":false,"pocket":false,"google":false,"viber":false,"stumbleupon":false,"qzone":false,"linkedin":false},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":true}},"theme":"default","author":"","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"SnpHub Tutorial","language":"en","links":{"sidebar":{}},"gitbook":"3.2.3"},"file":{"path":"content/Setup/file-formats.md","mtime":"2020-04-03T04:52:12.078Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2020-04-03T05:17:49.705Z"},"basePath":"../..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"File Formats","level":"4.1.3","depth":2,"next":{"title":"UI Setting","level":"4.1.4","depth":2,"path":"content/Setup/uisetting.md","ref":"./content/Setup/uisetting.md","articles":[]},"previous":{"title":"Configuration","level":"4.1.2","depth":2,"path":"content/Setup/configuration.md","ref":"./content/Setup/configuration.md","articles":[]},"dir":"ltr"},"config":{"plugins":["github","-sharing","sharing-plus","anchor-navigation-ex","-highlight","prism","prism-themes","-lunr","-search","expandable-chapters-small","splitter","code","livereload"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"prism":{"css":["prism-themes/themes/prism-ghcolors.css"]},"github":{"url":"https://github.com/esctrionsit/snphub"},"livereload":{},"splitter":{},"sharing-plus":{"qq":false,"all":["facebook","google","twitter","instapaper","linkedin","pocket","stumbleupon"],"douban":false,"facebook":true,"weibo":false,"instapaper":false,"whatsapp":false,"hatenaBookmark":false,"twitter":true,"messenger":false,"line":false,"vk":false,"pocket":true,"google":false,"viber":false,"stumbleupon":false,"qzone":false,"linkedin":false},"code":{"copyButtons":true},"fontsettings":{"theme":"white","family":"serif","size":2},"anchor-navigation-ex":{"associatedWithSummary":true,"float":{"floatIcon":"fa fa-navicon","level1Icon":"","level2Icon":"","level3Icon":"","showLevelIcon":false},"mode":"float","multipleH1":false,"pageTop":{"level1Icon":"fa fa-hand-o-right","level2Icon":"fa fa-hand-o-right","level3Icon":"fa fa-hand-o-right","showLevelIcon":false},"printLog":false,"showGoTop":true,"showLevel":true},"prism-themes":{},"expandable-chapters-small":{},"sharing":{"qq":false,"all":["twitter","facebook","google"],"douban":false,"facebook":false,"weibo":false,"instapaper":false,"whatsapp":false,"hatenaBookmark":false,"twitter":false,"messenger":false,"line":false,"vk":false,"pocket":false,"google":false,"viber":false,"stumbleupon":false,"qzone":false,"linkedin":false},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":true}},"theme":"default","author":"","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"SnpHub Tutorial","language":"en","links":{"sidebar":{}},"gitbook":"3.2.3"},"file":{"path":"content/Setup/file-formats.md","mtime":"2020-04-03T04:52:12.078Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2020-04-03T09:44:41.764Z"},"basePath":"../..","book":{"language":""}});
         });
     </script>
 </div>

@@ -2,7 +2,7 @@
 
 There is a configuration file named `setup.conf` under the `SnpHub` home directory. Content of the file is shown as below.
 
-```R
+```r
 ####################################################
 # File paths
 

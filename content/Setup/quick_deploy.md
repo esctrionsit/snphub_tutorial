@@ -57,6 +57,10 @@ Check [file format](/content/Setup/file-formats.html) for more details about req
 
 If it is your **first time** to set up `SnpHub`, you need to **delete** `advanced_config.R`, and then **rename** `advanced_config_O.R` to `advanced_config.R`.
 
+```sh
+rm -f advanced_config.R && mv advanced_config_O.R advanced_config.R
+```
+
 ##### Check the config file
 
 Each time you reset/changed your configuration, use:

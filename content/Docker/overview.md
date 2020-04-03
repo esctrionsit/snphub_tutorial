@@ -1,4 +1,4 @@
-# Quick set up with Docker
+# Quick setup with Docker
 
 #### Overview
 
