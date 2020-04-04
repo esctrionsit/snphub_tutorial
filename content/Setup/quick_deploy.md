@@ -1,4 +1,4 @@
-# Quick Deploy
+# General Setup
 
 > If you don't want to configure the whole environment, we also offer a **Docker-encapsulated version**. For more details, see [here](https://esctrionsit.github.io/snphub_tutorial/content/Docker/overview.html)
 

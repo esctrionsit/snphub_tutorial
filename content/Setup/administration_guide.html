@@ -4,7 +4,7 @@
     <head>
         <meta charset="UTF-8">
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
-        <title>File Formats · SnpHub Tutorial</title>
+        <title>Administration guide · SnpHub Tutorial</title>
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="description" content="">
         <meta name="generator" content="GitBook 3.2.3">
@@ -73,10 +73,10 @@
     <link rel="shortcut icon" href="../../gitbook/images/favicon.ico" type="image/x-icon">
 
     
-    <link rel="next" href="uisetting.html" />
+    <link rel="next" href="quick_deploy.html" />
     
     
-    <link rel="prev" href="configuration.html" />
+    <link rel="prev" href="../Basic_Usage/seqmaker.html" />
     
 
     </head>
@@ -274,7 +274,7 @@
             
         </li>
     
-        <li class="chapter " data-level="4" data-path="administration_guide.html">
+        <li class="chapter active" data-level="4" data-path="administration_guide.html">
             
                 <a href="administration_guide.html">
             
@@ -335,7 +335,7 @@
             
         </li>
     
-        <li class="chapter active" data-level="4.4" data-path="file-formats.html">
+        <li class="chapter " data-level="4.4" data-path="file-formats.html">
             
                 <a href="file-formats.html">
             
@@ -415,7 +415,7 @@
     <!-- Title -->
     <h1>
         <i class="fa fa-circle-o-notch fa-spin"></i>
-        <a href="../.." >File Formats</a>
+        <a href="../.." >Administration guide</a>
     </h1>
 </div>
 
@@ -427,52 +427,9 @@
                             
                                 <section class="normal markdown-section">
                                 
-                                <div id="anchor-navigation-ex-navbar"><i class="fa fa-navicon"></i><ul><li><span class="title-icon "></span><a href="#file-formats"><b>4.4. </b>File Formats</a></li></ul></div><a href="#file-formats" id="anchorNavigationExGoTop"><i class="fa fa-arrow-up"></i></a><h1 id="file-formats"><a name="file-formats" class="anchor-navigation-ex-anchor" href="#file-formats"><i class="fa fa-link" aria-hidden="true"></i></a>4.4. File Formats</h1>
-<p>To draw the plots, 3 self-defined files need to be added into configuration file.</p>
-<h4 id="metadata-file"><a name="metadata-file" class="anchor-navigation-ex-anchor" href="#metadata-file"><i class="fa fa-link" aria-hidden="true"></i></a>Metadata File</h4>
-<p>In this file, there are at least 3 columns separated by <code>\t</code>. It is used to gives the user a simpler way to select samples. First 3 columns, which are <code>vcfID</code>, <code>AccessionName</code> and <code>DisplayName</code> are <strong>required</strong>, and others are optional. <code>vcfID</code> means the id of the sample in the vcf file, <code>AccessionName</code> is the simple and easy to remember name for users to input at the browser, and <code>DisplayName</code> is the full name that will display in plot. Other columns are optional, to show some other information that users may need. </p>
-<p>It&apos;s the <strong>ONLY</strong> file that have <strong>header</strong>.</p>
-<p><strong>Example</strong></p>
-<pre class="language-"><code>vcfID    AccessionName    DisplayName    Passport    Altitude    MiniCore
-TA10108    TA10108    TA10108    Tajikistan    NA    MC
-TA10106    TA10106    TA10106    Kyrgyzstan    743    MC
-TA10103    TA10103    TA10103    Georgia    NA    -
-TA10101    TA10101    TA10101    Armenia    NA    -
-TA1631    TA1631    TA1631    Afghanistan    915    MC
-TA1635    TA1635    TA1635    Unknown    NA    -
-TA10212    TA10212    TA10212    Uzbekistan    773    MC
-TA10210    TA10210    TA10210    Uzbekistan    930    MC
-</code></pre><p><strong>Column Description</strong></p>
-<p><img src="../img/Config-1.jpg" alt=""></p>
-<h4 id="group-information-file"><a name="group-information-file" class="anchor-navigation-ex-anchor" href="#group-information-file"><i class="fa fa-link" aria-hidden="true"></i></a>Group Information File</h4>
-<p>In this file, information of group is recorded. There are 2 columns in total, without header, separated by <code>\t</code>.</p>
-<p><strong>Example</strong></p>
-<pre class="language-"><code>Group1    S1,S2,S3
-Group2    S4,S5
-Group3    S1,S2,S3,S4,S5
-</code></pre><p><strong>Column Description</strong></p>
-<p><img src="../img/Config-2.jpg" alt=""></p>
-<h4 id="sample-location-file"><a name="sample-location-file" class="anchor-navigation-ex-anchor" href="#sample-location-file"><i class="fa fa-link" aria-hidden="true"></i></a>Sample location File</h4>
-<p>In this file, location of group is recorded. There are 4 columns in total, without header, separated by <code>\t</code>.</p>
-<p><strong>Example</strong></p>
-<pre class="language-"><code>TA10069    Afghanistan    69.166667    34.5
-TA10070    Afghanistan    69.166667    34.5
-TA10071    Afghanistan    68.833333    36
-TA10072    Afghanistan    68.712273    35.956332
-TA10073    Afghanistan    68.712273    35.956332
-TA10074    Afghanistan    68.712273    35.956332
-TA10075    Afghanistan    68.712273    35.956332
-</code></pre><p><strong>Column Description</strong></p>
-<p><img src="../img/Config-3.jpg" alt=""></p>
-<h4 id="system-info-file"><a name="system-info-file" class="anchor-navigation-ex-anchor" href="#system-info-file"><i class="fa fa-link" aria-hidden="true"></i></a>System Info file</h4>
-<p><strong>Optional</strong>. In this file, you can write anything you want to show on the SnpHub instance.</p>
-<p><strong>Example</strong></p>
-<pre class="language-"><code>OS: Centos7
-Administrator: Tom
-Contact: Tom@some_email.com
-</code></pre><p><strong>Column Description</strong></p>
-<p><img src="../img/Config-4.jpg" alt=""></p>
-
+                                <script language="javascript" type="text/javascript"> 
+window.location.href='/content/Setup/quick_deploy.html';
+</script>
                                 
                                 </section>
                             
@@ -483,12 +440,12 @@ Contact: Tom@some_email.com
 
             
                 
-                <a href="configuration.html" class="navigation navigation-prev " aria-label="Previous page: Configuration">
+                <a href="../Basic_Usage/seqmaker.html" class="navigation navigation-prev " aria-label="Previous page: SeqMaker, create consensus sequence">
                     <i class="fa fa-angle-left"></i>
                 </a>
                 
                 
-                <a href="uisetting.html" class="navigation navigation-next " aria-label="Next page: UI Setting">
+                <a href="quick_deploy.html" class="navigation navigation-next " aria-label="Next page: General Setup">
                     <i class="fa fa-angle-right"></i>
                 </a>
                 
@@ -499,7 +456,7 @@ Contact: Tom@some_email.com
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"File Formats","level":"4.4","depth":1,"next":{"title":"UI Setting","level":"4.5","depth":1,"path":"content/Setup/uisetting.md","ref":"./content/Setup/uisetting.md","articles":[]},"previous":{"title":"Configuration","level":"4.3","depth":1,"path":"content/Setup/configuration.md","ref":"./content/Setup/configuration.md","articles":[]},"dir":"ltr"},"config":{"plugins":["github","-sharing","sharing-plus","anchor-navigation-ex","-highlight","prism","prism-themes","-lunr","-search","expandable-chapters-small","toggle-chapters","splitter","code","livereload"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"prism":{"css":["prism-themes/themes/prism-ghcolors.css"]},"github":{"url":"https://github.com/esctrionsit/snphub"},"livereload":{},"splitter":{},"sharing-plus":{"qq":false,"all":["facebook","google","twitter","instapaper","linkedin","pocket","stumbleupon"],"douban":false,"facebook":true,"weibo":false,"instapaper":false,"whatsapp":false,"hatenaBookmark":false,"twitter":true,"messenger":false,"line":false,"vk":false,"pocket":true,"google":false,"viber":false,"stumbleupon":false,"qzone":false,"linkedin":false},"code":{"copyButtons":true},"fontsettings":{"theme":"white","family":"serif","size":2},"anchor-navigation-ex":{"associatedWithSummary":true,"float":{"floatIcon":"fa fa-navicon","level1Icon":"","level2Icon":"","level3Icon":"","showLevelIcon":false},"mode":"float","multipleH1":false,"pageTop":{"level1Icon":"fa fa-hand-o-right","level2Icon":"fa fa-hand-o-right","level3Icon":"fa fa-hand-o-right","showLevelIcon":false},"printLog":false,"showGoTop":true,"showLevel":true},"prism-themes":{},"expandable-chapters-small":{},"sharing":{"qq":false,"all":["twitter","facebook","google"],"douban":false,"facebook":false,"weibo":false,"instapaper":false,"whatsapp":false,"hatenaBookmark":false,"twitter":false,"messenger":false,"line":false,"vk":false,"pocket":false,"google":false,"viber":false,"stumbleupon":false,"qzone":false,"linkedin":false},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":true},"toggle-chapters":{}},"theme":"default","author":"","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"SnpHub Tutorial","language":"en","links":{"sidebar":{}},"gitbook":"3.2.3"},"file":{"path":"content/Setup/file-formats.md","mtime":"2020-04-03T04:52:12.078Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2020-04-04T06:18:57.999Z"},"basePath":"../..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"Administration guide","level":"4","depth":0,"next":{"title":"General Setup","level":"4.1","depth":1,"path":"content/Setup/quick_deploy.md","ref":"./content/Setup/quick_deploy.md","articles":[]},"previous":{"title":"SeqMaker, create consensus sequence","level":"3.8","depth":1,"path":"content/Basic_Usage/seqmaker.md","ref":"./content/Basic_Usage/seqmaker.md","articles":[]},"dir":"ltr"},"config":{"plugins":["github","-sharing","sharing-plus","anchor-navigation-ex","-highlight","prism","prism-themes","-lunr","-search","expandable-chapters-small","toggle-chapters","splitter","code","livereload"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"prism":{"css":["prism-themes/themes/prism-ghcolors.css"]},"github":{"url":"https://github.com/esctrionsit/snphub"},"livereload":{},"splitter":{},"sharing-plus":{"qq":false,"all":["facebook","google","twitter","instapaper","linkedin","pocket","stumbleupon"],"douban":false,"facebook":true,"weibo":false,"instapaper":false,"whatsapp":false,"hatenaBookmark":false,"twitter":true,"messenger":false,"line":false,"vk":false,"pocket":true,"google":false,"viber":false,"stumbleupon":false,"qzone":false,"linkedin":false},"code":{"copyButtons":true},"fontsettings":{"theme":"white","family":"serif","size":2},"anchor-navigation-ex":{"associatedWithSummary":true,"float":{"floatIcon":"fa fa-navicon","level1Icon":"","level2Icon":"","level3Icon":"","showLevelIcon":false},"mode":"float","multipleH1":false,"pageTop":{"level1Icon":"fa fa-hand-o-right","level2Icon":"fa fa-hand-o-right","level3Icon":"fa fa-hand-o-right","showLevelIcon":false},"printLog":false,"showGoTop":true,"showLevel":true},"prism-themes":{},"expandable-chapters-small":{},"sharing":{"qq":false,"all":["twitter","facebook","google"],"douban":false,"facebook":false,"weibo":false,"instapaper":false,"whatsapp":false,"hatenaBookmark":false,"twitter":false,"messenger":false,"line":false,"vk":false,"pocket":false,"google":false,"viber":false,"stumbleupon":false,"qzone":false,"linkedin":false},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":true},"toggle-chapters":{}},"theme":"default","author":"","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"SnpHub Tutorial","language":"en","links":{"sidebar":{}},"gitbook":"3.2.3"},"file":{"path":"content/Setup/administration_guide.md","mtime":"2020-04-04T06:20:49.527Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2020-04-04T06:18:57.999Z"},"basePath":"../..","book":{"language":""}});
         });
     </script>
 </div>
