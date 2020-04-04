@@ -13,7 +13,7 @@ Options here are pretty simple.
 - **Replace homozygous/heterozygous?**: Choose whether to *only replace homozygous mutations*, or *replace both types together*.
 
 - **Samples**: The textbox titled "Samples" inquiry a sample list for querying. Three styles are supported for the sample-list input box, which are 
-`list of sample names (Accession name according to the “SampleInfo” channel)`, `use group IDs with "#"` and `mixture`. For more details, please see [the overview section](/content/Basic_Usage/overview.html).
+`list of sample names (Accession name according to the “SampleInfo” channel)`, `use group IDs with "#"` and `mixture`. For more details, please see [the overview section](https://esctrionsit.github.io/snphub_tutorial/content/Basic_Usage/overview.html).
 	- **Note:**  **#RAW** is a **RESERVED** ID presents to retrieve the REF (reference genome) sequence directly.
 
 - **Region or GeneID**: The textbox titled "**Region or GeneID** inquires the input for querying genomic regions. The input text shall be in form of `chr:from-to`. For example, `chr1A:1-100`. Also, gene ID is acceptable.

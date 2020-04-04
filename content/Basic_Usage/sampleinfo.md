@@ -20,7 +20,7 @@
 - ③: The **`Pre-defined sample groups`** table shows all the available pre-defined groups, which is maintained by the system manager. The pre-defined sample groups are usually widely-used by users, for example, “Experiment”, “Control”, “Cultivar”, “Wild”, “Landrace”, etc. Users can specify the predefined groups by the Group name/GroupID, so as to saving the labor for texting.
 	- For the "`Samples`" input box, adding a hashtag *(#)* before the group name is required, to distinguish it from sample accession names.
 	- For the "`Groups`" input box, the group name can be specified directly. 
-	- *More detailed usage see [overview section](/content/Basic_Usage/overview.html)*
+	- *More detailed usage see [overview section](https://esctrionsit.github.io/snphub_tutorial/content/Basic_Usage/overview.html)*
 
 - ④: The **`Other system information`** table shows more other meta-information for illustrating the dataset, which can be freely defined by the system manager. For example, the meta-information can include reference genome information, annotation information, details of raw data alignment, and data-using policy.
 

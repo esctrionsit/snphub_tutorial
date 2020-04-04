@@ -6,7 +6,7 @@ The **`HapMap`** channel provides a way to project the allele distribution of a 
 
 ## Panel ① on the left provides several options:
 - **Samples**:The textbox titled "Samples" inquiry a sample list for querying. Three styles are supported for the sample-list input box, which are 
-`list of sample names (Accession name according to the “SampleInfo” channel)`, `use group IDs with "#"` and `mixture`. For more details, please read [the overview section](/content/Basic_Usage/overview.html).
+`list of sample names (Accession name according to the “SampleInfo” channel)`, `use group IDs with "#"` and `mixture`. For more details, please read [the overview section](https://esctrionsit.github.io/snphub_tutorial/content/Basic_Usage/overview.html).
 
 - **Site**: A specific genomic site is required for the querying input boxes, such as "`chr:pos`".
 	- If a genomic region is provided, such as "`chr:posA-posB`", the first variantion site within the region will be used.

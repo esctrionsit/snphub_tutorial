@@ -1,3 +1,3 @@
 <script language="javascript" type="text/javascript"> 
-window.location.href='/content/Setup/quick_deploy.html';
+window.location.href='https://esctrionsit.github.io/snphub_tutorial/content/Setup/quick_deploy.html';
 </script>

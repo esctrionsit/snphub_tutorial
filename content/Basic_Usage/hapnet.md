@@ -5,7 +5,7 @@ Haplotype networks represent the relationships among the different haploid genot
 ![HapNet channel](./../img/HapNet-1.jpg)
 
 ## Panel ① on the left provides several options:
-- **Groups**: The textbox titled "Groups" inquiries a list of group IDs. Both `pre-defined group` and `user-defined group` styles are supported. For more details, please see [the overview section](/content/Basic_Usage/overview.html).
+- **Groups**: The textbox titled "Groups" inquiries a list of group IDs. Both `pre-defined group` and `user-defined group` styles are supported. For more details, please see [the overview section](https://esctrionsit.github.io/snphub_tutorial/content/Basic_Usage/overview.html).
 
 - **Region or GeneID**: The textbox titled "**Region or GeneID** inquire the input for querying genomic regions. The input text shall be in form of `chr:from-to`. For example, `chr1A:1-100`. Also, gene name is acceptable.
 
