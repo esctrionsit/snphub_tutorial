@@ -6,7 +6,7 @@ Different colors are used to represent the `homozygous mutations` (dark blue), `
 
 When the queried samples are in different groups, each group of samples will be displayed in separated block, to help to compare haplotypes between the groups.
 
-![Heatmap channel](./../img/Heatmap-1.jpg)
+![Heatmap channel](img/Heatmap-1.jpg)
 
 ## Panel ① on the left provides several options as following:
 - **Groups**: The textbox titled "Groups" inquiries a list of group IDs. Both `pre-defined group` and `user-defined group` styles are supported. For more details, please see [the overview section](channels).
@@ -25,7 +25,7 @@ When the queried samples are in different groups, each group of samples will be 
 
 ## Download Options
 
-![Download options of Heatmap](./../img/Download-options.gif)
+![Download options of Heatmap](img/Download-options.gif)
 
 Click the **Download Options** button, and then you can select downloading format (`PNG` or `PDF`) of figure, and specify the width and height to appropriate presentation.
 
@@ -33,4 +33,4 @@ Then, click `Download` to download the figure.
 
 ## Demonstration
 
-![Demonstration of Heatmap](./../img/Heatmap-0.gif)
+![Demonstration of Heatmap](img/Heatmap-0.gif)
