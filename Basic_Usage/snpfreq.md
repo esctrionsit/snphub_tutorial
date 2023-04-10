@@ -4,7 +4,7 @@ The **`SnpFreq`** channel allows user to visualize the SNPs/INDELs and functiona
 
 Variants causing amino acid changes are annotated in different colors, including *missense variation*, *synonymous variant*, *frameshift variant*, *stop code gained/lost* and *splice region variants*. Transcripts in the same region are displayed as different tracks at the bottom, with annotations of the *exons*, *introns*, *CDSs* and *transcription directions*. Samples in different groups are summarized independently and visualized in different tracks, which can be useful for exploring the different frequencies of SNPs among groups.
 
-![SnpFreq channel](./../img/SnpFreq-1.jpg)
+![SnpFreq channel](img/SnpFreq-1.jpg)
 
 ## Parameters in panel ①
 - **Groups**: The textbox titled "Groups" inquiries a list of group IDs. Both `pre-defined group` and `user-defined group` styles are supported. For more details, please see [the overview section](channels).
@@ -17,7 +17,7 @@ Variants causing amino acid changes are annotated in different colors, including
 
 ## Download Options
 
-![Download options](./../img/Download-options-2.gif)
+![Download options](img/Download-options-2.gif)
 
 Click the **Download Options** button, and then you can select downloading format (`PNG` or `PDF`) of figure, and specify the width and height to appropriate presentation.
 
@@ -25,4 +25,4 @@ Then, click `Download` to download the figure.
 
 ## Demonstration
 
-![Demonstration of SnpFreq](./../img/SnpFreq-0.gif)
+![Demonstration of SnpFreq](img/SnpFreq-0.gif)
