@@ -2,7 +2,7 @@
 
 In this channel, you can create a consensus sequence by substituting variants based on the reference genome, and the result can be downloaded directly as FASTA file.
 
-![SeqMaker channel](./../img/SeqMaker-1.jpg)
+![SeqMaker channel](img/SeqMaker-1.jpg)
 
 ## UI
 
@@ -20,4 +20,4 @@ Options here are pretty simple.
 
 ## Demonstration
 
-![Demonstration of SeqMaker](./../img/SeqMaker-0.gif)
+![Demonstration of SeqMaker](img/SeqMaker-0.gif)
