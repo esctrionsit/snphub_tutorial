@@ -2,7 +2,7 @@
 
 The **`HapMap`** channel provides a way to project the allele distribution of a single site geographically on a map, utilizing the provided resource-gathering locations.
 
-![HapMap channel](./../img/HapMap-2.jpg)
+![HapMap channel](img/HapMap-2.jpg)
 
 ## Panel ① on the left provides several options:
 - **Samples**:The textbox titled "Samples" inquiry a sample list for querying. Three styles are supported for the sample-list input box, which are 
@@ -21,7 +21,7 @@ The **`HapMap`** channel provides a way to project the allele distribution of a 
 
 ## Download Options
 
-![Download options](./../img/Download-options-2.gif)
+![Download options](img/Download-options-2.gif)
 
 Click the **Download Options** button, and then you can select downloading format (`PNG` or `PDF`) of figure, and specify the width and height to appropriate presentation.
 
@@ -29,4 +29,4 @@ Then, click `Download` to download the figure.
 
 ## Demonstration
 
-![Demonstration of HapMap](./../img/HapMap-0.gif)
+![Demonstration of HapMap](img/HapMap-0.gif)
