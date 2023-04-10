@@ -6,13 +6,13 @@ As many open-source bioinformatics tools are implemented as command lines or R p
 
 SnpHub provides user-friendly functions for navigating genomic variation data by implementing each of the functions on an independent tab page. Raw variation data and genomic sequence retrieval functions are provided in **VarTable** and **SeqMaker**. Versatile analysis and visualization functions are provided, including **Heatmap**, **HapNet**, **PhyloTree**, **SnpFreq** and **HapMap**. In all of these functions, SnpHub directly queries a gene ID as the corresponding genomic region directly based on the provided `GFF3` file.
 
-![](./../img/channels.jpg)
+![](img/channels.jpg)
 
 In this section, we would like to introduce the main functions supported by `SnpHub`.
 
 When you open a `Snphub` instance in your browser, you would see the page as below.
 
-![Overview of SnpHub](./../img/overview-1.jpg)
+![Overview of SnpHub](img/overview-1.jpg)
 
 Basically, the whole page is composed of two parts: "*menu*" part and "*workspace*" part.
 - ①: *Menu*: users can select different channels of SnpHub here.
@@ -38,7 +38,7 @@ sample1,sample2,sample3
 sample1,sample2,sample3,#PredefinedGroup1
 ```
 
-![Mixed use of sample and group in sample input](./../img/overview-2.jpg)
+![Mixed use of sample and group in sample input](img/overview-2.jpg)
 
 ### The input box: "Groups"
 
@@ -61,7 +61,7 @@ MyGroupA{Sample1,Sample2,Sample3},MyGroupB{Sample8,Sample9,Sample10}
 MyGroupA{Sample1,Sample2,Sample3},PredefineGroup1,PredefineGroup2,MyGroupB{Sample8,Sample9,Sample10}
 ```
 
-![group input using self-defined group](./../img/overview-3.jpg)
+![group input using self-defined group](img/overview-3.jpg)
 
 ### The input box: "Region or GeneID"
 
@@ -73,7 +73,7 @@ The gene-IDs is also supported, too. When a gene-ID is provided, the system will
 
 *Users can also specify the flanking regions of a gene (or a given region), through the input box "Flanking region length (bp)". It is usually `0` bp in the box by default, indicating no flanking region is considered. If `2000` is provided in this input box, then the flanking regions in length of "2000bp" will be included for both upstream and downstream.*
 
-![region input](./../img/overview-4.jpg)
+![region input](img/overview-4.jpg)
 
 ## Basic Output Functions
 
@@ -81,7 +81,7 @@ The gene-IDs is also supported, too. When a gene-ID is provided, the system will
 
 The button named `Download raw results as CSV` or `Download genotype in nucleotide as CSV` in channel `VarTable` will start downloading the table showing on the right of the page. The former will download an original table as `.csv` format, while the latter will download a table that contains genotype like `A/A` instead of `./.`.
 
-![download table](./../img/overview-5.jpg)
+![download table](img/overview-5.jpg)
 
 ### Download Figures
 
@@ -89,7 +89,7 @@ In channels that use plot as the output, you could find the button `Download Opt
 
 At the first time clicking the button, the downloading options will appear. They will hide again by another click.
 
-![download options](./../img/Download-options-2.gif)
+![download options](img/Download-options-2.gif)
 
 You can choose the file format between `.png` and `.pdf` (`.pdf` format is in vector graph format that can be nondestructive modified by tools such as *Adobe Illustrator*). User can also resize the figure by modifying the height and width of output graph.
 
