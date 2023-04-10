@@ -24,7 +24,7 @@ TA10210	TA10210	TA10210	Uzbekistan	930	MC
 
 **Column Description**
 
-![](./../img/Config-1.jpg)
+![](img/Config-1.jpg)
 
 #### Group Information File
 
@@ -40,7 +40,7 @@ Group3    S1,S2,S3,S4,S5
 
 **Column Description**
 
-![](./../img/Config-2.jpg)
+![](img/Config-2.jpg)
 
 #### Sample location File
 
@@ -60,7 +60,7 @@ TA10075	Afghanistan	68.712273	35.956332
 
 **Column Description**
 
-![](./../img/Config-3.jpg)
+![](img/Config-3.jpg)
 
 #### System Info file
 
@@ -76,4 +76,4 @@ Contact: Tom@some_email.com
 
 **Column Description**
 
-![](./../img/Config-4.jpg)
+![](img/Config-4.jpg)
