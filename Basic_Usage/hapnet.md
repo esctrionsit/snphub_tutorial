@@ -2,7 +2,7 @@
 
 Haplotype networks represent the relationships among the different haploid genotypes observed from the sample list based on package *[pegas](http://ape-package.ird.fr/pegas.html)*. You may find more information about haplotype network [here](http://phylonetworks.blogspot.com/2013/09/how-do-we-interpret-rooted-haplotype.html).
 
-![HapNet channel](./../img/HapNet-1.jpg)
+![HapNet channel](img/HapNet-1.jpg)
 
 ## Panel ① on the left provides several options:
 - **Groups**: The textbox titled "Groups" inquiries a list of group IDs. Both `pre-defined group` and `user-defined group` styles are supported. For more details, please see [the overview section](channels).
@@ -17,7 +17,7 @@ Haplotype networks represent the relationships among the different haploid genot
 
 ## Download Options
 
-![Download options](./../img/Download-options-2.gif)
+![Download options](img/Download-options-2.gif)
 
 Click the **Download Options** button, and then you can select downloading format (`PNG` or `PDF`) of figure, and specify the width and height to appropriate presentation.
 
@@ -25,10 +25,10 @@ Then, click `Download` to download the figure.
 
 ## Details
 
-![HapNet channel](./../img/HapNet-2.jpg)
+![HapNet channel](img/HapNet-2.jpg)
 
 A table containing the information of samples with haplotype groups will be shown under the plot on webpage.
 
 ## Demonstration
 
-![Demonstration of HapNet](./../img/HapNet-0.gif)
+![Demonstration of HapNet](img/HapNet-0.gif)
