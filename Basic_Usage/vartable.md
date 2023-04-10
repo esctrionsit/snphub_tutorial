@@ -2,7 +2,7 @@
 
 There are 2 panels in channel **`VarTable`**: the left one (①) is the input panel, and the right one (②) is the result display panel.
 
-![VarTable channel](./../img/VarTable-1.jpg)
+![VarTable channel](img/VarTable-1.jpg)
 
 In the **`VarTable`** function, users can query gene-/region-specific SNP/INDEL tables for a list of samples. To be consistent with the VCF format, the exported genotypes are denoted as `0/0`, `1/1`, `0/1` or `./.`, representing the "same genotype with reference genome", "homozygous variant genotype", "heterozygous genotype", or "missing data", respectively.
 
@@ -20,7 +20,7 @@ In the **`VarTable`** function, users can query gene-/region-specific SNP/INDEL 
 	- **List of samples, must NOT have variant**: When a sample is specified in this box, only site with the same genotype as reference or missing will be selected. Thus, the sites with variations will be filtered.
 	- **List of samples, independent of having variant**: No filtering will be done specific for the samples listed in this box. Thus, this box is suitable for specifying samples as accompanies. Usually, users will prefer to only specify the sample list in this box, so as to show more information as possible.
 
-![Samples of VarTable](./../img/VarTable-2.jpg)
+![Samples of VarTable](img/VarTable-2.jpg)
 
 - **Region or GeneID**: The textbox titled "**Region or GeneID** inquire the input for querying genomic regions. The input text shall be in form of `chr:from-to`. For example, `chr1A:1-100`. Also, gene name is acceptable.
 
@@ -30,7 +30,7 @@ In the **`VarTable`** function, users can query gene-/region-specific SNP/INDEL 
 
 ## RUN, and Download
 
-![Result of VarTable](./../img/VarTable-4.jpg)
+![Result of VarTable](img/VarTable-4.jpg)
 
 Click the `Run` button when getting all options ready. A table for variations will be displayed on the right panel. Parameters and system messages, such as error message will be shown at top of the right panel.
 
@@ -40,7 +40,7 @@ Click `Download genotype in nucleotide as csv` to download a `.csv` file, contai
 
 ## Advanced Options
 
-![Advanced options of VarTable](./../img/VarTable-1.gif)
+![Advanced options of VarTable](img/VarTable-1.gif)
 
 Click the button `Advanced Options` to show more options.
 
@@ -54,4 +54,4 @@ Click the button `Advanced Options` to show more options.
 
 ## Demonstration
 
-![Demonstration of VarTable](./../img/VarTable-0.gif)
+![Demonstration of VarTable](img/VarTable-0.gif)
