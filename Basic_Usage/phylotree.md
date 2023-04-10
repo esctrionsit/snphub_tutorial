@@ -1,6 +1,6 @@
 # PhyloTree, visualize sample distances
 
-![PhyloTree channel](./../img/PhyloTree-1.jpg)
+![PhyloTree channel](img/PhyloTree-1.jpg)
 
 The **`PhyloTree`** channel supports the exploration of the gene-based genetic distances and evolutionary history based on high-density SNP data. The distance matrix is calculated based on the genetic distances of specified genomic region. Then, two distance-based clustering methods, [neighbor-joining (NJ)](https://en.wikipedia.org/wiki/Neighbor_joining) tree analysis and multidimensional scaling (MDS, also known as PCoA), are supported.
 
@@ -8,7 +8,7 @@ NJ-tree method can rapidly evaluates a large amount of data and is suitable for 
 
 The MDS method supports the visualization of the distances of samples in two-dimensions through non-linear dimensionality reduction. This channel provides users with multiple ways to visualize the sample distances for a specified region.
 
-![MDS of PhyloTree channel](./../img/PhyloTree-2.jpg)
+![MDS of PhyloTree channel](img/PhyloTree-2.jpg)
 
 ## Panel ① on the left provides several options:
 - **Type**: Choose to draw a `phylogenetic tree` or a `multidimensional scaling plot`.
@@ -27,7 +27,7 @@ The MDS method supports the visualization of the distances of samples in two-dim
 
 ## Download Options
 
-![Download options](./../img/Download-options-2.gif)
+![Download options](img/Download-options-2.gif)
 
 Click the **Download Options** button, and then you can select downloading format (`PNG` or `PDF`) of figure, and specify the width and height to appropriate presentation.
 
@@ -35,10 +35,10 @@ Then, click `Download` to download the figure.
 
 ## Details
 
-![PhyloTree channel](./../img/PhyloTree-3.jpg)
+![PhyloTree channel](img/PhyloTree-3.jpg)
 
 There is a table below the plot, showing the distance matrix.
 
 ## Demonstration
 
-![Demonstration of PhyloTree](./../img/PhyloTree-0.gif)
+![Demonstration of PhyloTree](img/PhyloTree-0.gif)
